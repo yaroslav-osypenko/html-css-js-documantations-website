@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+  <title>Documentation</title>
+</head>
+  <body>
+    <header>
+      <section class="header container">
+        <header class="header-main">
+          <div class="header-main-logo"></div>
+          <div class="header-main-link">
+            <p>HTML/CSS Documentation</p>
+          </div>
+        </header>
+      </section>
+    </header>
+    <main>
+      <aside>
+        <section class="navigation-container container">
+         <nav class="navigation-menu">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="#Doctype" class="navigation-link">Тег doctype</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#htmllang" class="navigation-link">Тег html lang</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#head" class="navigation-link">Тег head</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#meta" class="navigation-link">Тег meta</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#h1" class="navigation-link">Тег h1</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#h1-h2-h3" class="navigation-link">Семантика тегів h1-h2-h3</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#h1-h2-h3" class="navigation-link">Семантика тегів h1-h2-h3</a>
+            </li>
+          </ul>
+         </nav>
+        </section>
+      </aside>
+      <section class="learn-html container">
+        <div class="learn-html-block" id="Doctype">
+          <div class="learn-html-desription">
+            <p>Інструкція, яка має бути найпершим рядком HTML-документа. Вона повідомляє браузеру, 
+              що сторінка написана на сучасному стандарті HTML5 , переводячи його у стандартний 
+              режим для коректного відображення макета.
+              <br><br>
+              Щоб вказати на початку документа потрібно ввести !, і натиснути Enter
+              Розгорнуться стандатрні налаштування. 
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code">
+!DOCTYPE html
+
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <h1>!DOCTYPE html</h1>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="htmllang">
+          <div class="learn-html-desription">
+            <p>
+              Атрибут у HTML, який використовується для визначення мови вмісту елемента, 
+              зазвичай встановлюється в тегу html. 
+              Він допомагає скрінрідерам правильно вимовляти текст, 
+              а пошуковим системам — коректно індексувати та надавати результати .
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code">
+  html lang="uk" html
+
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            html lang="uk" html
+          </div>
+        </div> 
+        <div class="learn-html-block" id="head">
+          <div class="learn-html-desription">
+            <p>Контейнер для метаданих HTML-документа, який розміщується між тегами 
+              html та body. Він містить інформацію про сторінку, яка не відображається користувачам
+              безпосередньо у вікні браузера. Усередині head зазвичай розміщують title, 
+              посилання на CSS-файли (link), JavaScript-скрипти, інформацію про кодування 
+              meta charset="utf-8" та SEO-дані.</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><div>
+  head
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  head
+</div></code></pre>
+        </div> 
+        <div class="learn-html-block" id="meta">
+          <div class="learn-html-desription">
+            <p>Тег meta — це самозакривний тег, який розміщується всередині head
+              і використовується для надання метаданих (додаткової інформації) про HTML-документ.
+               Ця інформація не відображається безпосередньо, але використовується браузерами, 
+               пошуковими системами та іншими вебсервісами. Тег meta не має закриваючого тегу.<br><br>
+               name="viewport": Це повідомляє браузеру, що метадані стосуються області перегляду (Viewport) — видимої області сторінки.<br>
+               Цей тег є критично важливим для адаптивного дизайну.<br><br>
+               content="width=device-width, initial-scale=1.0": Це сама інструкція для області перегляду, що складається з двох частин:<br><br>
+               width=device-width: Встановлює ширину області перегляду рівною фізичній ширині пристрою (замість використання ширини робочого столу за замовчуванням).<br>
+               initial-scale=1.0: Встановлює початковий коефіцієнт масштабування сторінки на 100%. Це гарантує, що при першому завантаженні сторінка не буде масштабована 
+               браузером (наприклад, щоб вона виглядала меншою на мобільному телефоні).</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</code></pre>
+        </div> 
+        <div class="learn-html-block" id="h1">
+          <div class="learn-html-desription">
+            <p>Тег h1 може бути тільки один. Це головний заголовок сторінки</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><div>
+  <h1>Заголовок</h1>
+</div></code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <h1>Заголовок h1</h1>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="h1-h2-h3">
+          <div class="learn-html-desription">
+            <p>Всі теги мають іти послідовно. Не завжди найбільший надпис на сторінці є h1.<br>
+              Для семантіки, кожен section має мати в собі h2. Якщо його немає, потрібно використати його 
+              з класом visually-hiden. І вписати туди сематично правильну назву секції. Потрібно це 
+              наприклад для того щоб використати далі h3 наприклад в назві товару. 
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><div>
+  <h1>Заголовок</h1>
+  <section>
+    <h2 class="visually-hiden">Скрита але правильно назва секції</h2>
+    <h2> Або звичайна назва секції </h2>
+    <article>
+      <h3>Назва товару</h3>
+      <p>Товар</p>
+    </article>
+    <article>
+      <h3>Назва товару</h3>
+      <p>Товар</p>
+    </article>
+  </section>
+</div></code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example example-semantik-h1-h2-h3">
+            <h1>Заголовок h1</h1>
+            <section class="example-semantik-h1-h2-h3-section">
+              <h2>Магазин товарів</h2>
+              <div class="example-semantik-towar">
+                <article>
+                  <h3>Назва товару</h3>
+                  <p>Товар</p>
+                </article>
+                <article>
+                  <h3>Назва товару</h3>
+                  <p>Товар</p>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div> 
+        <div class="learn-html-block">
+          <div class="learn-html-desription">
+            <p>Тег h1 може бути тільки один. Це головний заголовок сторінки</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><div>
+  <h1>Заголовок</h1>
+  <p>текст</p>
+  <a href="#">Посилання</a>
+</div></code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <h1>Заголовок h1</h1>
+          </div>
+        </div> 
+      </section>
+    </main>
+    <footer>
+    </footer>
+  <script>
+    function formatCodeElements() {
+      const codeElements = document.querySelectorAll('code.view-as-code');
+      codeElements.forEach(codeElement => {
+        const htmlContent = codeElement.innerHTML;
+        let escaped = htmlContent
+          .replace(/&(?!amp;|lt;|gt;|quot;|#39;)/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+        codeElement.innerHTML = escaped;
+
+        if (!codeElement.style.whiteSpace) {
+          codeElement.style.whiteSpace = 'pre-wrap';
+        }
+      });
+    }
+    
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', formatCodeElements);
+    } else {
+      formatCodeElements();
+    }
+  </script>
+  </body>
+
+</html>

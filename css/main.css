@@ -1,0 +1,233 @@
+@font-face {
+  font-family: ScienceGothic;
+  src: url("../fonts/ScienceGothic-Light.woff2") format(woff2);
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ScienceGothic;
+  src: url("../fonts/ScienceGothic-Bold.woff2") format(woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+:root {
+  --color-dark: black;
+  --color-light-dark: #131619;
+  --height-header: 70px;
+  --width-aside: 400px;
+  --marginHeader: 20px;
+  --background-color-block: #0f1f3d;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: ScienceGothic;
+  background-color: black;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1920px;
+}
+
+.header {
+  margin-bottom: var(--marginHeader);
+}
+
+.header-main {
+  width: 100%;
+  height: var(--height-header);
+  box-shadow: 0 3px 26px 5px var(--color-light-dark) ;
+  background-color: var(--color-light-dark);
+}
+
+.navigation-container {
+  padding: 20px;
+}
+
+
+main {
+  display: flex;
+  column-gap: 20px;
+  margin-inline: 15px;
+}
+
+
+aside section {
+  max-width: var(--width-aside);
+  min-width: 300px;
+  max-height: calc(100dvh - var(--height-header) - var(--marginHeader));
+  overflow: auto;
+  position: sticky;
+  top: 15px;
+  background-color:#0f1f3d;
+  border-radius: 15px;
+}
+
+.navigation-item {
+  background-color: #002e4d;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.header-main-link p {
+  color:#B4D5E0;
+  text-transform: uppercase;
+} 
+
+.learn-html {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color:#0a1429;
+  border-radius: 15px;
+  color: #D4F7C7;
+  width: 100%;
+  row-gap: 20px;
+} 
+
+.learn-html-block {
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--background-color-block);
+  transition: all 0.2s ease-in;
+}
+
+.learn-html-block:hover {
+  scale: 1.013;
+}
+
+.navigation-link {
+  display: block;
+  color: #D4C9E9;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
+.learn-html-code {
+  border-radius: 15px;
+}
+
+.learn-html-example {
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+pre {
+  margin-inline: 0 !important;
+  margin-block: 0 !important;
+  /* margin: 0 !important; */
+  /* display: grid; */
+}
+
+.view-as-code {
+  font-family: "Fira Code", Consolas, "Courier New", monospace;
+  font-variant-ligatures: contextual;
+  padding: 10px !important;
+}
+
+.learn-html-example {
+  color:black;
+}
+
+.example {
+  display: block;
+  margin-block: 10px;
+}
+
+.learn-html-desription {
+  margin-block: 15px;
+}
+
+.navigation-item {
+  margin-block: 10px
+}
+
+.example-semantik-h1-h2-h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.example-semantik-h1-h2-h3 h1 {
+  font-size: 25px;
+}
+
+.example-semantik-h1-h2-h3-section{
+  text-align: center;
+}
+
+.example-semantik-towar {
+  display: flex;
+}
+
+.example-semantik-towar article{
+  margin: 10px;
+}
