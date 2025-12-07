@@ -39,8 +39,9 @@ time, mark, audio, video {
 *,
 *::before,
 *::after {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -82,11 +83,21 @@ body {
   font-size: 16px;
 }
 
+main {
+  display: flex;
+  column-gap: 20px;
+  max-width: 1920px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+
 .container {
   max-width: 1920px;
 }
 
-.header {
+.main-header {
+  width: 100%;
   margin-bottom: var(--marginHeader);
 }
 
@@ -102,16 +113,8 @@ body {
 }
 
 
-main {
-  display: flex;
-  column-gap: 20px;
-  margin-inline: 15px;
-}
-
-
 aside section {
-  max-width: var(--width-aside);
-  min-width: 300px;
+  width: min(25vw, 400px);
   max-height: calc(100dvh - var(--height-header) - var(--marginHeader));
   overflow: auto;
   position: sticky;
@@ -146,14 +149,17 @@ aside section {
 } 
 
 .learn-html {
+  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   padding: 15px;
   background-color:#0a1429;
   border-radius: 15px;
   color: #D4F7C7;
-  width: 100%;
+  max-width: 100%;
   row-gap: 20px;
+  flex: 1; 
+  min-width: 0;
 } 
 
 .learn-html-block {
@@ -162,6 +168,7 @@ aside section {
   padding: 15px;
   background-color: var(--background-color-block);
   transition: all 0.2s ease-in;
+  flex-wrap: wrap;
 }
 
 .learn-html-block:hover {
@@ -234,4 +241,35 @@ pre {
 
 .example-semantik-towar article{
   margin: 10px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media (max-width: 1090px) {
+  .learn-html-code {
+    font-size: 12px;
+  }
+} 
+
+@media (max-width: 675px) {
+  main {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .body {
+    font-size: 15px;
+  }
+  .header-main-link p {
+    font-size: 15px;
+  }
+  .navigation-item {
+    margin-block: 5px;
+  }
+  aside section {
+    width: 100%;
+  }
 }
