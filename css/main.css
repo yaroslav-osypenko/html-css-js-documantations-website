@@ -124,6 +124,13 @@ aside section {
   background-color: #002e4d;
   border-radius: 10px;
   padding: 5px;
+  margin-block: 10px;
+  transition: all 0.1s ease-in;
+}
+
+.navigation-item:hover {
+  scale: 1.05;
+  background-color: #2e5cb8 ;
 }
 
 .header-main {
@@ -206,9 +213,6 @@ pre {
   margin-block: 15px;
 }
 
-.navigation-item {
-  margin-block: 10px
-}
 
 .example-semantik-h1-h2-h3 {
   display: flex;
