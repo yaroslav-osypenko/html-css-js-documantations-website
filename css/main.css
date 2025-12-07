@@ -125,11 +125,11 @@ aside section {
   background-color: #002e4d;
   border-radius: 10px;
   margin-block: 5px;
-  transition: all 0.1s ease-in;
+  transition: all 0.05s ease-in;
 }
 
-.navigation-item:hover {
-  scale: 1.05;
+.navigation-item:active {
+  scale: 0.98;
   background-color: #2e5cb8 ;
 }
 
@@ -279,6 +279,18 @@ pre {
   color: white;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .navigation-item {
+    transition: all 0.3s ease-in;
+  }
+  .navigation-item:hover {
+  scale: 1.05;
+  background-color: #2e5cb8 ;
+  }
+
+}
+
+
 @media (max-width: 1090px) {
   .learn-html-code {
     font-size: 12px;
@@ -301,6 +313,6 @@ pre {
   }
   aside section {
     width: 100%;
-    max-height: 50dvh;
+    max-height: 50vh;
   }
 }
