@@ -26,6 +26,7 @@
       <aside>
         <section class="navigation-container">
          <nav class="navigation-menu">
+          <span>Навігація</span>
           <ul class="navigation-list">
             <li class="navigation-item">
               <a href="#Doctype" class="navigation-link">Тег doctype</a>
@@ -40,13 +41,46 @@
               <a href="#meta" class="navigation-link">Тег meta</a>
             </li>
             <li class="navigation-item">
-              <a href="#h1" class="navigation-link">Тег h1</a>
+              <a href="#h1" class="navigation-link">Тег h1 - заголовок</a>
             </li>
             <li class="navigation-item">
               <a href="#h1-h2-h3" class="navigation-link">Семантика тегів h1-h2-h3</a>
             </li>
             <li class="navigation-item">
-              <a href="#h1-h2-h3" class="navigation-link">Семантика тегів h1-h2-h3</a>
+              <a href="#p" class="navigation-link">Тег p - параграф</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#ul" class="navigation-link">Cписок ul</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#ol" class="navigation-link">Cписок ol</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#b-strong" class="navigation-link">Тег b/strong - жирність</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#i-em" class="navigation-link">Тег i/em - курсив</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#s" class="navigation-link">Тег s - закреслений</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#u" class="navigation-link">Тег u - підкреслений</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#sub" class="navigation-link">Тег sub - нижн. регістр</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#sup" class="navigation-link">Тег sup - верх. регістр</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#small" class="navigation-link">Тег small - малий текст</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#code" class="navigation-link">Тег code - вставка коду</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#pre" class="navigation-link">Тег pre - перенос</a>
             </li>
           </ul>
          </nav>
@@ -182,18 +216,184 @@
             </section>
           </div>
         </div> 
-        <div class="learn-html-block">
+        <div class="learn-html-block" id="p">
           <div class="learn-html-desription">
-            <p>Тег h1 може бути тільки один. Це головний заголовок сторінки</p>
+            <p>Тег p — це парний блочний елемент який займає всю доступну йому ширину, який використовується для створення текстових абзаців;
+               він автоматично додає вертикальні відступи (margins) зверху та знизу, потрібно обнуляти стилі
+               для усунення мерджинів. Завжди починається з
+              нового рядка і може містити лише текст або рядкові елементи (наприклад, a чи strong).</p>
           </div>
-<pre><code class="language-html view-as-code learn-html-code"><div>
-  <h1>Заголовок</h1>
-  <p>текст</p>
-  <a href="#">Посилання</a>
-</div></code></pre>
+<pre><code class="language-html view-as-code learn-html-code"> <p>Текст</p>
+</code></pre>
           <span class="example">Example:</span>
           <div class="learn-html-example">
-            <h1>Заголовок h1</h1>
+            <p>Текстовий параграф.</p>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="ul">
+          <div class="learn-html-desription">
+            <p>Тег ul (unordered list) — це парний блочний елемент для створення маркованих списків, 
+               де кожен пункт за замовчуванням позначається крапкою, а тег li (list item) розміщується 
+               всередині нього для визначення окремих пунктів цього списку. Така структура дозволяє логічно 
+               групувати пов'язані елементи, автоматично додаючи до них лівий відступ для візуального виділення.</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><ul>
+  <li></li>
+</ul>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--ul">
+            <ul>
+              <li>Елемент</li>
+              <li>Елемент</li>
+              <li>Елемент</li>
+            </ul>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="ol">
+          <div class="learn-html-desription">
+            <p>Тег ol (ordered list) — це парний блочний елемент для створення нумерованих списків, 
+              де кожен пункт автоматично отримує порядковий номер. Тег li (list item) розміщується
+               всередині нього для визначення окремих пунктів.</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><ol>
+  <li></li>
+</ol>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--ol">
+            <ol>
+              <li>Елемент</li>
+              <li>Елемент</li>
+              <li>Елемент</li>
+            </ol>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="b-strong">
+          <div class="learn-html-desription">
+            <p>Тег форматування тексту b - робить текст жирним. Для наголошення на важливості тексту використовують strong - текст так само стане жирним</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><p><b>Жирний текст b</b></p>
+<p><strong>Жирний текст strong</strong></p>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <p><b>Жирний текст b</b></p>
+            <p><strong>Жирний текст strong</strong></p>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="i-em">
+          <div class="learn-html-desription">
+            <p>Тег форматування тексту i - робить текст курсивом. Також використовується em, для підвищення інтонацій на скрінрідері</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><p><i>Текст курсивом i</i></p>
+<p><em>Текст курсивом em</em></p>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <p><i>Текст курсивом i</i></p>
+            <p><em>Текст курсивом em</em></p>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="s">
+          <div class="learn-html-desription">
+            <p>Тег s — це парний рядковий елемент, який використовується для відображення тексту, 
+              що більше не є актуальним, точним або релевантним. Браузери за замовчуванням відображають 
+              вміст цього тегу закресленим. Це суто візуальне закреслення, яке не слід плутати з тегом del,
+               що вказує на видалення документальної правки.</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><p><s>100$</s></p>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <p><s>100$</s></p>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="u">
+          <div class="learn-html-desription">
+            <p>Тег u — це парний рядковий елемент, який використовується для візуального підкреслення тексту.
+               У сучасній семантиці HTML він застосовується для позначення тексту, який має особливий нетекстовий опис 
+               (наприклад, для виділення орфографічних помилок або власних назв у китайській мові), хоча за замовчуванням
+               браузери просто малюють під ним лінію. Слід бути обережним із його використанням, щоб користувачі не плутали 
+               підкреслений текст із посиланням.</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><p><u>100$</u></p>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <p><u>100$</u></p>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="sub">
+          <div class="learn-html-desription">
+            <p>Тег sub — це парний рядковий елемент, який використовується для відображення тексту
+               у нижньому індексі. Він рендериться шрифтом меншого розміру і розташовується нижче 
+               основної базової лінії тексту. Цей тег найчастіше застосовується для написання хімічних 
+               формул (наприклад, для цифр у формулі води) або математичних індексів.</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><p>H<sub>2</sub>O</p>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <p>H<sub>2</sub>O</p>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="sup">
+          <div class="learn-html-desription">
+            <p>Тег sup — це парний рядковий елемент, який використовується для відображення тексту у верхньому індексі.
+               Він рендериться шрифтом меншого розміру і розташовується вище основної базової лінії тексту. Цей тег зазвичай 
+               застосовується для написання математичних степенів, порядкових числівників або посилань на виноски в тексті.</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><p>50<sup>2</sup></p>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <p>50<sup>2</sup></p>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="small">
+          <div class="learn-html-desription">
+            <p>Тег small — це парний рядковий елемент, який використовується для відображення 
+              тексту дрібнішим шрифтом на 20%, ніж основний текст. Семантично він зазвичай позначає побічні 
+              зауваження, дисклеймери, застереження, авторські права або юридичні обмеження, які не є
+               головним фокусом контенту.</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><p>ТЕКСТ <small>ТЕКСТ</small></p>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <p>ТЕКСТ <small>ТЕКСТ</small></p>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="code">
+          <div class="learn-html-desription">
+            <p>Тег code — це парний рядковий елемент, який використовується для позначення 
+              фрагмента комп'ютерного коду в тексті. За замовчуванням браузери відображають 
+              вміст цього тегу моноширинним шрифтом, де всі символи мають однакову ширину, що 
+              допомагає візуально виділити програмний код, назви змінних або файлів на фоні звичайної мови.</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><p><code>learn</code></p>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <p><code>learn</code></p>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="pre">
+          <div class="learn-html-desription">
+            <p>Тег pre (preformatted text) — це парний блочний елемент, який використовується для 
+              виведення тексту саме в тому вигляді, в якому він написаний у вихідному коді. На відміну 
+              від звичайних тегів, він зберігає всі пробіли, табуляції та розриви рядків, а текст усередині 
+              нього зазвичай відображається моноширинним шрифтом. Це робить його ідеальним для відображення 
+              прикладів коду, ASCII-графіки або будь-яких текстових структур, де форматування має ключове значення.</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><pre>Код</pre>
+<pre>Код2</pre>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <pre>Код</pre>
+            <pre>Код2</pre>
           </div>
         </div> 
       </section>
