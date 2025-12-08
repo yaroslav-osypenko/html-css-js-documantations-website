@@ -106,6 +106,21 @@
                 </ul>
               </details>
             </li>
+            <li class="navigation-item">
+              <details>
+                <summary>
+                  <span>Тег кнопки - button</span>
+                </summary>
+                <ul>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#button" class="navigation-link">Тег button - загально</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#button-type" class="navigation-link">Атрибути button</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
           </ul>
          </nav>
         </section>
@@ -503,6 +518,47 @@ head
           <span class="example">Example:</span>
           <div class="learn-html-example">
             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Безпечне посилання на інстраграм</a>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="button">
+          <div class="learn-html-desription">
+            <p>Тег button — це парний блочно-рядковий елемент, який використовується для створення 
+              клікабельних кнопок у вебпапежах. На відміну від тегу a, який призначений для переходів
+               за посиланнями, button зазвичай ініціює дії на сторінці (наприклад, відкриття модального
+                вікна, відправку форми або запуск скрипта). Усередині нього можна розміщувати не лише текст, 
+                а й інші HTML-елементи, такі як зображення або іконки, що робить його гнучким інструментом для 
+                створення інтерфейсів.
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><button type="button"></button>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <button type="button">Кнопка</button>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="button-type">
+          <div class="learn-html-desription">
+            <p>Атрибути тегу button:<br>
+              type="submit": Значення за замовчуванням усередині форми. Відправляє дані на сервер при натисканні.<br>
+              type="button": Використовується для звичайних кнопок, які не відправляють форму, а виконують дії через JavaScript. <br>
+              Якщо в тег button не вказувати ніякого типу, то кнопка буде відправляти форму, тому якщо нам потрібна проста кнопка, потрібно <br>
+              обовязково вказувати тип кнопки - button/reset/submit<br>
+              type="reset": Скидає всі поля форми до їхніх початкових значень. <br>
+              disabled: Булевий атрибут, який робить кнопку неактивною, блокуючи будь-яку взаємодію з нею.
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><button type="button">Звичайна кнопка</button>
+<button type="sumbit">Кнопка відправки форми</button>
+<button type="reset">Кнопка ресета форми</button>
+<button type="button" disabled>Виключена кнопка</button>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <button type="button">Кнопка</button>
+            <button type="sumbit">Кнопка сабмит</button>
+            <button type="reset">Кнопка ресет</button>
+            <button type="button" disabled>Виключена кнопка</button>
           </div>
         </div> 
       </section>
