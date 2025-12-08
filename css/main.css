@@ -278,18 +278,42 @@ pre {
   text-transform: uppercase;
   color: white;
 }
-
-@media (hover: hover) and (pointer: fine) {
-  .navigation-item {
-    transition: all 0.15s ease-in;
-  }
-  .navigation-item:hover {
-  scale: 1.05;
-  background-color: #2e5cb8 ;
-  }
-
+.navigation-item summary {
+  display: flex;
+  cursor: pointer;
+}
+.navigation-item summary::marker {
+  display: none;
 }
 
+.navigation-item summary span {
+  padding-inline: 10px;
+  padding-block: 5px;
+  color: #D4C9E9;
+  text-transform: none;
+}
+
+
+.navigation-item.navigation-item-inner {
+  transition: all 0.15s ease-in;
+}
+
+.navigation-item.navigation-item-inner:hover {
+  scale: 1.03;
+  background-color: #131619;
+}
+
+.navigation-item {
+  transition: all 0.15s ease-in;
+}
+.navigation-item:hover {
+  scale: 1.03;
+  background-color: #2e5cb8 ;
+}
+
+details ul{
+  padding: 8px;
+}
 
 @media (max-width: 1090px) {
   .learn-html-code {

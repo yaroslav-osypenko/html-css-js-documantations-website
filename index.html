@@ -82,6 +82,30 @@
             <li class="navigation-item">
               <a href="#pre" class="navigation-link">Тег pre - перенос</a>
             </li>
+            <li class="navigation-item">
+              <details>
+                <summary>
+                  <span>Тег посилання — a</span>
+                </summary>
+                <ul>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#a" class="navigation-link">Тег a — загально</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#a-href" class="navigation-link">a - атрибут href</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#a-href-tel-email" class="navigation-link">href - email/tel</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#a-href-download" class="navigation-link">href - download</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#a-href-target" class="navigation-link">href - targer</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
           </ul>
          </nav>
         </section>
@@ -132,17 +156,16 @@
               посилання на CSS-файли (link), JavaScript-скрипти, інформацію про кодування 
               meta charset="utf-8" та SEO-дані.</p>
           </div>
-<pre><code class="language-html view-as-code learn-html-code"><div>
-  head
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
-  head
-</div></code></pre>
+<pre><code class="language-html view-as-code learn-html-code">head
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+head
+</code></pre>
         </div> 
         <div class="learn-html-block" id="meta">
           <div class="learn-html-desription">
@@ -394,6 +417,92 @@
           <div class="learn-html-example">
             <pre>Код</pre>
             <pre>Код2</pre>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="a">
+          <div class="learn-html-desription">
+            <p>Тег a — це парний рядковий елемент, що використовується для створення гіперпосилань, 
+              які дозволяють користувачам переходити на інші вебсторінки, файли, адреси електронної 
+              пошти або певні місця на тій самій сторінці. Основним атрибутом тегу є href, у якому 
+              вказується адреса призначення; без цього атрибута тег діє як звичайний текст. Окрім зовнішніх посилань,
+              тег a часто використовується для створення "якорів" (навігації всередині документа) за допомогою ідентифікаторів id..
+              
+              Якщо виникає питання що в контексті краще використати тег a чи button, відповідь проста
+              Тег а, коли кнопка передбачає перехід на іншу сторінку, дзвінок, mail і навігацію по сторонці</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><a href=""></a>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <a href="">Ссилка</a>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="a-href">
+          <div class="learn-html-desription">
+            <p>Атрибут href (hypertext reference) — це найважливіша частина тегу a, яка вказує точну адресу, 
+              куди перейде користувач після натискання. Це може бути повний URL-шлях (наприклад, посилання на інший сайт),
+               відносний шлях (посилання на іншу сторінку того самого сайту) або внутрішній ідентифікатор-якір, що починається 
+               з решітки (#), для швидкої навігації сторінкою. Якщо цей атрибут залишити порожнім, браузер сприйме посилання 
+               як перехід на поточну сторінку, оновивши її.</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><a href="Айді елемента до якого перейдемо"></a>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <a href="#Айді">Посилання на айді на сайті</a>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="a-href-tel-email">
+          <div class="learn-html-desription">
+            <p>Атрибут href зі значеннями tel: та mailto: перетворює звичайне посилання на інтерактивну дію для зв'язку. 
+              Значення tel: (наприклад, tel:+380000000000) дозволяє ініціювати телефонний дзвінок безпосередньо з мобільного 
+              пристрою або через додатки для дзвінків на комп'ютері, тоді як mailto: (наприклад, mailto:example@mail.com) 
+              автоматично відкриває поштову програму за замовчуванням зі вже вписаною адресою отримувача.
+              Не обовязково в тексті тега а вказувати номер, можна написати просто щось накшталт "подзвонити"</p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><a href="tel:+48000000000">Подзвонити</a>
+<a href="mailto:osupenkovv@gmail.com">Написати мейла</a>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <a href="tel:+48000000000">Подзвонити</a>
+            <a href="mailto:osupenkovv@gmail.com">Написати мейла</a>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="a-href-download">
+          <div class="learn-html-desription">
+            <p>Атрибут download в тезі a - використовується для завантаження файлів. 
+              Для цього потрібно вставити атрибут download в тег а, в атрибуті href потрібно вставити 
+              ссилку на скачування. 
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><a href="/file/kotik.img" download>Скачати кота</a>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <a href="/file/kotik.img" download>Скачати кота</a>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="a-href-target">
+          <div class="learn-html-desription">
+            <p>Атрибут target зі значенням _blank використовується в тезі a для того, щоб відкрити посилання в 
+              новій вкладці або новому вікні браузера. Це дозволяє користувачеві переглянути зовнішній ресурс, 
+              не закриваючи поточну сторінку вашого сайту. Для забезпечення безпеки та продуктивності при використанні
+              цього атрибута рекомендується також додавати атрибут rel зі значенням noopener або noreferrer. <br><br>
+              Атрибути noopener та noreferrer, які додаються до rel, є критично важливими для безпеки та продуктивності при 
+              використанні target="_blank". Коли ви відкриваєте нову сторінку, вона отримує доступ до початкового вікна через
+              об'єкт window.opener, що дозволяє зловмисникам потенційно змінити адресу вашого сайту на підробну. noopener повністю 
+              розриває цей зв'язок, забороняючи новій сторінці керувати вашою, а також звільняє ресурси браузера, оскільки обидві 
+              вкладки працюють в окремих процесах. noreferrer виконує ті самі функції захисту, але додатково забороняє браузеру
+              передавати адресу вашого сайту (HTTP-заголовок Referer) новому ресурсу, зберігаючи приватність ваших користувачів.
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><a href="https://www.instagram.com/" target="_blank"></a>
+<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"></a>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Безпечне посилання на інстраграм</a>
           </div>
         </div> 
       </section>
