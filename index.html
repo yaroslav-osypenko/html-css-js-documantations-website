@@ -121,6 +121,36 @@
                 </ul>
               </details>
             </li>
+            <li class="navigation-item">
+              <details>
+                <summary>
+                  <span>Тег зоображення - img</span>
+                </summary>
+                <ul>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#img" class="navigation-link">Тег img - загально</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#img-args" class="navigation-link">Атрибути img</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li class="navigation-item">
+              <details>
+                <summary>
+                  <span>Тег відео - video</span>
+                </summary>
+                <ul>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#video" class="navigation-link">Тег video</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#video-atr" class="navigation-link">Атрибути video</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
           </ul>
          </nav>
         </section>
@@ -556,9 +586,102 @@ head
           <span class="example">Example:</span>
           <div class="learn-html-example">
             <button type="button">Кнопка</button>
-            <button type="sumbit">Кнопка сабмит</button>
+            <button type="sumbit">Кнопка сабмт</button>
             <button type="reset">Кнопка ресет</button>
             <button type="button" disabled>Виключена кнопка</button>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="img">
+          <div class="learn-html-desription">
+            <p>Тег img — це самозакривний (поодинокий) елемент, який використовується для вбудовування зображень 
+              у вебсторінку. Він є рядковим елементом за замовчуванням, але для нього можна задавати розміри прямо
+              в коді або через стилі. На відміну від більшості тегів, він не містить тексту всередині, а відображає
+              графічний контент, отриманий за вказаною адресою.
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><img src="./cat.img"
+alt="Великий фейсбук"
+width="640"
+height="640">
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--img">
+            <img src="./img/cat.jpg"
+              alt="Великий фейсбук"
+              width="300"
+              height="200">
+          </div>
+        </div> 
+        <div class="learn-html-block" id="img-args">
+          <div class="learn-html-desription">
+            <p>src (source): Обов'язковий атрибут, що вказує шлях до файлу зображення. 
+               там має бути файл формату .jpg, .png, .svg або .webp. <br>
+               alt (alternative text): Важливий атрибут для доступності та SEO. Це текст, який з'явиться замість зображення, якщо файл не завантажиться, а також він зачитується скрінрідерами для людей з порушенням зору. <br>
+               width та height: Визначають ширину та висоту зображення в пікселях. Рекомендується завжди вказувати їх, щоб браузер заздалегідь зарезервував місце під картинку, запобігаючи стрибкам контенту при завантаженні.
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><img src="./cat.img"
+alt="Великий фейсбук"
+width="640"
+height="640">
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--img">
+            <img src="./img/cat.jpg"
+              alt="Великий фейсбук"
+              width="400"
+              height="200">
+          </div>
+        </div> 
+        <div class="learn-html-block" id="video">
+          <div class="learn-html-desription">
+            <p>Тег video — це потужний парний елемент, призначений для вбудовування відеоконтенту 
+              безпосередньо у вебсторінку без сторонніх плеєрів. Він працює як гнучкий контейнер:
+              ви можете вказати один файл через атрибут src або використовувати вкладені теги source,
+              щоб запропонувати браузеру різні формати (наприклад, MP4 та WebM) для максимальної сумісності.
+              Ключовим аспектом є атрибут controls, який додає стандартну панель керування (play, гучність, повний екран), 
+              без якої користувач не зможе взаємодіяти з відео, якщо тільки ви не створите власні кнопки через JavaScript.
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><video controls autoplay muted width="300" height="150">
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+  <p>На жаль ваш браузер не підтримує відео.</p>
+</video>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--img">
+            <video controls autoplay muted width="300" height="150">
+              <source src="video.mp4" type="video/mp4">
+              <source src="video.webm" type="video/webm">
+              <p>На жаль ваш браузер не підтримує відео.</p>
+            </video>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="video-atr">
+          <div class="learn-html-desription">
+            <p>Preload: Цей атрибут дозволяє вказати браузеру, як завантажувати відео під час завантаження сторінки. 
+              Значення none не вантажить нічого, metadata вантажить лише дані про тривалість та розмір, а auto намагається 
+              завантажити все відео одразу.Стилізація: На відміну від img, тег video часто потребує CSS-властивості object-fit: cover;, <br>
+              щоб відео красиво заповнювало відведений йому блок без чорних смуг по боках.Текстові доріжки: Всередині video можна додавати
+              тег track для підключення субтитрів (формат .vtt), що критично важливо для доступності контенту та SEO. <br>
+              Автозапуск: Важливо пам'ятати, що більшість сучасних браузерів блокують autoplay, якщо відео не має атрибута muted, щоб не створювати
+              раптового звукового шуму для користувача.
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><video controls autoplay muted width="300" height="150">
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+  <p>На жаль ваш браузер не підтримує відео.</p>
+</video>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--img">
+            <video controls autoplay muted width="300" height="150">
+              <source src="video.mp4" type="video/mp4">
+              <source src="video.webm" type="video/webm">
+              <p>На жаль ваш браузер не підтримує відео.</p>
+            </video>
           </div>
         </div> 
       </section>
