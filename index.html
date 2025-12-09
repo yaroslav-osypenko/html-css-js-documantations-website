@@ -181,6 +181,21 @@
                 </ul>
               </details>
             </li>
+            <li class="navigation-item">
+              <details>
+                <summary>
+                  <span>Тег table - таблиці</span>
+                </summary>
+                <ul>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#table" class="navigation-link">Тег table</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#table-atr" class="navigation-link">Атрибути table</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
           </ul>
          </nav>
         </section>
@@ -793,11 +808,183 @@ height="640">
               sandbox: Важливий атрибут для безпеки, який накладає обмеження на контент у iframe (наприклад, забороняє виконання скриптів або надсилання форм), якщо вони не дозволені явно. 
             </p>
           </div>
-<pre><code class="language-html view-as-code learn-html-code"><iframe src="" frameborder="0" width="100" height="100"></iframe>
+<pre><code class="language-html view-as-code learn-html-code"><iframe 
+  class="my-iframe"
+  src="https://uk.wikipedia.org/wiki/IFrame" 
+  title="Опис Iframe на Вікіпедії"
+  allowfullscreen>
+</iframe>
 </code></pre>
           <span class="example">Example:</span>
           <div class="learn-html-example learn-html-example--img">
-            <iframe src="" frameborder="0" width="100" height="100"></iframe>
+            <iframe 
+              class="my-iframe"
+              src="https://uk.wikipedia.org/wiki/IFrame" 
+              title="Опис Iframe на Вікіпедії"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="table">
+          <div class="learn-html-desription">
+            <p> Тег table - парний блочний елемент. Використовується для створення та форматування таблиць
+              За бородатих часів використовувася для повного верстання сайтів. Містить в собі семантичні теги - thead,
+              tbody, tfoot, для поділу таблиці на шапку, головну частину, та футер, суми в низу зазвичай. Для формування 
+              рядків використовується тег tr, для заголовків використовується th, для колонок td
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><table border="1">
+  <caption>Опис таблиці. Пишеться з верху і може бути тільки один</caption>
+  <!-- Тег thead виділяє шапку таблиці -->
+  <thead>
+    <tr>
+      <th>Інф</th>
+      <th>Інф</th>
+      <th>Інф</th>
+      <th>Інф</th>
+      <th>Інф</th>
+    </tr>
+  </thead>
+  <!-- Тег tbody виділяє основну частину таблиці. -->
+  <tbody>
+    <tr>
+      <td>Інф</td>
+      <td>Інф</td>
+      <td>Інф</td>
+      <td>Інф</td>
+      <td>Інф</td>
+    </tr>
+  </tbody>
+  <!-- Тег tfoot виділяє кінець таблиці. Зазвичай це ітого, за результатами підрахунків таблиці. -->
+  <tfoot>
+    <tr>
+      <td>Разом</td>
+      <td>Разом</td>
+      <td>Разом</td>
+      <td>Разом</td>
+      <td>Разом</td>
+    </tr>
+  </tfoot>
+</table>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--img">
+            <table border="1">
+              <caption>Опис таблиці. Пишеться з верху і може бути тільки один</caption>
+              <!-- Тег thead виділяє шапку таблиці -->
+              <thead>
+                <tr>
+                  <th>Інф</th>
+                  <th>Інф</th>
+                  <th>Інф</th>
+                  <th>Інф</th>
+                  <th>Інф</th>
+                </tr>
+              </thead>
+              <!-- Тег tbody виділяє основну частину таблиці. -->
+              <tbody>
+                <tr>
+                  <td>Інф</td>
+                  <td>Інф</td>
+                  <td>Інф</td>
+                  <td>Інф</td>
+                  <td>Інф</td>
+                </tr>
+              </tbody>
+              <!-- Тег tfoot виділяє кінець таблиці. Зазвичай це ітого, за результатами підрахунків таблиці. -->
+              <tfoot>
+                <tr>
+                  <td>Разом</td>
+                  <td>Разом</td>
+                  <td>Разом</td>
+                  <td>Разом</td>
+                  <td>Разом</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="table-atr">
+          <div class="learn-html-desription">
+            <p> Докладно про атрибути які можна і потрібно використовувати для форматування таблиць <br>
+                Тег caption - опис таблиці, може бути тільки один. <br>
+                Тег tr - створює рядок в таблиці. <br>
+                Тег th - використовується в назвах колонок, та в підсумках <br>
+                Тег td - Використовується для звичайний рядків з інформацією та числами. <br>
+                Тег thead - сематичний тег. Виділяє шапку таблиці <br>
+                Тег tbody - сематичний тег. Виділяє основну частину таблиці <br>
+                Тег tfoot - сематичний тег. Виділяє нижню частину таблиці (зазвичай з підсумками) <br>
+                Тег rowspan - використовується в колонках таблиці - задає, скільки рядків в низ займає тег <br>
+                Тег colspan - використовуєтсья в колонках таблиці - задає скільки рядків в ширину має займати колонка <br>
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><table border="1">
+  <caption>Розрахунковий лист ЖКХ</caption>
+  <thead>
+    <tr>
+      <th rowspan="2">Вид послуги</th>
+      <th rowspan="2">Од. виміру</th>
+      <th colspan="2">Обєм комунальних послуг</th>
+      <th rowspan="2">Розмір оплати</th>
+    </tr>
+    <tr>
+      <th>На індив. потреби</th>
+      <th>На суспільні потреби</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Холодна вода</td>
+      <td>Куб. М</td>
+      <td>3</td>
+      <td>4</td>
+      <td>1000</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <th>В суммі</th>
+      <th colspan="4">90000</th>
+    </tr>
+  </tfoot>
+</table>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--img">
+            <table border="1">
+              <caption>Розрахунковий лист ЖКХ</caption>
+              <thead>
+                <tr>
+                  <th rowspan="2">Вид послуги</th>
+                  <th rowspan="2">Од. виміру</th>
+                  <th colspan="2">Обєм комунальних послуг</th>
+                  <th rowspan="2">Розмір оплати</th>
+                </tr>
+                <tr>
+                  <th>На індив. потреби</th>
+                  <th>На суспільні потреби</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Холодна вода</td>
+                  <td>Куб. М</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>1000</td>
+                </tr>
+              </tbody>
+
+              <tfoot>
+                <tr>
+                  <th>В суммі</th>
+                  <th colspan="4">90000</th>
+                </tr>
+              </tfoot>
+            </table>
           </div>
         </div> 
       </section>
