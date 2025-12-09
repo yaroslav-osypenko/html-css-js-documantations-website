@@ -151,6 +151,36 @@
                 </ul>
               </details>
             </li>
+            <li class="navigation-item">
+              <details>
+                <summary>
+                  <span>Тег аудіо - audio</span>
+                </summary>
+                <ul>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#audio" class="navigation-link">Тег audio</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#audio-atr" class="navigation-link">Атрибути audio</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li class="navigation-item">
+              <details>
+                <summary>
+                  <span>Тег iframe - вставка</span>
+                </summary>
+                <ul>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#iframe" class="navigation-link">Тег iframe</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#iframe-atr" class="navigation-link">Атрибути iframe</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
           </ul>
          </nav>
         </section>
@@ -667,9 +697,14 @@ height="640">
               тег track для підключення субтитрів (формат .vtt), що критично важливо для доступності контенту та SEO. <br>
               Автозапуск: Важливо пам'ятати, що більшість сучасних браузерів блокують autoplay, якщо відео не має атрибута muted, щоб не створювати
               раптового звукового шуму для користувача.
+              Атрибут poster у тезі video дозволяє встановити зображення, яке буде відображатися як заставка (прев’ю) до того моменту,
+              поки користувач не натисне кнопку відтворення або поки відео не почнеться автоматично; це критично для дизайну, щоб замість 
+              порожнього чорного вікна користувач бачив релевантну обкладинку. Атрибут playsinline є незамінним для мобільних пристроїв, 
+              особливо на iOS, оскільки він дозволяє відео відтворюватися безпосередньо в межах сторінки, не перемикаючи його автоматично в
+              повноекранний системний плеєр, що зберігає цілісність вашого інтерфейсу.
             </p>
           </div>
-<pre><code class="language-html view-as-code learn-html-code"><video controls autoplay muted width="300" height="150">
+<pre><code class="language-html view-as-code learn-html-code"><video controls autoplay muted playsinline poster="./img/cat.jpg" width="300" height="150">
   <source src="video.mp4" type="video/mp4">
   <source src="video.webm" type="video/webm">
   <p>На жаль ваш браузер не підтримує відео.</p>
@@ -677,11 +712,92 @@ height="640">
 </code></pre>
           <span class="example">Example:</span>
           <div class="learn-html-example learn-html-example--img">
-            <video controls autoplay muted width="300" height="150">
+            <video controls autoplay muted poster="./img/cat.jpg" width="300" height="150">
               <source src="video.mp4" type="video/mp4">
               <source src="video.webm" type="video/webm">
               <p>На жаль ваш браузер не підтримує відео.</p>
             </video>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="audio">
+          <div class="learn-html-desription">
+            <p>Тег audio — це парний елемент, призначений для відтворення звукових файлів (музики, подкастів або голосових повідомлень) 
+              безпосередньо у вебдокументі. Як і у відео, атрибут controls є обов'язковим для відображення панелі керування (пуск, пауза, гучність),
+              а використання вкладених тегів source з різними форматами та атрибутом type забезпечує сумісність із різними браузерами. Важливою 
+              практикою є додавання текстового повідомлення або посилання на завантаження всередині контейнера, яке спрацює лише в тому випадку,
+              якщо браузер користувача застарілий і не підтримує цей тег.
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><audio controls>
+  <source src="audio.mp3" type="audio/mp3">
+  <source src="audio.ogg" type="audio/ogg">
+  <a href="audio.mp3" download> Ваш браузер не підтримує звук. Натисність щоб завантажити аудіо. </a>
+</audio>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--img">
+            <audio controls>
+              <source src="audio.mp3" type="audio/mp3">
+              <source src="audio.ogg" type="audio/ogg">
+              <a href="audio.mp3" download> Ваш браузер не підтримує звук. Натисність щоб завантажити аудіо. </a>
+            </audio>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="audio-atr">
+          <div class="learn-html-desription">
+            <p>Атрибути та особливості: <br> loop: Автоматично зациклює відтворення аудіо.muted: Запускає аудіо без звуку
+               (часто використовується в комбінації з автозапуском). <br> preload: Керує тим, чи вантажити файл одразу (auto), 
+               лише метадані (metadata) чи не вантажити до натискання (none). <br> fallback (посилання):  
+               посилання з атрибутом download всередині тегу — чудовий спосіб забезпечити доступ до контенту для всіх користувачів.
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><audio controls>
+  <source src="audio.mp3" type="audio/mp3">
+  <source src="audio.ogg" type="audio/ogg">
+  <a href="audio.mp3" download> Ваш браузер не підтримує звук. Натисність щоб завантажити аудіо. </a>
+</audio>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--img">
+            <audio controls>
+              <source src="audio.mp3" type="audio/mp3">
+              <source src="audio.ogg" type="audio/ogg">
+              <a href="audio.mp3" download> Ваш браузер не підтримує звук. Натисність щоб завантажити аудіо. </a>
+            </audio>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="iframe">
+          <div class="learn-html-desription">
+            <p>Тег iframe (inline frame) — це парний елемент, який дозволяє вбудовувати сторонні вебсторінки, 
+              відео з YouTube, карти Google або інші віджети безпосередньо у ваш HTML-документ. Він створює своєрідне 
+              «вікно», всередині якого відображається контент з іншого URL-джерела, вказаного в атрибуті src. Це незамінний 
+              інструмент для інтеграції сторонніх сервісів, проте він потребує уваги до безпеки та продуктивності, оскільки 
+              завантаження чужих сайтів може сповільнити сторінку.
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><iframe src="" frameborder="0" width="100" height="100"></iframe>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--img">
+            <iframe src="" frameborder="0" width="100" height="100"></iframe>
+          </div>
+        </div> 
+        <div class="learn-html-block" id="iframe-atr">
+          <div class="learn-html-desription">
+            <p>Ключові атрибути та налаштування:
+              src: Адреса контенту, який потрібно відобразити (наприклад, посилання на відео або мапу). <br>
+              width та height: Визначають розміри фрейма. Рекомендується задавати їх через CSS для кращої адаптивності. <br>
+              frameborder: Застарілий атрибут (в HTML5 краще використовувати CSS-властивість border: none;), який визначає наявність рамки навколо вікна. <br>
+              allowfullscreen: Дозволяє контенту всередині iframe (наприклад, відеоплеєру) переходити в повноекранний режим. <br>
+              loading="lazy": Сучасний атрибут, який змушує браузер завантажувати iframe лише тоді, коли користувач наближається до нього при прокручуванні, що значно пришвидшує перше завантаження сайту. <br>
+              sandbox: Важливий атрибут для безпеки, який накладає обмеження на контент у iframe (наприклад, забороняє виконання скриптів або надсилання форм), якщо вони не дозволені явно. 
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><iframe src="" frameborder="0" width="100" height="100"></iframe>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--img">
+            <iframe src="" frameborder="0" width="100" height="100"></iframe>
           </div>
         </div> 
       </section>
