@@ -324,6 +324,10 @@ details ul{
   padding: 8px;
 }
 
+.example-placeholder {
+  resize: none;
+}
+
 @media (max-width: 1090px) {
   .learn-html-code {
     font-size: 12px;
