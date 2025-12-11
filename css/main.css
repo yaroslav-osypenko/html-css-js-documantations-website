@@ -293,7 +293,6 @@ pre {
   text-transform: none;
 }
 
-
 .navigation-item.navigation-item-inner {
   transition: all 0.15s ease-in;
 }
@@ -314,6 +313,11 @@ pre {
 .learn-html-example.learn-html-example--img {
   display: flex;
   justify-content: center;
+}
+
+.learn-html-example--input form{
+  display: flex;
+  flex-direction: column;
 }
 
 details ul{

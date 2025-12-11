@@ -196,6 +196,15 @@
                 </ul>
               </details>
             </li>
+            <li class="navigation-item">
+              <a href="#form-tag" class="navigation-link">Тег form - форми</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#label" class="navigation-link">Тег label - опис інт. елемент.</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#input" class="navigation-link">Тег input - ввід данних</a>
+            </li>
           </ul>
          </nav>
         </section>
@@ -987,6 +996,178 @@ height="640">
             </table>
           </div>
         </div> 
+        <div class="learn-html-block" id="form-tag">
+          <div class="learn-html-desription">
+            <p>
+                Тег &lt;form&gt; визначає HTML-форму, яка використовується для збору та надсилання даних від користувача на сервер.<br>
+                <br>
+                Основні атрибути &lt;form&gt;:<br>
+                action - Вказує URL-адресу на сервері, куди будуть надіслані дані форми після її відправлення (наприклад, `/submit.php`).<br>
+                method - Визначає HTTP-метод для надсилання даних. Основні значення:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;* GET: Надсилає дані у рядку URL (видно користувачеві). Використовується для запитів, що не змінюють дані на сервері (наприклад, пошук).<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;* POST: Надсилає дані у тілі HTTP-запиту (приховано від користувача). Використовується для надсилання конфіденційних або великих обсягів даних (наприклад, реєстрація, завантаження файлів).<br>
+                enctype - Вказує, як дані форми повинні бути закодовані при надсиланні (використовується з `method="post"`). Найважливіше значення: `multipart/form-data` - обов'язкове для форм, які завантажують файли.<br>
+                target - Вказує, де відкрити відповідь сервера після відправки форми (аналогічно `target` в `&lt;a&gt;`).
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><form action="/submit_data.php" method="post">
+  <fieldset>
+    <legend>Введіть дані</legend>
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="user_name" required>
+    <label for="file">Завантажити файл:</label>
+    <input type="file" id="file" name="user_file">
+    <button type="submit">Надіслати</button>
+  </fieldset>
+</form>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--img">
+            <form action="" method="">
+              <fieldset>
+                <legend>Введіть дані</legend>
+
+                <label for="name-ex">Ім'я:</label>
+                <input type="text" id="name-ex" name="user_name" required>
+                
+                <br><br>
+                
+                <label for="file-ex">Завантажити файл:</label>
+                <input type="file" id="file-ex" name="user_file">
+                
+                <br><br>
+
+                <button type="submit">Надіслати</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="learn-html-block" id="label">
+          <div class="learn-html-desription">
+            <p>
+                Тег label - парний строчний тег, використовується для задання опису інтерактивним елементам вводу
+                Прикріплюється до елемента за допомогою айді. При прикрілпленні робиться інтерактивним
+                При нажатті на такий лейбл активується поле вводу до якого був прикріплений label.
+                Використовується для input, select, textarea.
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><form>
+  <label for="for-example">Приклад</label>
+  <input type="text" id="for-example" name="text" required>
+</form>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example">
+            <form>
+              <label for="for-example-1">Приклад</label>
+              <input type="text" id="for-example-1" name="text" required>
+            </form>
+          </div>
+        </div>
+        <div class="learn-html-block" id="input">
+          <div class="learn-html-desription">
+            <p>
+                Тег input - використовується для поллів вводу, checkbox, радіокнопок. Має широкий спектр можливостей та вкиористання
+                Розглянемо основні <br>
+                type=text - основний. Використовуэться для вводу тексту (але є textarea по прямому назначенню)<br>
+                type=url - використовується для вводу посилання <br>
+                type=tel - для вводу номеру телефона <br>
+                type=search - для пошукового запиту <br>
+                type=number - для вводу номера телефону <br>
+                type=password - для вводу пароля <br>
+                type=date Формат вводу дати - День Місяць Рік. <br>
+                type=datetime-local Для вводу День Місяць Рік і час в тікущому часовому поясі.<br>
+                type=month Формат місяць і рік. <br>
+                type=week Вибір неділі і року. <br>
+                type=time Вибір тільки часу. <br>
+                type=color Рідко використовується, потрібен для вибору кольору<br>
+                Також є type з аргументами file для вставки файлів. <br>
+                type=file - використовуэться для прикріплення файлів.
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><form>
+  <label for="text-example-">Текст</label>
+  <input type="text" id="text-example-" name="text" required>
+
+  <label for="tel-input">Телефон</label>
+  <input type="tel" id="tel-input" name="number-field">
+
+  <label for="url-example">Приклад</label>
+  <input type="url" id="url-example" name="url" required>
+
+  <label for="number-input">Число (Number):</label>
+  <input type="number" id="number-input" name="number-field">
+
+  <label for="password-input">Пароль:</label>
+  <input type="password" id="password-input" name="password-field">
+
+  <label for="date-input">Дата (День Місяць Рік):</label>
+  <input type="date" id="date-input" name="date-field">
+
+  <label for="datetime-input">Дата і час:</label>
+  <input type="datetime-local" id="datetime-input" name="datetime-field">
+
+  <label for="month-input">Місяць та Рік:</label>
+  <input type="month" id="month-input" name="month-field">
+
+  <label for="week-input">Тиждень та Рік:</label>
+  <input type="week" id="week-input" name="week-field">
+
+  <label for="time-input">Час:</label>
+  <input type="time" id="time-input" name="time-field">
+
+  <label for="color-input">Вибір кольору:</label>
+  <input type="color" id="color-input" name="color-field">
+
+  <label for="file-input">Прикріпити файл:</label>
+  <input type="file" id="file-input" name="file-field">
+
+</form>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--input">
+            <form>
+
+              <label for="text-example--">Текст</label>
+              <input type="text" id="text-example--" name="text" required>
+
+              <label for="tel-input-">Телефон</label>
+              <input type="tel" id="tel-input-" name="number-field">
+
+              <label for="url-example-">Url</label>
+              <input type="url" id="url-example-" name="url" required>
+
+              <label for="number-input-">Число (Number):</label>
+              <input type="number" id="number-input-" name="number-field">
+
+              <label for="password-input-">Пароль:</label>
+              <input type="password" id="password-input-" name="password-field">
+
+              <label for="date-input-">Дата (День Місяць Рік):</label>
+              <input type="date" id="date-input-" name="date-field">
+
+              <label for="datetime-input-">Дата і час:</label>
+              <input type="datetime-local" id="datetime-input-" name="datetime-field">
+
+              <label for="month-input-">Місяць та Рік:</label>
+              <input type="month" id="month-input-" name="month-field">
+
+              <label for="week-input-">Тиждень та Рік:</label>
+              <input type="week" id="week-input-" name="week-field">
+
+              <label for="time-input-">Час:</label>
+              <input type="time" id="time-input-" name="time-field">
+
+              <label for="color-input-">Вибір кольору:</label>
+              <input type="color" id="color-input-" name="color-field">
+
+              <label for="file-input-">Прикріпити файл:</label>
+              <input type="file" id="file-input-" name="file-field">
+
+            </form>
+          </div>
+        </div>
+
       </section>
     </main>
     <footer>
