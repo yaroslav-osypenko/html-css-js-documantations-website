@@ -6,11 +6,11 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>–
   <script>hljs.highlightAll();</script>
-</head>
   <title>Documentation</title>
 </head>
+
   <body>
     <header class="main-header">
       <section class="header">
@@ -18,6 +18,7 @@
           <div class="header-main-logo"></div>
           <div class="header-main-link">
             <p>HTML/CSS Documentation</p>
+            <a href=""></a>
           </div>
         </header>
       </section>
@@ -203,7 +204,22 @@
               <a href="#label" class="navigation-link">Тег label - опис інт. елемент.</a>
             </li>
             <li class="navigation-item">
-              <a href="#input" class="navigation-link">Тег input - ввід данних</a>
+              <details>
+                <summary>
+                  <span>Тег input - ввід данних</span>
+                </summary>
+                <ul>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#input" class="navigation-link">Тег input - ввід данних, загальні type</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#input-checkbox" class="navigation-link">type=checkbox</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#input-radio" class="navigation-link">type=radio</a>
+                  </li>
+                </ul>
+              </details>
             </li>
           </ul>
          </nav>
@@ -1167,7 +1183,83 @@ height="640">
             </form>
           </div>
         </div>
-
+        <div class="learn-html-block" id="input-checkbox">
+          <div class="learn-html-desription">
+            <p>
+              input - type=checkbox - чекбокс. Не можливий до зміни через css, скривається через visually-hidden.
+              Використовується разом з тегом label. Значення agreement потрібен для того щоб сервер знав що ви натиснули.
+              Якщо це політика компанії обовязково required.
+              Якщо добавити атрибут checked то такий атрибут буде відразу вибраний.
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><label for="check">Я згоден</label>
+  <input id="check" type="checkbox" value="agreement">
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--input">
+            <label for="check-">Я згоден</label>
+            <input id="check-" type="checkbox" value="agreement">
+          </div>
+        </div>
+        <div class="learn-html-block" id="input-radio">
+          <div class="learn-html-desription">
+            <p>
+              input - type=radio - використовується для селекта серед елментів, схоже на select але вибірка не з списка.<br>
+              При використанні атрибута checked - радіокнопка буде вибрана за стандарту.<br>
+              name - вказується для обєднання радіокнопок. Тобто робить вибірку<br>
+              id - вказується в данному випадку для label. <br>
+              value - значення для сервера.
+            </p>
+          </div>
+<pre><code class="language-html view-as-code learn-html-code"><form action="">
+  <fieldset>
+    <legend>Виберіть вашу стать</legend>
+    <p>
+      <input
+        checked
+        type="radio"
+        name="gender"
+        id="male"
+        value="male">
+      <label for="male"> Чол. </label>
+    </p>
+    <p>
+      <input
+        type="radio"
+        name="gender"
+        id="female"
+        value="female">
+      <label for="female"> Жін.</label>
+    </p>
+  </fieldset>
+</form>
+</code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--input">
+            <form action="">
+              <fieldset>
+                <legend>Виберіть вашу стать</legend>
+                <p>
+                  <input
+                    checked
+                    type="radio"
+                    name="gender"
+                    id="male-"
+                    value="male">
+                  <label for="male-"> Чол. </label>
+                </p>
+                <p>
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="female-"
+                    value="female">
+                  <label for="female-"> Жін.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
