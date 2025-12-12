@@ -226,6 +226,9 @@
             <li class="navigation-item">
               <a href="#input-textarea" class="navigation-link">Тег textarea - поле вводу</a>
             </li>
+            <li class="navigation-item">
+              <a href="#select-option" class="navigation-link">Тег select - вибір варіанта з списку.</a>
+            </li>
           </ul>
          </nav>
         </section>
@@ -1345,6 +1348,79 @@ height="640">
               name="text-example"
               maxlength="100"
             ></textarea>
+          </div>
+        </div>
+        <div class="learn-html-block" id="select-option">
+          <div class="learn-html-desription">
+            <p>
+              Тег select - парний тег, використовується разом з дочірніми елементами option
+              як варіантами під вибір. Стилізувати через css не можливо. Для того щоб зробити обовязковий
+              вибір елемента використовуються: <br> пусте значення value, disable - для неможливості вибору
+              елемента, та selected щоб вибрати його за замовчуванням.
+              Також для самого select прописати required для обовязкового вибору.
+              <br> <br>
+              Таким чином, required не пропустить елемент з пустим value,
+              атрибут селект зробить його автоматично вибраним, а disable відключить його
+              для вибору користувачем в тезі select. Таким чином користувач 100% вибере одне
+              з наведених нижче значень.
+            </p>
+          </div>
+          <pre><code class="language-html view-as-code learn-html-code"><form action="">
+            <label for="selector">Виберіть: </label>
+            <select name="selector-id" id="selector" required>
+              <option value="" disabled selected>Не вибрано</option>
+              <option value="urk">Ukraine</option>
+              <option value="fra">French</option>
+              <option value="pol">Poland</option>
+            </select>
+            <p>
+              <button type="submit"> Відправити </button>
+            </p>
+          </form>
+
+           Ще в середині можна поділити на під групи в селекторі, робиться це так
+
+          <form action="">
+            <label for="select1">Виберіть</label>
+            <select name="select-which" id="select1">
+              <optgroup label="Центр">
+                <option value="Київ"> Київ</option>
+                <option value="Кривий ріг"> Кривий ріг</option>
+              </optgroup>
+              <optgroup label="Схід">
+                <option value="Харків"> Харків</option>
+                <option value="Донецьк"> Донецьк</option>
+              </optgroup>
+            </select>
+          </form>
+          </code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--input">
+            <form action="">
+              <label for="selector-">Виберіть: </label>
+              <select name="selector-id" id="selector-" required>
+                <option value="" disabled selected>Не вибрано</option>
+                <option value="urk">Ukraine</option>
+                <option value="fra">French</option>
+                <option value="pol">Poland</option>
+              </select>
+              <p>
+                <button type="submit"> Выдправити </button>
+              </p>
+            </form>
+            <form action="">
+              <label for="select-">Виберіть</label>
+              <select name="select-which" id="select-">
+                <optgroup label="Центр">
+                  <option value="Київ"> Київ</option>
+                  <option value="Кривий ріг"> Кривий ріг</option>
+                </optgroup>
+                <optgroup label="Схід">
+                  <option value="Харків"> Харків</option>
+                  <option value="Донецьк"> Донецьк</option>
+                </optgroup>
+              </select>
+            </form>
           </div>
         </div>
       </section>
