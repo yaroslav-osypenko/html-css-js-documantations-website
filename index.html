@@ -220,6 +220,9 @@
                   <li class="navigation-item navigation-item-inner">
                     <a href="#input-inputmode" class="navigation-link">inputmode</a>
                   </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#input-paterns" class="navigation-link">input патерни</a>
+                  </li>
                 </ul>
               </details>
             </li>
@@ -228,6 +231,9 @@
             </li>
             <li class="navigation-item">
               <a href="#select-option" class="navigation-link">Тег select - вибір варіанта з списку.</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#semantik-tags" class="navigation-link">Основи скмантики.</a>
             </li>
           </ul>
          </nav>
@@ -1335,12 +1341,12 @@ height="640">
               wrap: Вказує браузеру, як обробляти переноси рядків під час відправки форми. Найпоширеніші значення: soft (переноси додаються лише візуально) та hard (переноси додаються до фактичних даних).
             </p>
           </div>
-<pre><code class="language-html view-as-code learn-html-code"><textarea
-  placeholder="Плейсхолдер"
-  name="text-example"
-  maxlength="100"
-></textarea>
-</code></pre>
+          <pre><code class="language-html view-as-code learn-html-code"><textarea
+            placeholder="Плейсхолдер"
+            name="text-example"
+            maxlength="100"
+          ></textarea>
+          </code></pre>
           <span class="example">Example:</span>
           <div class="learn-html-example learn-html-example--input">
             <textarea class="example-placeholder"
@@ -1348,6 +1354,33 @@ height="640">
               name="text-example"
               maxlength="100"
             ></textarea>
+          </div>
+        </div>
+        <div class="learn-html-block" id="input-paterns">
+          <div class="learn-html-desription">
+            <p>
+              Input - patern. Можемо задавати виключення при вводі в поле інпут за допомогою атрибуту pattern
+              Розглянемо це на прикладі заборони вводу будь чого окрім букв латинського алфавіту.
+            </p>
+          </div>
+          <pre><code class="language-html view-as-code learn-html-code">
+            <form action="">
+            <p>
+              <label for="inp">Ввести: </label>
+              <input id="inp" type="text" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Тільки латинські букви')">
+            </p>
+            <button type="submit">Відправити</button>
+          </form>
+          </code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--input">
+            <form action="">
+              <p>
+                <label for="inp-">Ввести: </label>
+                <input id="inp-" type="text" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Тільки латинські букви')">
+              </p>
+              <button type="submit">Відправити</button>
+            </form>
           </div>
         </div>
         <div class="learn-html-block" id="select-option">
@@ -1423,50 +1456,107 @@ height="640">
             </form>
           </div>
         </div>
+        <div class="learn-html-block" id="semantik-tags">
+          <div class="learn-html-desription">
+            <p>
+              Семантика в веброзробці означає використання тегів, які не лише впливають на відображення елемента (як це роблять div або span),
+              а й передають значення та функцію вмісту цього елемента як для браузерів, так і для пошукових систем (SEO) та допоміжних технологій
+              (наприклад, для читання з екрана).
+              Це робить структуру документа зрозумілішою та доступнішою.
+              Основні сематичні теги. <br>
+              header - Вступний вміст або група навігаційних посилань.	Логотип, заголовок сайту, слоган, панель пошуку, навігаційні посилання.
+              <br>
+              nav	- Група навігаційних посилань (меню).	Основне меню сайту, хлібні крихти (breadcrumbs), посилання "Зміст".
+              main - Основний, унікальний вміст документа.	Все, що не повторюється на інших сторінках (бічні панелі, підвали, навігація).
+              На сторінці може бути лише один main. article	Незалежний, самодостатній вміст.
+              Повідомлення в блозі, новинна стаття, коментар, товар у каталозі, віджет. Якщо видалити решту сторінки,
+              вміст article все ще має бути зрозумілим. <br> section - Загальний тематичний розділ вмісту.	Групування логічно пов'язаного
+              вмісту в межах main або article. Кожен section зазвичай повинен мати заголовок (h2-h6).
+              <br> aside - Вміст, пов'язаний із основним вмістом, але який може бути виділений окремо.	Бічна панель, цитати, виноски, реклама,
+              додаткові посилання. <br> footer -	Нижній колонтитул або завершальний розділ.
+              Інформація про автора/авторські права, контактна інформація, вторинна навігація.
+              <br>
+              <br>
+              <br>
+              figure / figcaption	Для розміщення зображення, діаграми, коду, ілюстрації (figure) з його описом або підписом (figcaption).
+              <br>
+              time	Представляє час (наприклад, для дати публікації). <br>
+              mark	Виділяє (маркує) текст, який є особливо актуальним. <br>
+              cite	Назва твору (книги, пісні, фільму). <br>
+              q / blockquote	Коротка цитата (q) або великий блок цитованого тексту (blockquote).
+              <br>
+            </p>
+          </div>
+          <pre><code class="language-html view-as-code learn-html-code">
+            <header>
+                <h1>Назва Вебсайту</h1>
+                <nav>
+                  <ul>
+                    <li><a href="/">Головна</a></li>
+                    <li><a href="/about">Про нас</a></li>
+                    <li><a href="/contacts">Контакти</a></li>
+                  </ul>
+                </nav>
+                <form role="search">
+                  <input type="search" placeholder="Пошук...">
+                </form>
+            </header>
+            <main>
+              <article>
+                  <h2>Семантика в HTML5: Чому це важливо</h2>
+
+                  <figure>
+                      <img src="path/to/image.jpg" alt="Опис зображення">
+                      <figcaption>Ілюстрація семантичних тегів.</figcaption>
+                  </figure>
+
+                  <section>
+                      <h3>Вступ до семантики</h3>
+                      <p>Семантичні теги додають значення структурі документа...</p>
+                  </section>
+
+                  <section>
+                      <h3>Практичне використання</h3>
+                      <p>Важливо використовувати <code>&lt;nav&gt;</code> для навігації, а не просто <code>&lt;div&gt;</code>.</p>
+                  </section>
+              </article>
+
+              <aside>
+                  <h4>Схожі Статті</h4>
+                  <nav>
+                      <ul>
+                          <li><a href="/article-2">Основи CSS</a></li>
+                          <li><a href="/article-3">JavaScript для початківців</a></li>
+                      </ul>
+                  </nav>
+              </aside>
+            </main>
+            <footer>
+                <nav>
+                    <a href="/terms">Умови використання</a>
+                    <a href="/privacy">Політика конфіденційності</a>
+                </nav>
+                <p><small>&copy; <time datetime="2025">2025</time> Назва Вебсайту.</small></p>
+            </footer>
+          </code></pre>
+          <span class="example">Example:</span>
+          <div class="learn-html-example learn-html-example--input">
+
+          </div>
+        </div>
       </section>
     </main>
     <footer>
     </footer>
   <script>
-    // function formatCodeElements() {
-    //   const codeElements = document.querySelectorAll('code.view-as-code');
-    //   codeElements.forEach(codeElement => {
-    //     const htmlContent = codeElement.innerHTML;
-    //     let escaped = htmlContent
-    //       .replace(/&(?!amp;|lt;|gt;|quot;|#39;)/g, '&amp;')
-    //       .replace(/</g, '&lt;')
-    //       .replace(/>/g, '&gt;');
-    //     codeElement.innerHTML = escaped;
-    //
-    //     if (!codeElement.style.whiteSpace) {
-    //       codeElement.style.whiteSpace = 'pre-wrap';
-    //     }
-    //   });
-    // }
-    //
-    // if (document.readyState === 'loading') {
-    //   document.addEventListener('DOMContentLoaded', formatCodeElements);
-    // } else {
-    //   formatCodeElements();
-    // }
-
     function formatCodeElements() {
       const codeElements = document.querySelectorAll('code.view-as-code');
-
       codeElements.forEach(codeElement => {
-        // Отримуємо сирий HTML
         let htmlContent = codeElement.innerHTML;
-
-        // --- 1. ЛОГІКА ДЕДЕНТАЦІЇ (Видалення мінімального зовнішнього відступу) ---
-
         const lines = htmlContent.split('\n');
         let minIndent = Infinity;
-
-        // Проходимо по рядках (крім першого та останнього, які часто порожні)
         lines.slice(1, -1).forEach(line => {
-          // Ігноруємо повністю порожні рядки
           if (line.trim().length > 0) {
-            // Знаходимо індекс першого не-пробільного символу
             const leadingSpaces = line.search(/\S/);
             if (leadingSpaces !== -1) {
               minIndent = Math.min(minIndent, leadingSpaces);
@@ -1474,37 +1564,31 @@ height="640">
           }
         });
 
-        // Якщо знайдено мінімальний відступ (> 0), видаляємо його з усіх рядків
+
         if (minIndent !== Infinity && minIndent > 0) {
-          // Створюємо регулярний вираз для видалення {minIndent} пробілів на початку (g - глобально, m - багаторядковий режим)
           const indentRegex = new RegExp(`^\\s{${minIndent}}`, 'gm');
           htmlContent = htmlContent.replace(indentRegex, '');
         }
 
-        // --- 2. ЕКРАНУВАННЯ ТА ВСТАВКА ---
 
-        // Екрануємо <, > та &
+
         let escaped = htmlContent
           .replace(/&(?!(?:amp|lt|gt|quot|#39);)/g, '&amp;')
           .replace(/</g, '&lt;')
           .replace(/>/g, '&gt;');
 
-        // Вставляємо очищений код і використовуємо .trim() для видалення зайвих пробілів/переносів на початку/кінці
         codeElement.innerHTML = escaped.trim();
 
-        // Забезпечуємо відображення пробілів і переносів
         if (!codeElement.style.whiteSpace) {
           codeElement.style.whiteSpace = 'pre-wrap';
         }
       });
 
-      // Викликаємо Highlight.js тільки після того, як всі <code> блоки оновлені
       if (window.hljs) {
         hljs.highlightAll();
       }
     }
 
-    // Забезпечення виконання після завантаження DOM
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', formatCodeElements);
     } else {
