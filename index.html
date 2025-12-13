@@ -14,11 +14,8 @@
     <header class="main-header">
       <section class="header">
         <header class="header-main">
-          <div class="header-main-logo"></div>
-          <div class="header-main-link">
-            <p>HTML/CSS Documentation</p>
-            <a href=""></a>
-          </div>
+          <p>HTML/CSS Documentation</p>
+          <a href="./css-page.html">CSS</a>
         </header>
       </section>
     </header>
@@ -234,6 +231,9 @@
             </li>
             <li class="navigation-item">
               <a href="#semantik-tags" class="navigation-link">Основи скмантики.</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#optimizing-media" class="navigation-link">Оптимізація завантаження медіа</a>
             </li>
           </ul>
          </nav>
@@ -680,11 +680,11 @@
               графічний контент, отриманий за вказаною адресою.
             </p>
           </div>
-<pre><code class="language-html view-as-code learn-html-code"><img src="./cat.img"
-alt="Великий фейсбук"
-width="640"
-height="640">
-</code></pre>
+          <pre><code class="language-html view-as-code learn-html-code"><img src="./cat.img"
+          alt="Великий фейсбук"
+          width="640"
+          height="640">
+          </code></pre>
           <span class="example">Example:</span>
           <div class="learn-html-example learn-html-example--img">
             <img src="./img/cat.jpg"
@@ -701,11 +701,11 @@ height="640">
                width та height: Визначають ширину та висоту зображення в пікселях. Рекомендується завжди вказувати їх, щоб браузер заздалегідь зарезервував місце під картинку, запобігаючи стрибкам контенту при завантаженні.
             </p>
           </div>
-<pre><code class="language-html view-as-code learn-html-code"><img src="./cat.img"
-alt="Великий фейсбук"
-width="640"
-height="640">
-</code></pre>
+            <pre><code class="language-html view-as-code learn-html-code"><img src="./cat.img"
+            alt="Великий фейсбук"
+            width="640"
+            height="640">
+            </code></pre>
           <span class="example">Example:</span>
           <div class="learn-html-example learn-html-example--img">
             <img src="./img/cat.jpg"
@@ -869,42 +869,42 @@ height="640">
               рядків використовується тег tr, для заголовків використовується th, для колонок td
             </p>
           </div>
-<pre><code class="language-html view-as-code learn-html-code"><table border="1">
-  <caption>Опис таблиці. Пишеться з верху і може бути тільки один</caption>
-  <!-- Тег thead виділяє шапку таблиці -->
-  <thead>
-    <tr>
-      <th>Інф</th>
-      <th>Інф</th>
-      <th>Інф</th>
-      <th>Інф</th>
-      <th>Інф</th>
-    </tr>
-  </thead>
-  <!-- Тег tbody виділяє основну частину таблиці. -->
-  <tbody>
-    <tr>
-      <td>Інф</td>
-      <td>Інф</td>
-      <td>Інф</td>
-      <td>Інф</td>
-      <td>Інф</td>
-    </tr>
-  </tbody>
-  <!-- Тег tfoot виділяє кінець таблиці. Зазвичай це ітого, за результатами підрахунків таблиці. -->
-  <tfoot>
-    <tr>
-      <td>Разом</td>
-      <td>Разом</td>
-      <td>Разом</td>
-      <td>Разом</td>
-      <td>Разом</td>
-    </tr>
-  </tfoot>
-</table>
-</code></pre>
+          <pre><code class="language-html view-as-code learn-html-code"><table border="1">
+            <caption>Опис таблиці. Пишеться з верху і може бути тільки один</caption>
+            <!-- Тег thead виділяє шапку таблиці -->
+            <thead>
+              <tr>
+                <th>Інф</th>
+                <th>Інф</th>
+                <th>Інф</th>
+                <th>Інф</th>
+                <th>Інф</th>
+              </tr>
+            </thead>
+            <!-- Тег tbody виділяє основну частину таблиці. -->
+            <tbody>
+              <tr>
+                <td>Інф</td>
+                <td>Інф</td>
+                <td>Інф</td>
+                <td>Інф</td>
+                <td>Інф</td>
+              </tr>
+            </tbody>
+            <!-- Тег tfoot виділяє кінець таблиці. Зазвичай це ітого, за результатами підрахунків таблиці. -->
+            <tfoot>
+              <tr>
+                <td>Разом</td>
+                <td>Разом</td>
+                <td>Разом</td>
+                <td>Разом</td>
+                <td>Разом</td>
+              </tr>
+            </tfoot>
+          </table>
+          </code></pre>
           <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--img">
+          <div class="learn-html-example learn-html-example--table">
             <table border="1">
               <caption>Опис таблиці. Пишеться з верху і може бути тільки один</caption>
               <!-- Тег thead виділяє шапку таблиці -->
@@ -954,41 +954,41 @@ height="640">
                 Тег colspan - використовуєтсья в колонках таблиці - задає скільки рядків в ширину має займати колонка <br>
             </p>
           </div>
-<pre><code class="language-html view-as-code learn-html-code"><table border="1">
-  <caption>Розрахунковий лист ЖКХ</caption>
-  <thead>
-    <tr>
-      <th rowspan="2">Вид послуги</th>
-      <th rowspan="2">Од. виміру</th>
-      <th colspan="2">Обєм комунальних послуг</th>
-      <th rowspan="2">Розмір оплати</th>
-    </tr>
-    <tr>
-      <th>На індив. потреби</th>
-      <th>На суспільні потреби</th>
-    </tr>
-  </thead>
+          <pre><code class="language-html view-as-code learn-html-code--table"><table border="1">
+            <caption>Розрахунковий лист ЖКХ</caption>
+            <thead>
+              <tr>
+                <th rowspan="2">Вид послуги</th>
+                <th rowspan="2">Од. виміру</th>
+                <th colspan="2">Обєм комунальних послуг</th>
+                <th rowspan="2">Розмір оплати</th>
+              </tr>
+              <tr>
+                <th>На індив. потреби</th>
+                <th>На суспільні потреби</th>
+              </tr>
+            </thead>
 
-  <tbody>
-    <tr>
-      <td>Холодна вода</td>
-      <td>Куб. М</td>
-      <td>3</td>
-      <td>4</td>
-      <td>1000</td>
-    </tr>
-  </tbody>
+            <tbody>
+              <tr>
+                <td>Холодна вода</td>
+                <td>Куб. М</td>
+                <td>3</td>
+                <td>4</td>
+                <td>1000</td>
+              </tr>
+            </tbody>
 
-  <tfoot>
-    <tr>
-      <th>В суммі</th>
-      <th colspan="4">90000</th>
-    </tr>
-  </tfoot>
-</table>
-</code></pre>
+            <tfoot>
+              <tr>
+                <th>В суммі</th>
+                <th colspan="4">90000</th>
+              </tr>
+            </tfoot>
+          </table>
+          </code></pre>
           <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--img">
+          <div class="learn-html-example learn-html-example--table">
             <table border="1">
               <caption>Розрахунковий лист ЖКХ</caption>
               <thead>
@@ -1539,10 +1539,93 @@ height="640">
                 <p><small>&copy; <time datetime="2025">2025</time> Назва Вебсайту.</small></p>
             </footer>
           </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--input">
-
+        </div>
+        <div class="learn-html-block" id="optimizing-media">
+          <div class="learn-html-desription">
+            <p>
+              Оптимізація загрузки медіа для швидкого завантаження сайту. <br>
+              <br>
+              Найперше про що потрібно сказати. Задавати img / video розміри одразу,
+              <br>
+              щоб перед загрузкою сайту їм виділялось місце. Як вказано в прикладі.
+              Важливими значеннями для оптимізації є <br> <br>
+              img {max-width:100%; height:auto} <br> <br>
+              Задається в css і потрібно для того щоб зоображення не займало більше а ніж
+              <br>
+              має, та зменшувалось в пропорціях якщо воно просто не поміщається в якийсь обєкт
+              <br> <br>
+              Тепер розглянем оптимізацію під щільність пікселів. <br>
+              На різних девайсах різна шільність пікселів. <br>
+              Наприклад у ноутбука x2 а у телефона x3. <br>
+              Це можна перевірити на сайті pixelratio <br>
+              <br>
+              Для того щоб дати браузеру вибір завантажуваної картинки <br>
+              В фігмі ми вигружаємо img в 3 різних варіантах. x1 x2 x3. <br>
+              Це потрібно для якісного відораження картинки. <br>
+              Вказано в прикладі. <br>
+              Дескріптор плотності пікселів вказується черед декілька пробілів в функції srcset.
+              Але питання, для чого нам вигружати на телефон, то саме зоображення якщо там воно менше.
+              <br> <br>
+              Для цього ми робимо два різних файли для desktop та mobile. <br>
+              Вказано в прикладі. <br> <br>
+              Також для оптимізації можна використати оптимізовані формати файлів для завантаження сторінки.
+              Починаючи з найменш великого формата закінчуючи найбільш. Вказано в прикладі.
+              <br>
+              <br>
+              В самому низу наведений приклад оптимізованого завантаження background.
+            </p>
           </div>
+          <pre><code class="language-html view-as-code learn-html-code">
+            Задаємо висоту та ширину з початку.
+            <img src="/"
+                 alt="Зообрвження"
+                 width="100" height="100">
+            Оптимізація по щільності пікселів
+            <img
+              src="images/cat.jpg"
+              srcset="
+              images/cat.jpg    1x,
+              images/cat_x2.jpg 2x,
+              images/cat_x3.jpg 3x,"
+              alt=""
+            >
+            Оптимізоване завантаження зоображень під телефон та desktop
+            <picture>
+              <source srcset="mobile_cat"
+                      media="(max-width: 500px)">
+              <img
+                src="desktop_cat"
+                alt="Кіт"
+                width="500" height="500"
+              >
+            </picture>
+            Оптимізація по форматам зоображень
+            <picture>
+              <source srcset="cat.avif" type="image/avif">
+              <source srcset="cat.webp" type="image/webp">
+              <img src="cat.jpg" alt="Морда кота" width="100" height="100">
+            </picture>
+            Обєднані всі способи оптимізації
+            <picture>
+              <source srcset="cat_mobile.avif" media="(max-width: 500px)" type="image/avif">
+              <source srcset="cat_mobile.webp" media="(max-width: 500px)" type="image/webp">
+              <source srcset="cat_mobile.jpg" media="(max-width: 500px)">
+              <source srcset="cat_desktop.avif"  type="image/avif">
+              <source srcset="cat_desktop.webp"  type="image/webp">
+              <img src="cat_desktop.jpg" alt="Кіт" width="100" height="100">
+            </picture>
+            Оптимізоване підключення background через css
+            <style>
+            .new_item {
+              background-repeat: no-repeat;
+              background-image: image-set(
+                url('/') type('image/avif'),
+                url('/') type('image/webp'),
+                url('/') type('image/jpeg')
+              );
+            }
+            </style>
+          </code></pre>
         </div>
       </section>
     </main>
