@@ -10,333 +10,349 @@
   <script>hljs.highlightAll();</script>
   <title>Documentation HTML/CSS</title>
 </head>
-  <body>
-    <header class="main-header">
-      <section class="header">
-        <header class="header-main">
-          <p>HTML/CSS Documentation</p>
-          <a href="./css-page.html">CSS</a>
-        </header>
+<body>
+  <header class="main-header">
+    <section class="header">
+      <header class="header-main">
+        <p>HTML/CSS Documentation</p>
+        <a href="./css-page.html">CSS</a>
+      </header>
+    </section>
+  </header>
+  <main>
+    <aside>
+      <section class="navigation-container">
+       <nav class="navigation-menu">
+        <span>Навігація</span>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="#Doctype" class="navigation-link">Тег doctype</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#htmllang" class="navigation-link">Тег html lang</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#head" class="navigation-link">Тег head</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#meta" class="navigation-link">Тег meta</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#h1" class="navigation-link">Тег h1 - заголовок</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#h1-h2-h3" class="navigation-link">Семантика тегів h1-h2-h3</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#p" class="navigation-link">Тег p - параграф</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#ul" class="navigation-link">Cписок ul</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#ol" class="navigation-link">Cписок ol</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#b-strong" class="navigation-link">Тег b/strong - жирність</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#i-em" class="navigation-link">Тег i/em - курсив</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#s" class="navigation-link">Тег s - закреслений</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#u" class="navigation-link">Тег u - підкреслений</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#sub" class="navigation-link">Тег sub - нижн. регістр</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#sup" class="navigation-link">Тег sup - верх. регістр</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#small" class="navigation-link">Тег small - малий текст</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#code" class="navigation-link">Тег code - вставка коду</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#pre" class="navigation-link">Тег pre - перенос</a>
+          </li>
+          <li class="navigation-item">
+            <details>
+              <summary>
+                <span>Тег посилання — a</span>
+              </summary>
+              <ul>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#a" class="navigation-link">Тег a — загально</a>
+                </li>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#a-href" class="navigation-link">a - атрибут href</a>
+                </li>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#a-href-tel-email" class="navigation-link">href - email/tel</a>
+                </li>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#a-href-download" class="navigation-link">href - download</a>
+                </li>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#a-href-target" class="navigation-link">href - targer</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="navigation-item">
+            <details>
+              <summary>
+                <span>Тег кнопки - button</span>
+              </summary>
+              <ul>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#button" class="navigation-link">Тег button - загально</a>
+                </li>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#button-type" class="navigation-link">Атрибути button</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="navigation-item">
+            <details>
+              <summary>
+                <span>Тег зоображення - img</span>
+              </summary>
+              <ul>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#img" class="navigation-link">Тег img - загально</a>
+                </li>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#img-args" class="navigation-link">Атрибути img</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="navigation-item">
+            <details>
+              <summary>
+                <span>Тег відео - video</span>
+              </summary>
+              <ul>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#video" class="navigation-link">Тег video</a>
+                </li>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#video-atr" class="navigation-link">Атрибути video</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="navigation-item">
+            <details>
+              <summary>
+                <span>Тег аудіо - audio</span>
+              </summary>
+              <ul>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#audio" class="navigation-link">Тег audio</a>
+                </li>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#audio-atr" class="navigation-link">Атрибути audio</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="navigation-item">
+            <details>
+              <summary>
+                <span>Тег iframe - вставка</span>
+              </summary>
+              <ul>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#iframe" class="navigation-link">Тег iframe</a>
+                </li>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#iframe-atr" class="navigation-link">Атрибути iframe</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="navigation-item">
+            <details>
+              <summary>
+                <span>Тег table - таблиці</span>
+              </summary>
+              <ul>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#table" class="navigation-link">Тег table</a>
+                </li>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#table-atr" class="navigation-link">Атрибути table</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="navigation-item">
+            <a href="#form-tag" class="navigation-link">Тег form - форми</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#label" class="navigation-link">Тег label - опис інт. елемент.</a>
+          </li>
+          <li class="navigation-item">
+            <details>
+              <summary>
+                <span>Тег input - ввід данних</span>
+              </summary>
+              <ul>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#input" class="navigation-link">Тег input - ввід данних, загальні type</a>
+                </li>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#input-checkbox" class="navigation-link">type=checkbox</a>
+                </li>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#input-radio" class="navigation-link">type=radio</a>
+                </li>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#input-inputmode" class="navigation-link">inputmode</a>
+                </li>
+                <li class="navigation-item navigation-item-inner">
+                  <a href="#input-paterns" class="navigation-link">input патерни</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="navigation-item">
+            <a href="#input-textarea" class="navigation-link">Тег textarea - поле вводу</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#select-option" class="navigation-link">Тег select - вибір варіанта з списку.</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#semantik-tags" class="navigation-link">Основи скмантики.</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#optimizing-media" class="navigation-link">Оптимізація завантаження медіа</a>
+          </li>
+        </ul>
+       </nav>
       </section>
-    </header>
-    <main>
-      <aside>
-        <section class="navigation-container">
-         <nav class="navigation-menu">
-          <span>Навігація</span>
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a href="#Doctype" class="navigation-link">Тег doctype</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#htmllang" class="navigation-link">Тег html lang</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#head" class="navigation-link">Тег head</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#meta" class="navigation-link">Тег meta</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#h1" class="navigation-link">Тег h1 - заголовок</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#h1-h2-h3" class="navigation-link">Семантика тегів h1-h2-h3</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#p" class="navigation-link">Тег p - параграф</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#ul" class="navigation-link">Cписок ul</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#ol" class="navigation-link">Cписок ol</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#b-strong" class="navigation-link">Тег b/strong - жирність</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#i-em" class="navigation-link">Тег i/em - курсив</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#s" class="navigation-link">Тег s - закреслений</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#u" class="navigation-link">Тег u - підкреслений</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#sub" class="navigation-link">Тег sub - нижн. регістр</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#sup" class="navigation-link">Тег sup - верх. регістр</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#small" class="navigation-link">Тег small - малий текст</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#code" class="navigation-link">Тег code - вставка коду</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#pre" class="navigation-link">Тег pre - перенос</a>
-            </li>
-            <li class="navigation-item">
-              <details>
-                <summary>
-                  <span>Тег посилання — a</span>
-                </summary>
-                <ul>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#a" class="navigation-link">Тег a — загально</a>
-                  </li>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#a-href" class="navigation-link">a - атрибут href</a>
-                  </li>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#a-href-tel-email" class="navigation-link">href - email/tel</a>
-                  </li>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#a-href-download" class="navigation-link">href - download</a>
-                  </li>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#a-href-target" class="navigation-link">href - targer</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li class="navigation-item">
-              <details>
-                <summary>
-                  <span>Тег кнопки - button</span>
-                </summary>
-                <ul>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#button" class="navigation-link">Тег button - загально</a>
-                  </li>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#button-type" class="navigation-link">Атрибути button</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li class="navigation-item">
-              <details>
-                <summary>
-                  <span>Тег зоображення - img</span>
-                </summary>
-                <ul>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#img" class="navigation-link">Тег img - загально</a>
-                  </li>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#img-args" class="navigation-link">Атрибути img</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li class="navigation-item">
-              <details>
-                <summary>
-                  <span>Тег відео - video</span>
-                </summary>
-                <ul>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#video" class="navigation-link">Тег video</a>
-                  </li>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#video-atr" class="navigation-link">Атрибути video</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li class="navigation-item">
-              <details>
-                <summary>
-                  <span>Тег аудіо - audio</span>
-                </summary>
-                <ul>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#audio" class="navigation-link">Тег audio</a>
-                  </li>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#audio-atr" class="navigation-link">Атрибути audio</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li class="navigation-item">
-              <details>
-                <summary>
-                  <span>Тег iframe - вставка</span>
-                </summary>
-                <ul>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#iframe" class="navigation-link">Тег iframe</a>
-                  </li>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#iframe-atr" class="navigation-link">Атрибути iframe</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li class="navigation-item">
-              <details>
-                <summary>
-                  <span>Тег table - таблиці</span>
-                </summary>
-                <ul>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#table" class="navigation-link">Тег table</a>
-                  </li>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#table-atr" class="navigation-link">Атрибути table</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li class="navigation-item">
-              <a href="#form-tag" class="navigation-link">Тег form - форми</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#label" class="navigation-link">Тег label - опис інт. елемент.</a>
-            </li>
-            <li class="navigation-item">
-              <details>
-                <summary>
-                  <span>Тег input - ввід данних</span>
-                </summary>
-                <ul>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#input" class="navigation-link">Тег input - ввід данних, загальні type</a>
-                  </li>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#input-checkbox" class="navigation-link">type=checkbox</a>
-                  </li>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#input-radio" class="navigation-link">type=radio</a>
-                  </li>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#input-inputmode" class="navigation-link">inputmode</a>
-                  </li>
-                  <li class="navigation-item navigation-item-inner">
-                    <a href="#input-paterns" class="navigation-link">input патерни</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li class="navigation-item">
-              <a href="#input-textarea" class="navigation-link">Тег textarea - поле вводу</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#select-option" class="navigation-link">Тег select - вибір варіанта з списку.</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#semantik-tags" class="navigation-link">Основи скмантики.</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#optimizing-media" class="navigation-link">Оптимізація завантаження медіа</a>
-            </li>
-          </ul>
-         </nav>
-        </section>
-      </aside>
-      <section class="learn-html container">
-        <div class="learn-html-block" id="Doctype">
-          <div class="learn-html-desription">
-            <p>Інструкція, яка має бути найпершим рядком HTML-документа. Вона повідомляє браузеру, 
-              що сторінка написана на сучасному стандарті HTML5 , переводячи його у стандартний 
-              режим для коректного відображення макета.
-              <br><br>
-              Щоб вказати на початку документа потрібно ввести !, і натиснути Enter
-              Розгорнуться стандатрні налаштування. 
-            </p>
-          </div>
-          <pre><code class="language-html view-as-code learn-html-code">
-          !DOCTYPE html
+    </aside>
+    <section class="learn-html container">
+      <div class="learn-html-block" id="Doctype">
+        <div class="learn-html-desription">
+          <p>Інструкція, яка має бути найпершим рядком HTML-документа. Вона повідомляє браузеру,
+            що сторінка написана на сучасному стандарті HTML5 , переводячи його у стандартний
+            режим для коректного відображення макета.
+            <br><br>
+            Щоб вказати на початку документа потрібно ввести !, і натиснути Enter
+            Розгорнуться стандатрні налаштування.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+        !DOCTYPE html
 
-          </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <h1>!DOCTYPE html</h1>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="htmllang">
-          <div class="learn-html-desription">
-            <p>
-              Атрибут у HTML, який використовується для визначення мови вмісту елемента, 
-              зазвичай встановлюється в тегу html. 
-              Він допомагає скрінрідерам правильно вимовляти текст, 
-              а пошуковим системам — коректно індексувати та надавати результати .
-            </p>
-          </div>
-          <pre><code class="language-html view-as-code learn-html-code">html lang="uk" html</code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            html lang="uk" html
-          </div>
-        </div> 
-        <div class="learn-html-block" id="head">
-          <div class="learn-html-desription">
-            <p>Контейнер для метаданих HTML-документа, який розміщується між тегами 
-              html та body. Він містить інформацію про сторінку, яка не відображається користувачам
-              безпосередньо у вікні браузера. Усередині head зазвичай розміщують title, 
-              посилання на CSS-файли (link), JavaScript-скрипти, інформацію про кодування 
-              meta charset="utf-8" та SEO-дані.</p>
-          </div>
-          <pre><code class="language-html view-as-code learn-html-code">head
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="/css/main.css">
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-            <script>hljs.highlightAll();</script>
-          head
-          </code></pre>
-        </div> 
-        <div class="learn-html-block" id="meta">
-          <div class="learn-html-desription">
-            <p>Тег meta — це самозакривний тег, який розміщується всередині head
-              і використовується для надання метаданих (додаткової інформації) про HTML-документ.
-               Ця інформація не відображається безпосередньо, але використовується браузерами, 
-               пошуковими системами та іншими вебсервісами. Тег meta не має закриваючого тегу.<br><br>
-               name="viewport": Це повідомляє браузеру, що метадані стосуються області перегляду (Viewport) — видимої області сторінки.<br>
-               Цей тег є критично важливим для адаптивного дизайну.<br><br>
-               content="width=device-width, initial-scale=1.0": Це сама інструкція для області перегляду, що складається з двох частин:<br><br>
-               width=device-width: Встановлює ширину області перегляду рівною фізичній ширині пристрою (замість використання ширини робочого столу за замовчуванням).<br>
-               initial-scale=1.0: Встановлює початковий коефіцієнт масштабування сторінки на 100%. Це гарантує, що при першому завантаженні сторінка не буде масштабована 
-               браузером (наприклад, щоб вона виглядала меншою на мобільному телефоні).</p>
-          </div>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <h1>!DOCTYPE html</h1>
+        </div>
+      </div>
+      <div class="learn-html-block" id="htmllang">
+        <div class="learn-html-desription">
+          <p>
+            Атрибут у HTML, який використовується для визначення мови вмісту елемента,
+            зазвичай встановлюється в тегу html.
+            Він допомагає скрінрідерам правильно вимовляти текст,
+            а пошуковим системам — коректно індексувати та надавати результати .
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">html lang="uk" html</code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          html lang="uk" html
+        </div>
+      </div>
+      <div class="learn-html-block" id="head">
+        <div class="learn-html-desription">
+          <p>Контейнер для метаданих HTML-документа, який розміщується між тегами
+            html та body. Він містить інформацію про сторінку, яка не відображається користувачам
+            безпосередньо у вікні браузера. Усередині head зазвичай розміщують title,
+            посилання на CSS-файли (link), JavaScript-скрипти, інформацію про кодування
+            meta charset="utf-8" та SEO-дані.</p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">head
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="/css/main.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+          <script>hljs.highlightAll();</script>
+        head
+        </code></pre>
+      </div>
+      <div class="learn-html-block" id="meta">
+        <div class="learn-html-desription">
+          <p>Тег meta — це самозакривний тег, який розміщується всередині head
+            і використовується для надання метаданих (додаткової інформації) про HTML-документ.
+             Ця інформація не відображається безпосередньо, але використовується браузерами,
+             пошуковими системами та іншими вебсервісами. Тег meta не має закриваючого тегу.<br><br>
+             name="viewport": Це повідомляє браузеру, що метадані стосуються області перегляду (Viewport) — видимої області сторінки.<br>
+             Цей тег є критично важливим для адаптивного дизайну.<br><br>
+             content="width=device-width, initial-scale=1.0": Це сама інструкція для області перегляду, що складається з двох частин:<br><br>
+             width=device-width: Встановлює ширину області перегляду рівною фізичній ширині пристрою (замість використання ширини робочого столу за замовчуванням).<br>
+             initial-scale=1.0: Встановлює початковий коефіцієнт масштабування сторінки на 100%. Це гарантує, що при першому завантаженні сторінка не буде масштабована
+             браузером (наприклад, щоб вона виглядала меншою на мобільному телефоні).</p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </code></pre>
-        </div> 
-        <div class="learn-html-block" id="h1">
-          <div class="learn-html-desription">
-            <p>Тег h1 може бути тільки один. Це головний заголовок сторінки</p>
-          </div>
-          <pre><code class="language-html view-as-code learn-html-code">
-            <h1>Заголовок</h1>
-          </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <h1>Заголовок h1</h1>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="h1-h2-h3">
-          <div class="learn-html-desription">
-            <p>Всі теги мають іти послідовно. Не завжди найбільший надпис на сторінці є h1.<br>
-              Для семантіки, кожен section має мати в собі h2. Якщо його немає, потрібно використати його 
-              з класом visually-hiden. І вписати туди сематично правильну назву секції. Потрібно це 
-              наприклад для того щоб використати далі h3 наприклад в назві товару. 
-            </p>
-          </div>
-          <pre><code class="language-html view-as-code learn-html-code">
-            <h1>Заголовок</h1>
-            <section>
-              <h2 class="visually-hiden">Скрита але правильно назва секції</h2>
-              <h2> Або звичайна назва секції </h2>
+      </div>
+      <div class="learn-html-block" id="h1">
+        <div class="learn-html-desription">
+          <p>Тег h1 може бути тільки один. Це головний заголовок сторінки</p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <h1>Заголовок</h1>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <h1>Заголовок h1</h1>
+        </div>
+      </div>
+      <div class="learn-html-block" id="h1-h2-h3">
+        <div class="learn-html-desription">
+          <p>Всі теги мають іти послідовно. Не завжди найбільший надпис на сторінці є h1.<br>
+            Для семантіки, кожен section має мати в собі h2. Якщо його немає, потрібно використати його
+            з класом visually-hiden. І вписати туди сематично правильну назву секції. Потрібно це
+            наприклад для того щоб використати далі h3 наприклад в назві товару.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <h1>Заголовок</h1>
+          <section>
+            <h2 class="visually-hiden">Скрита але правильно назва секції</h2>
+            <h2> Або звичайна назва секції </h2>
+            <article>
+              <h3>Назва товару</h3>
+              <p>Товар</p>
+            </article>
+            <article>
+              <h3>Назва товару</h3>
+              <p>Товар</p>
+            </article>
+          </section>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example example-semantik-h1-h2-h3">
+          <h1>Заголовок h1</h1>
+          <section class="example-semantik-h1-h2-h3-section">
+            <h2>Магазин товарів</h2>
+            <div class="example-semantik-towar">
               <article>
                 <h3>Назва товару</h3>
                 <p>Товар</p>
@@ -345,531 +361,551 @@
                 <h3>Назва товару</h3>
                 <p>Товар</p>
               </article>
-            </section>
-          </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example example-semantik-h1-h2-h3">
-            <h1>Заголовок h1</h1>
-            <section class="example-semantik-h1-h2-h3-section">
-              <h2>Магазин товарів</h2>
-              <div class="example-semantik-towar">
-                <article>
-                  <h3>Назва товару</h3>
-                  <p>Товар</p>
-                </article>
-                <article>
-                  <h3>Назва товару</h3>
-                  <p>Товар</p>
-                </article>
-              </div>
-            </section>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="p">
-          <div class="learn-html-desription">
-            <p>Тег p — це парний блочний елемент який займає всю доступну йому ширину, який використовується для створення текстових абзаців;
-               він автоматично додає вертикальні відступи (margins) зверху та знизу, потрібно обнуляти стилі
-               для усунення мерджинів. Завжди починається з
-              нового рядка і може містити лише текст або рядкові елементи (наприклад, a чи strong).</p>
-          </div>
-          <pre><code class="language-html view-as-code learn-html-code"><p>Текст</p>
-          </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <p>Текстовий параграф.</p>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="ul">
-          <div class="learn-html-desription">
-            <p>Тег ul (unordered list) — це парний блочний елемент для створення маркованих списків, 
-               де кожен пункт за замовчуванням позначається крапкою, а тег li (list item) розміщується 
-               всередині нього для визначення окремих пунктів цього списку. Така структура дозволяє логічно 
-               групувати пов'язані елементи, автоматично додаючи до них лівий відступ для візуального виділення.</p>
-          </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="learn-html-block" id="p">
+        <div class="learn-html-desription">
+          <p>Тег p — це парний блочний елемент який займає всю доступну йому ширину, який використовується для створення текстових абзаців;
+             він автоматично додає вертикальні відступи (margins) зверху та знизу, потрібно обнуляти стилі
+             для усунення мерджинів. Завжди починається з
+            нового рядка і може містити лише текст або рядкові елементи (наприклад, a чи strong).</p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code"><p>Текст</p>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <p>Текстовий параграф.</p>
+        </div>
+      </div>
+      <div class="learn-html-block" id="ul">
+        <div class="learn-html-desription">
+          <p>Тег ul (unordered list) — це парний блочний елемент для створення маркованих списків,
+             де кожен пункт за замовчуванням позначається крапкою, а тег li (list item) розміщується
+             всередині нього для визначення окремих пунктів цього списку. Така структура дозволяє логічно
+             групувати пов'язані елементи, автоматично додаючи до них лівий відступ для візуального виділення.</p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><ul>
-  <li></li>
+<li></li>
 </ul>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--ul">
-            <ul>
-              <li>Елемент</li>
-              <li>Елемент</li>
-              <li>Елемент</li>
-            </ul>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="ol">
-          <div class="learn-html-desription">
-            <p>Тег ol (ordered list) — це парний блочний елемент для створення нумерованих списків, 
-              де кожен пункт автоматично отримує порядковий номер. Тег li (list item) розміщується
-               всередині нього для визначення окремих пунктів.</p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--ul">
+          <ul>
+            <li>Елемент</li>
+            <li>Елемент</li>
+            <li>Елемент</li>
+          </ul>
+        </div>
+      </div>
+      <div class="learn-html-block" id="ol">
+        <div class="learn-html-desription">
+          <p>Тег ol (ordered list) — це парний блочний елемент для створення нумерованих списків,
+            де кожен пункт автоматично отримує порядковий номер. Тег li (list item) розміщується
+             всередині нього для визначення окремих пунктів.</p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><ol>
-  <li></li>
+<li></li>
 </ol>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--ol">
-            <ol>
-              <li>Елемент</li>
-              <li>Елемент</li>
-              <li>Елемент</li>
-            </ol>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="b-strong">
-          <div class="learn-html-desription">
-            <p>Тег форматування тексту b - робить текст жирним. Для наголошення на важливості тексту використовують strong - текст так само стане жирним</p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--ol">
+          <ol>
+            <li>Елемент</li>
+            <li>Елемент</li>
+            <li>Елемент</li>
+          </ol>
+        </div>
+      </div>
+      <div class="learn-html-block" id="b-strong">
+        <div class="learn-html-desription">
+          <p>Тег форматування тексту b - робить текст жирним. Для наголошення на важливості тексту використовують strong - текст так само стане жирним</p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><p><b>Жирний текст b</b></p>
 <p><strong>Жирний текст strong</strong></p>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <p><b>Жирний текст b</b></p>
-            <p><strong>Жирний текст strong</strong></p>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="i-em">
-          <div class="learn-html-desription">
-            <p>Тег форматування тексту i - робить текст курсивом. Також використовується em, для підвищення інтонацій на скрінрідері</p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <p><b>Жирний текст b</b></p>
+          <p><strong>Жирний текст strong</strong></p>
+        </div>
+      </div>
+      <div class="learn-html-block" id="i-em">
+        <div class="learn-html-desription">
+          <p>Тег форматування тексту i - робить текст курсивом. Також використовується em, для підвищення інтонацій на скрінрідері</p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><p><i>Текст курсивом i</i></p>
 <p><em>Текст курсивом em</em></p>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <p><i>Текст курсивом i</i></p>
-            <p><em>Текст курсивом em</em></p>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="s">
-          <div class="learn-html-desription">
-            <p>Тег s — це парний рядковий елемент, який використовується для відображення тексту, 
-              що більше не є актуальним, точним або релевантним. Браузери за замовчуванням відображають 
-              вміст цього тегу закресленим. Це суто візуальне закреслення, яке не слід плутати з тегом del,
-               що вказує на видалення документальної правки.</p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <p><i>Текст курсивом i</i></p>
+          <p><em>Текст курсивом em</em></p>
+        </div>
+      </div>
+      <div class="learn-html-block" id="s">
+        <div class="learn-html-desription">
+          <p>Тег s — це парний рядковий елемент, який використовується для відображення тексту,
+            що більше не є актуальним, точним або релевантним. Браузери за замовчуванням відображають
+            вміст цього тегу закресленим. Це суто візуальне закреслення, яке не слід плутати з тегом del,
+             що вказує на видалення документальної правки.</p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><p><s>100$</s></p>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <p><s>100$</s></p>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="u">
-          <div class="learn-html-desription">
-            <p>Тег u — це парний рядковий елемент, який використовується для візуального підкреслення тексту.
-               У сучасній семантиці HTML він застосовується для позначення тексту, який має особливий нетекстовий опис 
-               (наприклад, для виділення орфографічних помилок або власних назв у китайській мові), хоча за замовчуванням
-               браузери просто малюють під ним лінію. Слід бути обережним із його використанням, щоб користувачі не плутали 
-               підкреслений текст із посиланням.</p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <p><s>100$</s></p>
+        </div>
+      </div>
+      <div class="learn-html-block" id="u">
+        <div class="learn-html-desription">
+          <p>Тег u — це парний рядковий елемент, який використовується для візуального підкреслення тексту.
+             У сучасній семантиці HTML він застосовується для позначення тексту, який має особливий нетекстовий опис
+             (наприклад, для виділення орфографічних помилок або власних назв у китайській мові), хоча за замовчуванням
+             браузери просто малюють під ним лінію. Слід бути обережним із його використанням, щоб користувачі не плутали
+             підкреслений текст із посиланням.</p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><p><u>100$</u></p>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <p><u>100$</u></p>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="sub">
-          <div class="learn-html-desription">
-            <p>Тег sub — це парний рядковий елемент, який використовується для відображення тексту
-               у нижньому індексі. Він рендериться шрифтом меншого розміру і розташовується нижче 
-               основної базової лінії тексту. Цей тег найчастіше застосовується для написання хімічних 
-               формул (наприклад, для цифр у формулі води) або математичних індексів.</p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <p><u>100$</u></p>
+        </div>
+      </div>
+      <div class="learn-html-block" id="sub">
+        <div class="learn-html-desription">
+          <p>Тег sub — це парний рядковий елемент, який використовується для відображення тексту
+             у нижньому індексі. Він рендериться шрифтом меншого розміру і розташовується нижче
+             основної базової лінії тексту. Цей тег найчастіше застосовується для написання хімічних
+             формул (наприклад, для цифр у формулі води) або математичних індексів.</p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><p>H<sub>2</sub>O</p>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <p>H<sub>2</sub>O</p>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="sup">
-          <div class="learn-html-desription">
-            <p>Тег sup — це парний рядковий елемент, який використовується для відображення тексту у верхньому індексі.
-               Він рендериться шрифтом меншого розміру і розташовується вище основної базової лінії тексту. Цей тег зазвичай 
-               застосовується для написання математичних степенів, порядкових числівників або посилань на виноски в тексті.</p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <p>H<sub>2</sub>O</p>
+        </div>
+      </div>
+      <div class="learn-html-block" id="sup">
+        <div class="learn-html-desription">
+          <p>Тег sup — це парний рядковий елемент, який використовується для відображення тексту у верхньому індексі.
+             Він рендериться шрифтом меншого розміру і розташовується вище основної базової лінії тексту. Цей тег зазвичай
+             застосовується для написання математичних степенів, порядкових числівників або посилань на виноски в тексті.</p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><p>50<sup>2</sup></p>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <p>50<sup>2</sup></p>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="small">
-          <div class="learn-html-desription">
-            <p>Тег small — це парний рядковий елемент, який використовується для відображення 
-              тексту дрібнішим шрифтом на 20%, ніж основний текст. Семантично він зазвичай позначає побічні 
-              зауваження, дисклеймери, застереження, авторські права або юридичні обмеження, які не є
-               головним фокусом контенту.</p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <p>50<sup>2</sup></p>
+        </div>
+      </div>
+      <div class="learn-html-block" id="small">
+        <div class="learn-html-desription">
+          <p>Тег small — це парний рядковий елемент, який використовується для відображення
+            тексту дрібнішим шрифтом на 20%, ніж основний текст. Семантично він зазвичай позначає побічні
+            зауваження, дисклеймери, застереження, авторські права або юридичні обмеження, які не є
+             головним фокусом контенту.</p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><p>ТЕКСТ <small>ТЕКСТ</small></p>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <p>ТЕКСТ <small>ТЕКСТ</small></p>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="code">
-          <div class="learn-html-desription">
-            <p>Тег code — це парний рядковий елемент, який використовується для позначення 
-              фрагмента комп'ютерного коду в тексті. За замовчуванням браузери відображають 
-              вміст цього тегу моноширинним шрифтом, де всі символи мають однакову ширину, що 
-              допомагає візуально виділити програмний код, назви змінних або файлів на фоні звичайної мови.</p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <p>ТЕКСТ <small>ТЕКСТ</small></p>
+        </div>
+      </div>
+      <div class="learn-html-block" id="code">
+        <div class="learn-html-desription">
+          <p>Тег code — це парний рядковий елемент, який використовується для позначення
+            фрагмента комп'ютерного коду в тексті. За замовчуванням браузери відображають
+            вміст цього тегу моноширинним шрифтом, де всі символи мають однакову ширину, що
+            допомагає візуально виділити програмний код, назви змінних або файлів на фоні звичайної мови.</p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><p><code>learn</code></p>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <p><code>learn</code></p>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="pre">
-          <div class="learn-html-desription">
-            <p>Тег pre (preformatted text) — це парний блочний елемент, який використовується для 
-              виведення тексту саме в тому вигляді, в якому він написаний у вихідному коді. На відміну 
-              від звичайних тегів, він зберігає всі пробіли, табуляції та розриви рядків, а текст усередині 
-              нього зазвичай відображається моноширинним шрифтом. Це робить його ідеальним для відображення 
-              прикладів коду, ASCII-графіки або будь-яких текстових структур, де форматування має ключове значення.</p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <p><code>learn</code></p>
+        </div>
+      </div>
+      <div class="learn-html-block" id="pre">
+        <div class="learn-html-desription">
+          <p>Тег pre (preformatted text) — це парний блочний елемент, який використовується для
+            виведення тексту саме в тому вигляді, в якому він написаний у вихідному коді. На відміну
+            від звичайних тегів, він зберігає всі пробіли, табуляції та розриви рядків, а текст усередині
+            нього зазвичай відображається моноширинним шрифтом. Це робить його ідеальним для відображення
+            прикладів коду, ASCII-графіки або будь-яких текстових структур, де форматування має ключове значення.</p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><pre>Код</pre>
 <pre>Код2</pre>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <pre>Код</pre>
-            <pre>Код2</pre>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="a">
-          <div class="learn-html-desription">
-            <p>Тег a — це парний рядковий елемент, що використовується для створення гіперпосилань, 
-              які дозволяють користувачам переходити на інші вебсторінки, файли, адреси електронної 
-              пошти або певні місця на тій самій сторінці. Основним атрибутом тегу є href, у якому 
-              вказується адреса призначення; без цього атрибута тег діє як звичайний текст. Окрім зовнішніх посилань,
-              тег a часто використовується для створення "якорів" (навігації всередині документа) за допомогою ідентифікаторів id..
-              
-              Якщо виникає питання що в контексті краще використати тег a чи button, відповідь проста
-              Тег а, коли кнопка передбачає перехід на іншу сторінку, дзвінок, mail і навігацію по сторонці</p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <pre>Код</pre>
+          <pre>Код2</pre>
+        </div>
+      </div>
+      <div class="learn-html-block" id="a">
+        <div class="learn-html-desription">
+          <p>Тег a — це парний рядковий елемент, що використовується для створення гіперпосилань,
+            які дозволяють користувачам переходити на інші вебсторінки, файли, адреси електронної
+            пошти або певні місця на тій самій сторінці. Основним атрибутом тегу є href, у якому
+            вказується адреса призначення; без цього атрибута тег діє як звичайний текст. Окрім зовнішніх посилань,
+            тег a часто використовується для створення "якорів" (навігації всередині документа) за допомогою ідентифікаторів id..
+
+            Якщо виникає питання що в контексті краще використати тег a чи button, відповідь проста
+            Тег а, коли кнопка передбачає перехід на іншу сторінку, дзвінок, mail і навігацію по сторонці</p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><a href=""></a>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <a href="">Ссилка</a>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="a-href">
-          <div class="learn-html-desription">
-            <p>Атрибут href (hypertext reference) — це найважливіша частина тегу a, яка вказує точну адресу, 
-              куди перейде користувач після натискання. Це може бути повний URL-шлях (наприклад, посилання на інший сайт),
-               відносний шлях (посилання на іншу сторінку того самого сайту) або внутрішній ідентифікатор-якір, що починається 
-               з решітки (#), для швидкої навігації сторінкою. Якщо цей атрибут залишити порожнім, браузер сприйме посилання 
-               як перехід на поточну сторінку, оновивши її.</p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <a href="">Ссилка</a>
+        </div>
+      </div>
+      <div class="learn-html-block" id="a-href">
+        <div class="learn-html-desription">
+          <p>Атрибут href (hypertext reference) — це найважливіша частина тегу a, яка вказує точну адресу,
+            куди перейде користувач після натискання. Це може бути повний URL-шлях (наприклад, посилання на інший сайт),
+             відносний шлях (посилання на іншу сторінку того самого сайту) або внутрішній ідентифікатор-якір, що починається
+             з решітки (#), для швидкої навігації сторінкою. Якщо цей атрибут залишити порожнім, браузер сприйме посилання
+             як перехід на поточну сторінку, оновивши її.</p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><a href="Айді елемента до якого перейдемо"></a>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <a href="#Айді">Посилання на айді на сайті</a>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="a-href-tel-email">
-          <div class="learn-html-desription">
-            <p>Атрибут href зі значеннями tel: та mailto: перетворює звичайне посилання на інтерактивну дію для зв'язку. 
-              Значення tel: (наприклад, tel:+380000000000) дозволяє ініціювати телефонний дзвінок безпосередньо з мобільного 
-              пристрою або через додатки для дзвінків на комп'ютері, тоді як mailto: (наприклад, mailto:example@mail.com) 
-              автоматично відкриває поштову програму за замовчуванням зі вже вписаною адресою отримувача.
-              Не обовязково в тексті тега а вказувати номер, можна написати просто щось накшталт "подзвонити"</p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <a href="#Айді">Посилання на айді на сайті</a>
+        </div>
+      </div>
+      <div class="learn-html-block" id="a-href-tel-email">
+        <div class="learn-html-desription">
+          <p>Атрибут href зі значеннями tel: та mailto: перетворює звичайне посилання на інтерактивну дію для зв'язку.
+            Значення tel: (наприклад, tel:+380000000000) дозволяє ініціювати телефонний дзвінок безпосередньо з мобільного
+            пристрою або через додатки для дзвінків на комп'ютері, тоді як mailto: (наприклад, mailto:example@mail.com)
+            автоматично відкриває поштову програму за замовчуванням зі вже вписаною адресою отримувача.
+            Не обовязково в тексті тега а вказувати номер, можна написати просто щось накшталт "подзвонити"</p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><a href="tel:+48000000000">Подзвонити</a>
 <a href="mailto:osupenkovv@gmail.com">Написати мейла</a>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <a href="tel:+48000000000">Подзвонити</a>
-            <a href="mailto:osupenkovv@gmail.com">Написати мейла</a>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="a-href-download">
-          <div class="learn-html-desription">
-            <p>Атрибут download в тезі a - використовується для завантаження файлів. 
-              Для цього потрібно вставити атрибут download в тег а, в атрибуті href потрібно вставити 
-              ссилку на скачування. 
-            </p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <a href="tel:+48000000000">Подзвонити</a>
+          <a href="mailto:osupenkovv@gmail.com">Написати мейла</a>
+        </div>
+      </div>
+      <div class="learn-html-block" id="a-href-download">
+        <div class="learn-html-desription">
+          <p>Атрибут download в тезі a - використовується для завантаження файлів.
+            Для цього потрібно вставити атрибут download в тег а, в атрибуті href потрібно вставити
+            ссилку на скачування.
+          </p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><a href="/file/kotik.img" download>Скачати кота</a>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <a href="/file/kotik.img" download>Скачати кота</a>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="a-href-target">
-          <div class="learn-html-desription">
-            <p>Атрибут target зі значенням _blank використовується в тезі a для того, щоб відкрити посилання в 
-              новій вкладці або новому вікні браузера. Це дозволяє користувачеві переглянути зовнішній ресурс, 
-              не закриваючи поточну сторінку вашого сайту. Для забезпечення безпеки та продуктивності при використанні
-              цього атрибута рекомендується також додавати атрибут rel зі значенням noopener або noreferrer. <br><br>
-              Атрибути noopener та noreferrer, які додаються до rel, є критично важливими для безпеки та продуктивності при 
-              використанні target="_blank". Коли ви відкриваєте нову сторінку, вона отримує доступ до початкового вікна через
-              об'єкт window.opener, що дозволяє зловмисникам потенційно змінити адресу вашого сайту на підробну. noopener повністю 
-              розриває цей зв'язок, забороняючи новій сторінці керувати вашою, а також звільняє ресурси браузера, оскільки обидві 
-              вкладки працюють в окремих процесах. noreferrer виконує ті самі функції захисту, але додатково забороняє браузеру
-              передавати адресу вашого сайту (HTTP-заголовок Referer) новому ресурсу, зберігаючи приватність ваших користувачів.
-            </p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <a href="/file/kotik.img" download>Скачати кота</a>
+        </div>
+      </div>
+      <div class="learn-html-block" id="a-href-target">
+        <div class="learn-html-desription">
+          <p>Атрибут target зі значенням _blank використовується в тезі a для того, щоб відкрити посилання в
+            новій вкладці або новому вікні браузера. Це дозволяє користувачеві переглянути зовнішній ресурс,
+            не закриваючи поточну сторінку вашого сайту. Для забезпечення безпеки та продуктивності при використанні
+            цього атрибута рекомендується також додавати атрибут rel зі значенням noopener або noreferrer. <br><br>
+            Атрибути noopener та noreferrer, які додаються до rel, є критично важливими для безпеки та продуктивності при
+            використанні target="_blank". Коли ви відкриваєте нову сторінку, вона отримує доступ до початкового вікна через
+            об'єкт window.opener, що дозволяє зловмисникам потенційно змінити адресу вашого сайту на підробну. noopener повністю
+            розриває цей зв'язок, забороняючи новій сторінці керувати вашою, а також звільняє ресурси браузера, оскільки обидві
+            вкладки працюють в окремих процесах. noreferrer виконує ті самі функції захисту, але додатково забороняє браузеру
+            передавати адресу вашого сайту (HTTP-заголовок Referer) новому ресурсу, зберігаючи приватність ваших користувачів.
+          </p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><a href="https://www.instagram.com/" target="_blank"></a>
 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"></a>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Безпечне посилання на інстраграм</a>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="button">
-          <div class="learn-html-desription">
-            <p>Тег button — це парний блочно-рядковий елемент, який використовується для створення 
-              клікабельних кнопок у вебпапежах. На відміну від тегу a, який призначений для переходів
-               за посиланнями, button зазвичай ініціює дії на сторінці (наприклад, відкриття модального
-                вікна, відправку форми або запуск скрипта). Усередині нього можна розміщувати не лише текст, 
-                а й інші HTML-елементи, такі як зображення або іконки, що робить його гнучким інструментом для 
-                створення інтерфейсів.
-            </p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Безпечне посилання на інстраграм</a>
+        </div>
+      </div>
+      <div class="learn-html-block" id="button">
+        <div class="learn-html-desription">
+          <p>Тег button — це парний блочно-рядковий елемент, який використовується для створення
+            клікабельних кнопок у вебпапежах. На відміну від тегу a, який призначений для переходів
+             за посиланнями, button зазвичай ініціює дії на сторінці (наприклад, відкриття модального
+              вікна, відправку форми або запуск скрипта). Усередині нього можна розміщувати не лише текст,
+              а й інші HTML-елементи, такі як зображення або іконки, що робить його гнучким інструментом для
+              створення інтерфейсів.
+          </p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><button type="button"></button>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <button type="button">Кнопка</button>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="button-type">
-          <div class="learn-html-desription">
-            <p>Атрибути тегу button:<br>
-              type="submit": Значення за замовчуванням усередині форми. Відправляє дані на сервер при натисканні.<br>
-              type="button": Використовується для звичайних кнопок, які не відправляють форму, а виконують дії через JavaScript. <br>
-              Якщо в тег button не вказувати ніякого типу, то кнопка буде відправляти форму, тому якщо нам потрібна проста кнопка, потрібно <br>
-              обовязково вказувати тип кнопки - button/reset/submit<br>
-              type="reset": Скидає всі поля форми до їхніх початкових значень. <br>
-              disabled: Булевий атрибут, який робить кнопку неактивною, блокуючи будь-яку взаємодію з нею.
-            </p>
-          </div>
-          <pre><code class="language-html view-as-code learn-html-code"><button type="button">Звичайна кнопка</button>
-          <button type="sumbit">Кнопка відправки форми</button>
-          <button type="reset">Кнопка ресета форми</button>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <button type="button">Кнопка</button>
+        </div>
+      </div>
+      <div class="learn-html-block" id="button-type">
+        <div class="learn-html-desription">
+          <p>Атрибути тегу button:<br>
+            type="submit": Значення за замовчуванням усередині форми. Відправляє дані на сервер при натисканні.<br>
+            type="button": Використовується для звичайних кнопок, які не відправляють форму, а виконують дії через JavaScript. <br>
+            Якщо в тег button не вказувати ніякого типу, то кнопка буде відправляти форму, тому якщо нам потрібна проста кнопка, потрібно <br>
+            обовязково вказувати тип кнопки - button/reset/submit<br>
+            type="reset": Скидає всі поля форми до їхніх початкових значень. <br>
+            disabled: Булевий атрибут, який робить кнопку неактивною, блокуючи будь-яку взаємодію з нею.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code"><button type="button">Звичайна кнопка</button>
+        <button type="sumbit">Кнопка відправки форми</button>
+        <button type="reset">Кнопка ресета форми</button>
+        <button type="button" disabled>Виключена кнопка</button>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <button type="button">Кнопка</button>
+          <button type="sumbit">Кнопка сабмт</button>
+          <button type="reset">Кнопка ресет</button>
           <button type="button" disabled>Виключена кнопка</button>
-          </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example">
-            <button type="button">Кнопка</button>
-            <button type="sumbit">Кнопка сабмт</button>
-            <button type="reset">Кнопка ресет</button>
-            <button type="button" disabled>Виключена кнопка</button>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="img">
-          <div class="learn-html-desription">
-            <p>Тег img — це самозакривний (поодинокий) елемент, який використовується для вбудовування зображень 
-              у вебсторінку. Він є рядковим елементом за замовчуванням, але для нього можна задавати розміри прямо
-              в коді або через стилі. На відміну від більшості тегів, він не містить тексту всередині, а відображає
-              графічний контент, отриманий за вказаною адресою.
-            </p>
-          </div>
+        </div>
+      </div>
+      <div class="learn-html-block" id="img">
+        <div class="learn-html-desription">
+          <p>Тег img — це самозакривний (поодинокий) елемент, який використовується для вбудовування зображень
+            у вебсторінку. Він є рядковим елементом за замовчуванням, але для нього можна задавати розміри прямо
+            в коді або через стилі. На відміну від більшості тегів, він не містить тексту всередині, а відображає
+            графічний контент, отриманий за вказаною адресою.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code"><img src="./cat.img"
+        alt="Великий фейсбук"
+        width="640"
+        height="640">
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--img">
+          <img src="./img/cat.jpg"
+            alt="Великий фейсбук"
+            width="300"
+            height="200">
+        </div>
+      </div>
+      <div class="learn-html-block" id="img-args">
+        <div class="learn-html-desription">
+          <p>src (source): Обов'язковий атрибут, що вказує шлях до файлу зображення.
+             там має бути файл формату .jpg, .png, .svg або .webp. <br>
+             alt (alternative text): Важливий атрибут для доступності та SEO. Це текст, який з'явиться замість зображення, якщо файл не завантажиться, а також він зачитується скрінрідерами для людей з порушенням зору. <br>
+             width та height: Визначають ширину та висоту зображення в пікселях. Рекомендується завжди вказувати їх, щоб браузер заздалегідь зарезервував місце під картинку, запобігаючи стрибкам контенту при завантаженні.
+          </p>
+        </div>
           <pre><code class="language-html view-as-code learn-html-code"><img src="./cat.img"
           alt="Великий фейсбук"
           width="640"
           height="640">
           </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--img">
-            <img src="./img/cat.jpg"
-              alt="Великий фейсбук"
-              width="300"
-              height="200">
-          </div>
-        </div> 
-        <div class="learn-html-block" id="img-args">
-          <div class="learn-html-desription">
-            <p>src (source): Обов'язковий атрибут, що вказує шлях до файлу зображення. 
-               там має бути файл формату .jpg, .png, .svg або .webp. <br>
-               alt (alternative text): Важливий атрибут для доступності та SEO. Це текст, який з'явиться замість зображення, якщо файл не завантажиться, а також він зачитується скрінрідерами для людей з порушенням зору. <br>
-               width та height: Визначають ширину та висоту зображення в пікселях. Рекомендується завжди вказувати їх, щоб браузер заздалегідь зарезервував місце під картинку, запобігаючи стрибкам контенту при завантаженні.
-            </p>
-          </div>
-            <pre><code class="language-html view-as-code learn-html-code"><img src="./cat.img"
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--img">
+          <img src="./img/cat.jpg"
             alt="Великий фейсбук"
-            width="640"
-            height="640">
-            </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--img">
-            <img src="./img/cat.jpg"
-              alt="Великий фейсбук"
-              width="400"
-              height="200">
-          </div>
-        </div> 
-        <div class="learn-html-block" id="video">
-          <div class="learn-html-desription">
-            <p>Тег video — це потужний парний елемент, призначений для вбудовування відеоконтенту 
-              безпосередньо у вебсторінку без сторонніх плеєрів. Він працює як гнучкий контейнер:
-              ви можете вказати один файл через атрибут src або використовувати вкладені теги source,
-              щоб запропонувати браузеру різні формати (наприклад, MP4 та WebM) для максимальної сумісності.
-              Ключовим аспектом є атрибут controls, який додає стандартну панель керування (play, гучність, повний екран), 
-              без якої користувач не зможе взаємодіяти з відео, якщо тільки ви не створите власні кнопки через JavaScript.
-            </p>
-          </div>
-          <pre><code class="language-html view-as-code learn-html-code"><video controls autoplay muted width="300" height="150">
+            width="400"
+            height="200">
+        </div>
+      </div>
+      <div class="learn-html-block" id="video">
+        <div class="learn-html-desription">
+          <p>Тег video — це потужний парний елемент, призначений для вбудовування відеоконтенту
+            безпосередньо у вебсторінку без сторонніх плеєрів. Він працює як гнучкий контейнер:
+            ви можете вказати один файл через атрибут src або використовувати вкладені теги source,
+            щоб запропонувати браузеру різні формати (наприклад, MP4 та WebM) для максимальної сумісності.
+            Ключовим аспектом є атрибут controls, який додає стандартну панель керування (play, гучність, повний екран),
+            без якої користувач не зможе взаємодіяти з відео, якщо тільки ви не створите власні кнопки через JavaScript.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code"><video controls autoplay muted width="300" height="150">
+          <source src="video.mp4" type="video/mp4">
+          <source src="video.webm" type="video/webm">
+          <p>На жаль ваш браузер не підтримує відео.</p>
+        </video>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--img">
+          <video controls autoplay muted width="300" height="150">
             <source src="video.mp4" type="video/mp4">
             <source src="video.webm" type="video/webm">
             <p>На жаль ваш браузер не підтримує відео.</p>
           </video>
-          </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--img">
-            <video controls autoplay muted width="300" height="150">
-              <source src="video.mp4" type="video/mp4">
-              <source src="video.webm" type="video/webm">
-              <p>На жаль ваш браузер не підтримує відео.</p>
-            </video>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="video-atr">
-          <div class="learn-html-desription">
-            <p>Preload: Цей атрибут дозволяє вказати браузеру, як завантажувати відео під час завантаження сторінки. 
-              Значення none не вантажить нічого, metadata вантажить лише дані про тривалість та розмір, а auto намагається 
-              завантажити все відео одразу.Стилізація: На відміну від img, тег video часто потребує CSS-властивості object-fit: cover;, <br>
-              щоб відео красиво заповнювало відведений йому блок без чорних смуг по боках.Текстові доріжки: Всередині video можна додавати
-              тег track для підключення субтитрів (формат .vtt), що критично важливо для доступності контенту та SEO. <br>
-              Автозапуск: Важливо пам'ятати, що більшість сучасних браузерів блокують autoplay, якщо відео не має атрибута muted, щоб не створювати
-              раптового звукового шуму для користувача.
-              Атрибут poster у тезі video дозволяє встановити зображення, яке буде відображатися як заставка (прев’ю) до того моменту,
-              поки користувач не натисне кнопку відтворення або поки відео не почнеться автоматично; це критично для дизайну, щоб замість 
-              порожнього чорного вікна користувач бачив релевантну обкладинку. Атрибут playsinline є незамінним для мобільних пристроїв, 
-              особливо на iOS, оскільки він дозволяє відео відтворюватися безпосередньо в межах сторінки, не перемикаючи його автоматично в
-              повноекранний системний плеєр, що зберігає цілісність вашого інтерфейсу.
-            </p>
-          </div>
+        </div>
+      </div>
+      <div class="learn-html-block" id="video-atr">
+        <div class="learn-html-desription">
+          <p>Preload: Цей атрибут дозволяє вказати браузеру, як завантажувати відео під час завантаження сторінки.
+            Значення none не вантажить нічого, metadata вантажить лише дані про тривалість та розмір, а auto намагається
+            завантажити все відео одразу.Стилізація: На відміну від img, тег video часто потребує CSS-властивості object-fit: cover;, <br>
+            щоб відео красиво заповнювало відведений йому блок без чорних смуг по боках.Текстові доріжки: Всередині video можна додавати
+            тег track для підключення субтитрів (формат .vtt), що критично важливо для доступності контенту та SEO. <br>
+            Автозапуск: Важливо пам'ятати, що більшість сучасних браузерів блокують autoplay, якщо відео не має атрибута muted, щоб не створювати
+            раптового звукового шуму для користувача.
+            Атрибут poster у тезі video дозволяє встановити зображення, яке буде відображатися як заставка (прев’ю) до того моменту,
+            поки користувач не натисне кнопку відтворення або поки відео не почнеться автоматично; це критично для дизайну, щоб замість
+            порожнього чорного вікна користувач бачив релевантну обкладинку. Атрибут playsinline є незамінним для мобільних пристроїв,
+            особливо на iOS, оскільки він дозволяє відео відтворюватися безпосередньо в межах сторінки, не перемикаючи його автоматично в
+            повноекранний системний плеєр, що зберігає цілісність вашого інтерфейсу.
+          </p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><video controls autoplay muted playsinline poster="./img/cat.jpg" width="300" height="150">
-  <source src="video.mp4" type="video/mp4">
-  <source src="video.webm" type="video/webm">
-  <p>На жаль ваш браузер не підтримує відео.</p>
+<source src="video.mp4" type="video/mp4">
+<source src="video.webm" type="video/webm">
+<p>На жаль ваш браузер не підтримує відео.</p>
 </video>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--img">
-            <video controls autoplay muted poster="./img/cat.jpg" width="300" height="150">
-              <source src="video.mp4" type="video/mp4">
-              <source src="video.webm" type="video/webm">
-              <p>На жаль ваш браузер не підтримує відео.</p>
-            </video>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="audio">
-          <div class="learn-html-desription">
-            <p>Тег audio — це парний елемент, призначений для відтворення звукових файлів (музики, подкастів або голосових повідомлень) 
-              безпосередньо у вебдокументі. Як і у відео, атрибут controls є обов'язковим для відображення панелі керування (пуск, пауза, гучність),
-              а використання вкладених тегів source з різними форматами та атрибутом type забезпечує сумісність із різними браузерами. Важливою 
-              практикою є додавання текстового повідомлення або посилання на завантаження всередині контейнера, яке спрацює лише в тому випадку,
-              якщо браузер користувача застарілий і не підтримує цей тег.
-            </p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--img">
+          <video controls autoplay muted poster="./img/cat.jpg" width="300" height="150">
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.webm" type="video/webm">
+            <p>На жаль ваш браузер не підтримує відео.</p>
+          </video>
+        </div>
+      </div>
+      <div class="learn-html-block" id="audio">
+        <div class="learn-html-desription">
+          <p>Тег audio — це парний елемент, призначений для відтворення звукових файлів (музики, подкастів або голосових повідомлень)
+            безпосередньо у вебдокументі. Як і у відео, атрибут controls є обов'язковим для відображення панелі керування (пуск, пауза, гучність),
+            а використання вкладених тегів source з різними форматами та атрибутом type забезпечує сумісність із різними браузерами. Важливою
+            практикою є додавання текстового повідомлення або посилання на завантаження всередині контейнера, яке спрацює лише в тому випадку,
+            якщо браузер користувача застарілий і не підтримує цей тег.
+          </p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><audio controls>
-  <source src="audio.mp3" type="audio/mp3">
-  <source src="audio.ogg" type="audio/ogg">
-  <a href="audio.mp3" download> Ваш браузер не підтримує звук. Натисність щоб завантажити аудіо. </a>
+<source src="audio.mp3" type="audio/mp3">
+<source src="audio.ogg" type="audio/ogg">
+<a href="audio.mp3" download> Ваш браузер не підтримує звук. Натисність щоб завантажити аудіо. </a>
 </audio>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--img">
-            <audio controls>
-              <source src="audio.mp3" type="audio/mp3">
-              <source src="audio.ogg" type="audio/ogg">
-              <a href="audio.mp3" download> Ваш браузер не підтримує звук. Натисність щоб завантажити аудіо. </a>
-            </audio>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="audio-atr">
-          <div class="learn-html-desription">
-            <p>Атрибути та особливості: <br> loop: Автоматично зациклює відтворення аудіо.muted: Запускає аудіо без звуку
-               (часто використовується в комбінації з автозапуском). <br> preload: Керує тим, чи вантажити файл одразу (auto), 
-               лише метадані (metadata) чи не вантажити до натискання (none). <br> fallback (посилання):  
-               посилання з атрибутом download всередині тегу — чудовий спосіб забезпечити доступ до контенту для всіх користувачів.
-            </p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--img">
+          <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+            <source src="audio.ogg" type="audio/ogg">
+            <a href="audio.mp3" download> Ваш браузер не підтримує звук. Натисність щоб завантажити аудіо. </a>
+          </audio>
+        </div>
+      </div>
+      <div class="learn-html-block" id="audio-atr">
+        <div class="learn-html-desription">
+          <p>Атрибути та особливості: <br> loop: Автоматично зациклює відтворення аудіо.muted: Запускає аудіо без звуку
+             (часто використовується в комбінації з автозапуском). <br> preload: Керує тим, чи вантажити файл одразу (auto),
+             лише метадані (metadata) чи не вантажити до натискання (none). <br> fallback (посилання):
+             посилання з атрибутом download всередині тегу — чудовий спосіб забезпечити доступ до контенту для всіх користувачів.
+          </p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><audio controls>
-  <source src="audio.mp3" type="audio/mp3">
-  <source src="audio.ogg" type="audio/ogg">
-  <a href="audio.mp3" download> Ваш браузер не підтримує звук. Натисність щоб завантажити аудіо. </a>
+<source src="audio.mp3" type="audio/mp3">
+<source src="audio.ogg" type="audio/ogg">
+<a href="audio.mp3" download> Ваш браузер не підтримує звук. Натисність щоб завантажити аудіо. </a>
 </audio>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--img">
-            <audio controls>
-              <source src="audio.mp3" type="audio/mp3">
-              <source src="audio.ogg" type="audio/ogg">
-              <a href="audio.mp3" download> Ваш браузер не підтримує звук. Натисність щоб завантажити аудіо. </a>
-            </audio>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="iframe">
-          <div class="learn-html-desription">
-            <p>Тег iframe (inline frame) — це парний елемент, який дозволяє вбудовувати сторонні вебсторінки, 
-              відео з YouTube, карти Google або інші віджети безпосередньо у ваш HTML-документ. Він створює своєрідне 
-              «вікно», всередині якого відображається контент з іншого URL-джерела, вказаного в атрибуті src. Це незамінний 
-              інструмент для інтеграції сторонніх сервісів, проте він потребує уваги до безпеки та продуктивності, оскільки 
-              завантаження чужих сайтів може сповільнити сторінку.
-            </p>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--img">
+          <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+            <source src="audio.ogg" type="audio/ogg">
+            <a href="audio.mp3" download> Ваш браузер не підтримує звук. Натисність щоб завантажити аудіо. </a>
+          </audio>
+        </div>
+      </div>
+      <div class="learn-html-block" id="iframe">
+        <div class="learn-html-desription">
+          <p>Тег iframe (inline frame) — це парний елемент, який дозволяє вбудовувати сторонні вебсторінки,
+            відео з YouTube, карти Google або інші віджети безпосередньо у ваш HTML-документ. Він створює своєрідне
+            «вікно», всередині якого відображається контент з іншого URL-джерела, вказаного в атрибуті src. Це незамінний
+            інструмент для інтеграції сторонніх сервісів, проте він потребує уваги до безпеки та продуктивності, оскільки
+            завантаження чужих сайтів може сповільнити сторінку.
+          </p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><iframe src="" frameborder="0" width="100" height="100"></iframe>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--img">
-            <iframe src="" frameborder="0" width="100" height="100"></iframe>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="iframe-atr">
-          <div class="learn-html-desription">
-            <p>Ключові атрибути та налаштування:
-              src: Адреса контенту, який потрібно відобразити (наприклад, посилання на відео або мапу). <br>
-              width та height: Визначають розміри фрейма. Рекомендується задавати їх через CSS для кращої адаптивності. <br>
-              frameborder: Застарілий атрибут (в HTML5 краще використовувати CSS-властивість border: none;), який визначає наявність рамки навколо вікна. <br>
-              allowfullscreen: Дозволяє контенту всередині iframe (наприклад, відеоплеєру) переходити в повноекранний режим. <br>
-              loading="lazy": Сучасний атрибут, який змушує браузер завантажувати iframe лише тоді, коли користувач наближається до нього при прокручуванні, що значно пришвидшує перше завантаження сайту. <br>
-              sandbox: Важливий атрибут для безпеки, який накладає обмеження на контент у iframe (наприклад, забороняє виконання скриптів або надсилання форм), якщо вони не дозволені явно. 
-            </p>
-          </div>
-          <pre><code class="language-html view-as-code learn-html-code"><iframe
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--img">
+          <iframe src="" frameborder="0" width="100" height="100"></iframe>
+        </div>
+      </div>
+      <div class="learn-html-block" id="iframe-atr">
+        <div class="learn-html-desription">
+          <p>Ключові атрибути та налаштування:
+            src: Адреса контенту, який потрібно відобразити (наприклад, посилання на відео або мапу). <br>
+            width та height: Визначають розміри фрейма. Рекомендується задавати їх через CSS для кращої адаптивності. <br>
+            frameborder: Застарілий атрибут (в HTML5 краще використовувати CSS-властивість border: none;), який визначає наявність рамки навколо вікна. <br>
+            allowfullscreen: Дозволяє контенту всередині iframe (наприклад, відеоплеєру) переходити в повноекранний режим. <br>
+            loading="lazy": Сучасний атрибут, який змушує браузер завантажувати iframe лише тоді, коли користувач наближається до нього при прокручуванні, що значно пришвидшує перше завантаження сайту. <br>
+            sandbox: Важливий атрибут для безпеки, який накладає обмеження на контент у iframe (наприклад, забороняє виконання скриптів або надсилання форм), якщо вони не дозволені явно.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code"><iframe
+          class="my-iframe"
+          src="https://uk.wikipedia.org/wiki/IFrame"
+          title="Опис Iframe на Вікіпедії"
+          allowfullscreen>
+        </iframe>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--img">
+          <iframe
             class="my-iframe"
             src="https://uk.wikipedia.org/wiki/IFrame"
             title="Опис Iframe на Вікіпедії"
             allowfullscreen>
           </iframe>
-          </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--img">
-            <iframe 
-              class="my-iframe"
-              src="https://uk.wikipedia.org/wiki/IFrame" 
-              title="Опис Iframe на Вікіпедії"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="table">
-          <div class="learn-html-desription">
-            <p> Тег table - парний блочний елемент. Використовується для створення та форматування таблиць
-              За бородатих часів використовувася для повного верстання сайтів. Містить в собі семантичні теги - thead,
-              tbody, tfoot, для поділу таблиці на шапку, головну частину, та футер, суми в низу зазвичай. Для формування 
-              рядків використовується тег tr, для заголовків використовується th, для колонок td
-            </p>
-          </div>
-          <pre><code class="language-html view-as-code learn-html-code"><table border="1">
+        </div>
+      </div>
+      <div class="learn-html-block" id="table">
+        <div class="learn-html-desription">
+          <p> Тег table - парний блочний елемент. Використовується для створення та форматування таблиць
+            За бородатих часів використовувася для повного верстання сайтів. Містить в собі семантичні теги - thead,
+            tbody, tfoot, для поділу таблиці на шапку, головну частину, та футер, суми в низу зазвичай. Для формування
+            рядків використовується тег tr, для заголовків використовується th, для колонок td
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code"><table border="1">
+          <caption>Опис таблиці. Пишеться з верху і може бути тільки один</caption>
+          <!-- Тег thead виділяє шапку таблиці -->
+          <thead>
+            <tr>
+              <th>Інф</th>
+              <th>Інф</th>
+              <th>Інф</th>
+              <th>Інф</th>
+              <th>Інф</th>
+            </tr>
+          </thead>
+          <!-- Тег tbody виділяє основну частину таблиці. -->
+          <tbody>
+            <tr>
+              <td>Інф</td>
+              <td>Інф</td>
+              <td>Інф</td>
+              <td>Інф</td>
+              <td>Інф</td>
+            </tr>
+          </tbody>
+          <!-- Тег tfoot виділяє кінець таблиці. Зазвичай це ітого, за результатами підрахунків таблиці. -->
+          <tfoot>
+            <tr>
+              <td>Разом</td>
+              <td>Разом</td>
+              <td>Разом</td>
+              <td>Разом</td>
+              <td>Разом</td>
+            </tr>
+          </tfoot>
+        </table>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--table">
+          <table border="1">
             <caption>Опис таблиці. Пишеться з верху і може бути тільки один</caption>
             <!-- Тег thead виділяє шапку таблиці -->
             <thead>
@@ -902,59 +938,58 @@
               </tr>
             </tfoot>
           </table>
-          </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--table">
-            <table border="1">
-              <caption>Опис таблиці. Пишеться з верху і може бути тільки один</caption>
-              <!-- Тег thead виділяє шапку таблиці -->
-              <thead>
-                <tr>
-                  <th>Інф</th>
-                  <th>Інф</th>
-                  <th>Інф</th>
-                  <th>Інф</th>
-                  <th>Інф</th>
-                </tr>
-              </thead>
-              <!-- Тег tbody виділяє основну частину таблиці. -->
-              <tbody>
-                <tr>
-                  <td>Інф</td>
-                  <td>Інф</td>
-                  <td>Інф</td>
-                  <td>Інф</td>
-                  <td>Інф</td>
-                </tr>
-              </tbody>
-              <!-- Тег tfoot виділяє кінець таблиці. Зазвичай це ітого, за результатами підрахунків таблиці. -->
-              <tfoot>
-                <tr>
-                  <td>Разом</td>
-                  <td>Разом</td>
-                  <td>Разом</td>
-                  <td>Разом</td>
-                  <td>Разом</td>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="table-atr">
-          <div class="learn-html-desription">
-            <p> Докладно про атрибути які можна і потрібно використовувати для форматування таблиць <br>
-                Тег caption - опис таблиці, може бути тільки один. <br>
-                Тег tr - створює рядок в таблиці. <br>
-                Тег th - використовується в назвах колонок, та в підсумках <br>
-                Тег td - Використовується для звичайний рядків з інформацією та числами. <br>
-                Тег thead - сематичний тег. Виділяє шапку таблиці <br>
-                Тег tbody - сематичний тег. Виділяє основну частину таблиці <br>
-                Тег tfoot - сематичний тег. Виділяє нижню частину таблиці (зазвичай з підсумками) <br>
-                Тег rowspan - використовується в колонках таблиці - задає, скільки рядків в низ займає тег <br>
-                Тег colspan - використовуєтсья в колонках таблиці - задає скільки рядків в ширину має займати колонка <br>
-            </p>
-          </div>
-          <pre><code class="language-html view-as-code learn-html-code--table"><table border="1">
+        </div>
+      </div>
+      <div class="learn-html-block" id="table-atr">
+        <div class="learn-html-desription">
+          <p> Докладно про атрибути які можна і потрібно використовувати для форматування таблиць <br>
+              Тег caption - опис таблиці, може бути тільки один. <br>
+              Тег tr - створює рядок в таблиці. <br>
+              Тег th - використовується в назвах колонок, та в підсумках <br>
+              Тег td - Використовується для звичайний рядків з інформацією та числами. <br>
+              Тег thead - сематичний тег. Виділяє шапку таблиці <br>
+              Тег tbody - сематичний тег. Виділяє основну частину таблиці <br>
+              Тег tfoot - сематичний тег. Виділяє нижню частину таблиці (зазвичай з підсумками) <br>
+              Тег rowspan - використовується в колонках таблиці - задає, скільки рядків в низ займає тег <br>
+              Тег colspan - використовуєтсья в колонках таблиці - задає скільки рядків в ширину має займати колонка <br>
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code--table"><table border="1">
+          <caption>Розрахунковий лист ЖКХ</caption>
+          <thead>
+            <tr>
+              <th rowspan="2">Вид послуги</th>
+              <th rowspan="2">Од. виміру</th>
+              <th colspan="2">Обєм комунальних послуг</th>
+              <th rowspan="2">Розмір оплати</th>
+            </tr>
+            <tr>
+              <th>На індив. потреби</th>
+              <th>На суспільні потреби</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Холодна вода</td>
+              <td>Куб. М</td>
+              <td>3</td>
+              <td>4</td>
+              <td>1000</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <th>В суммі</th>
+              <th colspan="4">90000</th>
+            </tr>
+          </tfoot>
+        </table>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--table">
+          <table border="1">
             <caption>Розрахунковий лист ЖКХ</caption>
             <thead>
               <tr>
@@ -986,436 +1021,429 @@
               </tr>
             </tfoot>
           </table>
-          </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--table">
-            <table border="1">
-              <caption>Розрахунковий лист ЖКХ</caption>
-              <thead>
-                <tr>
-                  <th rowspan="2">Вид послуги</th>
-                  <th rowspan="2">Од. виміру</th>
-                  <th colspan="2">Обєм комунальних послуг</th>
-                  <th rowspan="2">Розмір оплати</th>
-                </tr>
-                <tr>
-                  <th>На індив. потреби</th>
-                  <th>На суспільні потреби</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td>Холодна вода</td>
-                  <td>Куб. М</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>1000</td>
-                </tr>
-              </tbody>
-
-              <tfoot>
-                <tr>
-                  <th>В суммі</th>
-                  <th colspan="4">90000</th>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-        </div> 
-        <div class="learn-html-block" id="form-tag">
-          <div class="learn-html-desription">
-            <p>
-                Тег &lt;form&gt; визначає HTML-форму, яка використовується для збору та надсилання даних від користувача на сервер.<br>
-                <br>
-                Основні атрибути &lt;form&gt;:<br>
-                action - Вказує URL-адресу на сервері, куди будуть надіслані дані форми після її відправлення (наприклад, `/submit.php`).<br>
-                method - Визначає HTTP-метод для надсилання даних. Основні значення:<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;* GET: Надсилає дані у рядку URL (видно користувачеві). Використовується для запитів, що не змінюють дані на сервері (наприклад, пошук).<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;* POST: Надсилає дані у тілі HTTP-запиту (приховано від користувача). Використовується для надсилання конфіденційних або великих обсягів даних (наприклад, реєстрація, завантаження файлів).<br>
-                enctype - Вказує, як дані форми повинні бути закодовані при надсиланні (використовується з `method="post"`). Найважливіше значення: `multipart/form-data` - обов'язкове для форм, які завантажують файли.<br>
-                target - Вказує, де відкрити відповідь сервера після відправки форми (аналогічно `target` в `&lt;a&gt;`).
-            </p>
-          </div>
+        </div>
+      </div>
+      <div class="learn-html-block" id="form-tag">
+        <div class="learn-html-desription">
+          <p>
+              Тег &lt;form&gt; визначає HTML-форму, яка використовується для збору та надсилання даних від користувача на сервер.<br>
+              <br>
+              Основні атрибути &lt;form&gt;:<br>
+              action - Вказує URL-адресу на сервері, куди будуть надіслані дані форми після її відправлення (наприклад, `/submit.php`).<br>
+              method - Визначає HTTP-метод для надсилання даних. Основні значення:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;* GET: Надсилає дані у рядку URL (видно користувачеві). Використовується для запитів, що не змінюють дані на сервері (наприклад, пошук).<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;* POST: Надсилає дані у тілі HTTP-запиту (приховано від користувача). Використовується для надсилання конфіденційних або великих обсягів даних (наприклад, реєстрація, завантаження файлів).<br>
+              enctype - Вказує, як дані форми повинні бути закодовані при надсиланні (використовується з `method="post"`). Найважливіше значення: `multipart/form-data` - обов'язкове для форм, які завантажують файли.<br>
+              target - Вказує, де відкрити відповідь сервера після відправки форми (аналогічно `target` в `&lt;a&gt;`).
+          </p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><form action="/submit_data.php" method="post">
-  <fieldset>
-    <legend>Введіть дані</legend>
-    <label for="name">Ім'я:</label>
-    <input type="text" id="name" name="user_name" required>
-    <label for="file">Завантажити файл:</label>
-    <input type="file" id="file" name="user_file">
-    <button type="submit">Надіслати</button>
-  </fieldset>
+<fieldset>
+  <legend>Введіть дані</legend>
+  <label for="name">Ім'я:</label>
+  <input type="text" id="name" name="user_name" required>
+  <label for="file">Завантажити файл:</label>
+  <input type="file" id="file" name="user_file">
+  <button type="submit">Надіслати</button>
+</fieldset>
 </form>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--img">
-            <form action="" method="">
-              <fieldset>
-                <legend>Введіть дані</legend>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--img">
+          <form action="" method="">
+            <fieldset>
+              <legend>Введіть дані</legend>
 
-                <label for="name-ex">Ім'я:</label>
-                <input type="text" id="name-ex" name="user_name" required>
-                
-                <br><br>
-                
-                <label for="file-ex">Завантажити файл:</label>
-                <input type="file" id="file-ex" name="user_file">
-                
-                <br><br>
+              <label for="name-ex">Ім'я:</label>
+              <input type="text" id="name-ex" name="user_name" required>
 
-                <button type="submit">Надіслати</button>
-              </fieldset>
-            </form>
-          </div>
+              <br><br>
+
+              <label for="file-ex">Завантажити файл:</label>
+              <input type="file" id="file-ex" name="user_file">
+
+              <br><br>
+
+              <button type="submit">Надіслати</button>
+            </fieldset>
+          </form>
         </div>
-        <div class="learn-html-block" id="label">
-          <div class="learn-html-desription">
-            <p>
-                Тег label - парний строчний тег, використовується для задання опису інтерактивним елементам вводу
-                Прикріплюється до елемента за допомогою айді. При прикрілпленні робиться інтерактивним
-                При нажатті на такий лейбл активується поле вводу до якого був прикріплений label.
-                Використовується для input, select, textarea.
-            </p>
-          </div>
+      </div>
+      <div class="learn-html-block" id="label">
+        <div class="learn-html-desription">
+          <p>
+              Тег label - парний строчний тег, використовується для задання опису інтерактивним елементам вводу
+              Прикріплюється до елемента за допомогою айді. При прикрілпленні робиться інтерактивним
+              При нажатті на такий лейбл активується поле вводу до якого був прикріплений label.
+              Використовується для input, select, textarea.
+          </p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><form>
-  <label for="for-example">Приклад</label>
-  <input type="text" id="for-example" name="text" required>
+<label for="for-example">Приклад</label>
+<input type="text" id="for-example" name="text" required>
 </form>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example">
-            <form>
-              <label for="for-example-1">Приклад</label>
-              <input type="text" id="for-example-1" name="text" required>
-            </form>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example">
+          <form>
+            <label for="for-example-1">Приклад</label>
+            <input type="text" id="for-example-1" name="text" required>
+          </form>
         </div>
-        <div class="learn-html-block" id="input">
-          <div class="learn-html-desription">
-            <p>
-                Тег input - використовується для поллів вводу, checkbox, радіокнопок. Має широкий спектр можливостей та вкиористання
-                Розглянемо основні <br>
-                type=text - основний. Використовуэться для вводу тексту (але є textarea по прямому назначенню)<br>
-                type=url - використовується для вводу посилання <br>
-                type=tel - для вводу номеру телефона <br>
-                type=search - для пошукового запиту <br>
-                type=number - для вводу номера телефону <br>
-                type=password - для вводу пароля <br>
-                type=date Формат вводу дати - День Місяць Рік. <br>
-                type=datetime-local Для вводу День Місяць Рік і час в тікущому часовому поясі.<br>
-                type=month Формат місяць і рік. <br>
-                type=week Вибір неділі і року. <br>
-                type=time Вибір тільки часу. <br>
-                type=color Рідко використовується, потрібен для вибору кольору<br>
-                Також є type з аргументами file для вставки файлів. <br>
-                type=file - використовуэться для прикріплення файлів.
-            </p>
-          </div>
+      </div>
+      <div class="learn-html-block" id="input">
+        <div class="learn-html-desription">
+          <p>
+              Тег input - використовується для поллів вводу, checkbox, радіокнопок. Має широкий спектр можливостей та вкиористання
+              Розглянемо основні <br>
+              type=text - основний. Використовуэться для вводу тексту (але є textarea по прямому назначенню)<br>
+              type=url - використовується для вводу посилання <br>
+              type=tel - для вводу номеру телефона <br>
+              type=search - для пошукового запиту <br>
+              type=number - для вводу номера телефону <br>
+              type=password - для вводу пароля <br>
+              type=date Формат вводу дати - День Місяць Рік. <br>
+              type=datetime-local Для вводу День Місяць Рік і час в тікущому часовому поясі.<br>
+              type=month Формат місяць і рік. <br>
+              type=week Вибір неділі і року. <br>
+              type=time Вибір тільки часу. <br>
+              type=color Рідко використовується, потрібен для вибору кольору<br>
+              Також є type з аргументами file для вставки файлів. <br>
+              type=file - використовуэться для прикріплення файлів.
+          </p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><form>
-  <label for="text-example-">Текст</label>
-  <input type="text" id="text-example-" name="text" required>
+<label for="text-example-">Текст</label>
+<input type="text" id="text-example-" name="text" required>
 
-  <label for="tel-input">Телефон</label>
-  <input type="tel" id="tel-input" name="number-field">
+<label for="tel-input">Телефон</label>
+<input type="tel" id="tel-input" name="number-field">
 
-  <label for="url-example">Приклад</label>
-  <input type="url" id="url-example" name="url" required>
+<label for="url-example">Приклад</label>
+<input type="url" id="url-example" name="url" required>
 
-  <label for="number-input">Число (Number):</label>
-  <input type="number" id="number-input" name="number-field">
+<label for="number-input">Число (Number):</label>
+<input type="number" id="number-input" name="number-field">
 
-  <label for="password-input">Пароль:</label>
-  <input type="password" id="password-input" name="password-field">
+<label for="password-input">Пароль:</label>
+<input type="password" id="password-input" name="password-field">
 
-  <label for="date-input">Дата (День Місяць Рік):</label>
-  <input type="date" id="date-input" name="date-field">
+<label for="date-input">Дата (День Місяць Рік):</label>
+<input type="date" id="date-input" name="date-field">
 
-  <label for="datetime-input">Дата і час:</label>
-  <input type="datetime-local" id="datetime-input" name="datetime-field">
+<label for="datetime-input">Дата і час:</label>
+<input type="datetime-local" id="datetime-input" name="datetime-field">
 
-  <label for="month-input">Місяць та Рік:</label>
-  <input type="month" id="month-input" name="month-field">
+<label for="month-input">Місяць та Рік:</label>
+<input type="month" id="month-input" name="month-field">
 
-  <label for="week-input">Тиждень та Рік:</label>
-  <input type="week" id="week-input" name="week-field">
+<label for="week-input">Тиждень та Рік:</label>
+<input type="week" id="week-input" name="week-field">
 
-  <label for="time-input">Час:</label>
-  <input type="time" id="time-input" name="time-field">
+<label for="time-input">Час:</label>
+<input type="time" id="time-input" name="time-field">
 
-  <label for="color-input">Вибір кольору:</label>
-  <input type="color" id="color-input" name="color-field">
+<label for="color-input">Вибір кольору:</label>
+<input type="color" id="color-input" name="color-field">
 
-  <label for="file-input">Прикріпити файл:</label>
-  <input type="file" id="file-input" name="file-field">
+<label for="file-input">Прикріпити файл:</label>
+<input type="file" id="file-input" name="file-field">
 
 </form>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--input">
-            <form>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--input">
+          <form>
 
-              <label for="text-example--">Текст</label>
-              <input type="text" id="text-example--" name="text" required>
+            <label for="text-example--">Текст</label>
+            <input type="text" id="text-example--" name="text" required>
 
-              <label for="tel-input-">Телефон</label>
-              <input type="tel" id="tel-input-" name="number-field">
+            <label for="tel-input-">Телефон</label>
+            <input type="tel" id="tel-input-" name="number-field">
 
-              <label for="url-example-">Url</label>
-              <input type="url" id="url-example-" name="url" required>
+            <label for="url-example-">Url</label>
+            <input type="url" id="url-example-" name="url" required>
 
-              <label for="number-input-">Число (Number):</label>
-              <input type="number" id="number-input-" name="number-field">
+            <label for="number-input-">Число (Number):</label>
+            <input type="number" id="number-input-" name="number-field">
 
-              <label for="password-input-">Пароль:</label>
-              <input type="password" id="password-input-" name="password-field">
+            <label for="password-input-">Пароль:</label>
+            <input type="password" id="password-input-" name="password-field">
 
-              <label for="date-input-">Дата (День Місяць Рік):</label>
-              <input type="date" id="date-input-" name="date-field">
+            <label for="date-input-">Дата (День Місяць Рік):</label>
+            <input type="date" id="date-input-" name="date-field">
 
-              <label for="datetime-input-">Дата і час:</label>
-              <input type="datetime-local" id="datetime-input-" name="datetime-field">
+            <label for="datetime-input-">Дата і час:</label>
+            <input type="datetime-local" id="datetime-input-" name="datetime-field">
 
-              <label for="month-input-">Місяць та Рік:</label>
-              <input type="month" id="month-input-" name="month-field">
+            <label for="month-input-">Місяць та Рік:</label>
+            <input type="month" id="month-input-" name="month-field">
 
-              <label for="week-input-">Тиждень та Рік:</label>
-              <input type="week" id="week-input-" name="week-field">
+            <label for="week-input-">Тиждень та Рік:</label>
+            <input type="week" id="week-input-" name="week-field">
 
-              <label for="time-input-">Час:</label>
-              <input type="time" id="time-input-" name="time-field">
+            <label for="time-input-">Час:</label>
+            <input type="time" id="time-input-" name="time-field">
 
-              <label for="color-input-">Вибір кольору:</label>
-              <input type="color" id="color-input-" name="color-field">
+            <label for="color-input-">Вибір кольору:</label>
+            <input type="color" id="color-input-" name="color-field">
 
-              <label for="file-input-">Прикріпити файл:</label>
-              <input type="file" id="file-input-" name="file-field">
+            <label for="file-input-">Прикріпити файл:</label>
+            <input type="file" id="file-input-" name="file-field">
 
-            </form>
-          </div>
+          </form>
         </div>
-        <div class="learn-html-block" id="input-checkbox">
-          <div class="learn-html-desription">
-            <p>
-              input - type=checkbox - чекбокс. Не можливий до зміни через css, скривається через visually-hidden.
-              Використовується разом з тегом label. Значення agreement потрібен для того щоб сервер знав що ви натиснули.
-              Якщо це політика компанії обовязково required.
-              Якщо добавити атрибут checked то такий атрибут буде відразу вибраний.
-            </p>
-          </div>
+      </div>
+      <div class="learn-html-block" id="input-checkbox">
+        <div class="learn-html-desription">
+          <p>
+            input - type=checkbox - чекбокс. Не можливий до зміни через css, скривається через visually-hidden.
+            Використовується разом з тегом label. Значення agreement потрібен для того щоб сервер знав що ви натиснули.
+            Якщо це політика компанії обовязково required.
+            Якщо добавити атрибут checked то такий атрибут буде відразу вибраний.
+          </p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><label for="check">Я згоден</label>
-  <input id="check" type="checkbox" value="agreement">
+<input id="check" type="checkbox" value="agreement">
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--input">
-            <label for="check-">Я згоден</label>
-            <input id="check-" type="checkbox" value="agreement">
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--input">
+          <label for="check-">Я згоден</label>
+          <input id="check-" type="checkbox" value="agreement">
         </div>
-        <div class="learn-html-block" id="input-radio">
-          <div class="learn-html-desription">
-            <p>
-              input - type=radio - використовується для селекта серед елментів, схоже на select але вибірка не з списка.<br>
-              При використанні атрибута checked - радіокнопка буде вибрана за стандарту.<br>
-              name - вказується для обєднання радіокнопок. Тобто робить вибірку<br>
-              id - вказується в данному випадку для label. <br>
-              value - значення для сервера.
-            </p>
-          </div>
+      </div>
+      <div class="learn-html-block" id="input-radio">
+        <div class="learn-html-desription">
+          <p>
+            input - type=radio - використовується для селекта серед елментів, схоже на select але вибірка не з списка.<br>
+            При використанні атрибута checked - радіокнопка буде вибрана за стандарту.<br>
+            name - вказується для обєднання радіокнопок. Тобто робить вибірку<br>
+            id - вказується в данному випадку для label. <br>
+            value - значення для сервера.
+          </p>
+        </div>
 <pre><code class="language-html view-as-code learn-html-code"><form action="">
-  <fieldset>
-    <legend>Виберіть вашу стать</legend>
-    <p>
-      <input
-        checked
-        type="radio"
-        name="gender"
-        id="male"
-        value="male">
-      <label for="male"> Чол. </label>
-    </p>
-    <p>
-      <input
-        type="radio"
-        name="gender"
-        id="female"
-        value="female">
-      <label for="female"> Жін.</label>
-    </p>
-  </fieldset>
+<fieldset>
+  <legend>Виберіть вашу стать</legend>
+  <p>
+    <input
+      checked
+      type="radio"
+      name="gender"
+      id="male"
+      value="male">
+    <label for="male"> Чол. </label>
+  </p>
+  <p>
+    <input
+      type="radio"
+      name="gender"
+      id="female"
+      value="female">
+    <label for="female"> Жін.</label>
+  </p>
+</fieldset>
 </form>
 </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--input">
-            <form action="">
-              <fieldset>
-                <legend>Виберіть вашу стать</legend>
-                <p>
-                  <input
-                    checked
-                    type="radio"
-                    name="gender"
-                    id="male-"
-                    value="male">
-                  <label for="male-"> Чол. </label>
-                </p>
-                <p>
-                  <input
-                    type="radio"
-                    name="gender"
-                    id="female-"
-                    value="female">
-                  <label for="female-"> Жін.</label>
-                </p>
-              </fieldset>
-            </form>
-          </div>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--input">
+          <form action="">
+            <fieldset>
+              <legend>Виберіть вашу стать</legend>
+              <p>
+                <input
+                  checked
+                  type="radio"
+                  name="gender"
+                  id="male-"
+                  value="male">
+                <label for="male-"> Чол. </label>
+              </p>
+              <p>
+                <input
+                  type="radio"
+                  name="gender"
+                  id="female-"
+                  value="female">
+                <label for="female-"> Жін.</label>
+              </p>
+            </fieldset>
+          </form>
         </div>
-        <div class="learn-html-block" id="input-inputmode">
-          <div class="learn-html-desription">
-            <p>
-              input inputmode використовується для мобільних пристроїв.
-              При натисканні на такий інпут, відповідно до inputmode будуть відкриватись
-              відповідні клавіатури. Ось декілька прикладів таких інпутів
-            </p>
-          </div>
-            <pre><code class="language-html view-as-code learn-html-code"><form action="">
-              <label for="example-tel">Телефон</label>
-              <input id="example-tel" type="text" inputmode="tel">
-              <label for="example-email">Емаил</label>
-              <input id="example-email" type="text" inputmode="email">
-              <label for="example-numeric">Номер</label>
-              <input id="example-numeric" type="text" inputmode="numeric">
-              <label for="example-decimal">Номер децимал</label>
-              <input id="example-decimal" type="text" inputmode="decimal">
-              <label for="example-search">Пошуковий запит</label>
-              <input id="example-search" type="text" inputmode="search">
-              <label for="example-url">Посилання</label>
-              <input id="example-url" type="text" inputmode="url">
-            </form>
-            </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--input">
-            <form action="">
-              <label for="example-tel-">Телефон</label>
-              <input id="example-tel-" type="text" inputmode="tel">
-              <label for="example-email-">Емаил</label>
-              <input id="example-email-" type="text" inputmode="email">
-              <label for="example-numeric-">Номер</label>
-              <input id="example-numeric-" type="text" inputmode="numeric">
-              <label for="example-decimal-">Номер децимал</label>
-              <input id="example-decimal-" type="text" inputmode="decimal">
-              <label for="example-search-">Пошуковий запит</label>
-              <input id="example-search-" type="text" inputmode="search">
-              <label for="example-url-">Посилання</label>
-              <input id="example-url-" type="text" inputmode="url">
-            </form>
-          </div>
+      </div>
+      <div class="learn-html-block" id="input-inputmode">
+        <div class="learn-html-desription">
+          <p>
+            input inputmode використовується для мобільних пристроїв.
+            При натисканні на такий інпут, відповідно до inputmode будуть відкриватись
+            відповідні клавіатури. Ось декілька прикладів таких інпутів
+          </p>
         </div>
-        <div class="learn-html-block" id="input-textarea">
-          <div class="learn-html-desription">
-            <p>
-              Тег textarea - створює багаторядкове поле вводу для введення тексту,
-              що дозволяє користувачу вводити довільний обсяг тексту.
-              На відміну від input type=text який приймає один рядок - textarea
-              приймає скільки завгодно. <br> <br>
-              Має цікаві наступні атрибути - <br>
-              name: Це ключовий атрибут, який надає полю унікальне ім'я. Це ім'я необхідне для ідентифікації та збору даних, коли форма відправляється на сервер. Наприклад: name="user_comment".
-              <br>
-              id: Унікальний ідентифікатор елемента, який дозволяє звертатися до нього з CSS, JavaScript, а також зв'язувати його з елементом label для покращення доступності. Наприклад: id="feedback_area".
-              <br>
-              cols: Визначає видиму ширину текстового поля. Значення вказується в кількості символів (стовпців). Цей атрибут є рекомендаційним, оскільки кінцева ширина часто задається за допомогою CSS. Наприклад: cols="40".
-              <br>
-              rows: Визначає видиму висоту текстового поля в кількості рядків. Наприклад: rows="12".
-              <br>
-              placeholder: Короткий підказуючий текст, який відображається всередині поля, доки користувач не почне вводити дані. Зникає при фокусі на полі. Наприклад: placeholder="Введіть ваше повідомлення тут...".
-              <br>
-              required: Булевий атрибут, який вказує, що поле має бути заповнене користувачем перед успішною відправкою форми.
-              <br>
-              disabled: Булевий атрибут, який робить поле неактивним. Користувач не може взаємодіяти з полем, і його вміст не відправляється з формою.
-              <br>
-              readonly: Булевий атрибут, який дозволяє відображати вміст, але забороняє користувачеві його редагувати.
-              <br>
-              maxlength: Встановлює максимальну кількість символів, які користувач може ввести у це поле. Наприклад: maxlength="1000".
-              <br>
-              wrap: Вказує браузеру, як обробляти переноси рядків під час відправки форми. Найпоширеніші значення: soft (переноси додаються лише візуально) та hard (переноси додаються до фактичних даних).
-            </p>
-          </div>
-          <pre><code class="language-html view-as-code learn-html-code"><textarea
+          <pre><code class="language-html view-as-code learn-html-code"><form action="">
+            <label for="example-tel">Телефон</label>
+            <input id="example-tel" type="text" inputmode="tel">
+            <label for="example-email">Емаил</label>
+            <input id="example-email" type="text" inputmode="email">
+            <label for="example-numeric">Номер</label>
+            <input id="example-numeric" type="text" inputmode="numeric">
+            <label for="example-decimal">Номер децимал</label>
+            <input id="example-decimal" type="text" inputmode="decimal">
+            <label for="example-search">Пошуковий запит</label>
+            <input id="example-search" type="text" inputmode="search">
+            <label for="example-url">Посилання</label>
+            <input id="example-url" type="text" inputmode="url">
+          </form>
+          </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--input">
+          <form action="">
+            <label for="example-tel-">Телефон</label>
+            <input id="example-tel-" type="text" inputmode="tel">
+            <label for="example-email-">Емаил</label>
+            <input id="example-email-" type="text" inputmode="email">
+            <label for="example-numeric-">Номер</label>
+            <input id="example-numeric-" type="text" inputmode="numeric">
+            <label for="example-decimal-">Номер децимал</label>
+            <input id="example-decimal-" type="text" inputmode="decimal">
+            <label for="example-search-">Пошуковий запит</label>
+            <input id="example-search-" type="text" inputmode="search">
+            <label for="example-url-">Посилання</label>
+            <input id="example-url-" type="text" inputmode="url">
+          </form>
+        </div>
+      </div>
+      <div class="learn-html-block" id="input-textarea">
+        <div class="learn-html-desription">
+          <p>
+            Тег textarea - створює багаторядкове поле вводу для введення тексту,
+            що дозволяє користувачу вводити довільний обсяг тексту.
+            На відміну від input type=text який приймає один рядок - textarea
+            приймає скільки завгодно. <br> <br>
+            Має цікаві наступні атрибути - <br>
+            name: Це ключовий атрибут, який надає полю унікальне ім'я. Це ім'я необхідне для ідентифікації та збору даних, коли форма відправляється на сервер. Наприклад: name="user_comment".
+            <br>
+            id: Унікальний ідентифікатор елемента, який дозволяє звертатися до нього з CSS, JavaScript, а також зв'язувати його з елементом label для покращення доступності. Наприклад: id="feedback_area".
+            <br>
+            cols: Визначає видиму ширину текстового поля. Значення вказується в кількості символів (стовпців). Цей атрибут є рекомендаційним, оскільки кінцева ширина часто задається за допомогою CSS. Наприклад: cols="40".
+            <br>
+            rows: Визначає видиму висоту текстового поля в кількості рядків. Наприклад: rows="12".
+            <br>
+            placeholder: Короткий підказуючий текст, який відображається всередині поля, доки користувач не почне вводити дані. Зникає при фокусі на полі. Наприклад: placeholder="Введіть ваше повідомлення тут...".
+            <br>
+            required: Булевий атрибут, який вказує, що поле має бути заповнене користувачем перед успішною відправкою форми.
+            <br>
+            disabled: Булевий атрибут, який робить поле неактивним. Користувач не може взаємодіяти з полем, і його вміст не відправляється з формою.
+            <br>
+            readonly: Булевий атрибут, який дозволяє відображати вміст, але забороняє користувачеві його редагувати.
+            <br>
+            maxlength: Встановлює максимальну кількість символів, які користувач може ввести у це поле. Наприклад: maxlength="1000".
+            <br>
+            wrap: Вказує браузеру, як обробляти переноси рядків під час відправки форми. Найпоширеніші значення: soft (переноси додаються лише візуально) та hard (переноси додаються до фактичних даних).
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code"><textarea
+          placeholder="Плейсхолдер"
+          name="text-example"
+          maxlength="100"
+        ></textarea>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--input">
+          <textarea class="example-placeholder"
             placeholder="Плейсхолдер"
             name="text-example"
             maxlength="100"
           ></textarea>
-          </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--input">
-            <textarea class="example-placeholder"
-              placeholder="Плейсхолдер"
-              name="text-example"
-              maxlength="100"
-            ></textarea>
-          </div>
         </div>
-        <div class="learn-html-block" id="input-paterns">
-          <div class="learn-html-desription">
+      </div>
+      <div class="learn-html-block" id="input-paterns">
+        <div class="learn-html-desription">
+          <p>
+            Input - patern. Можемо задавати виключення при вводі в поле інпут за допомогою атрибуту pattern
+            Розглянемо це на прикладі заборони вводу будь чого окрім букв латинського алфавіту.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <form action="">
+          <p>
+            <label for="inp">Ввести: </label>
+            <input id="inp" type="text" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Тільки латинські букви')">
+          </p>
+          <button type="submit">Відправити</button>
+        </form>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--input">
+          <form action="">
             <p>
-              Input - patern. Можемо задавати виключення при вводі в поле інпут за допомогою атрибуту pattern
-              Розглянемо це на прикладі заборони вводу будь чого окрім букв латинського алфавіту.
-            </p>
-          </div>
-          <pre><code class="language-html view-as-code learn-html-code">
-            <form action="">
-            <p>
-              <label for="inp">Ввести: </label>
-              <input id="inp" type="text" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Тільки латинські букви')">
+              <label for="inp-">Ввести: </label>
+              <input id="inp-" type="text" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Тільки латинські букви')">
             </p>
             <button type="submit">Відправити</button>
           </form>
-          </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--input">
-            <form action="">
-              <p>
-                <label for="inp-">Ввести: </label>
-                <input id="inp-" type="text" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Тільки латинські букви')">
-              </p>
-              <button type="submit">Відправити</button>
-            </form>
-          </div>
         </div>
-        <div class="learn-html-block" id="select-option">
-          <div class="learn-html-desription">
-            <p>
-              Тег select - парний тег, використовується разом з дочірніми елементами option
-              як варіантами під вибір. Стилізувати через css не можливо. Для того щоб зробити обовязковий
-              вибір елемента використовуються: <br> пусте значення value, disable - для неможливості вибору
-              елемента, та selected щоб вибрати його за замовчуванням.
-              Також для самого select прописати required для обовязкового вибору.
-              <br> <br>
-              Таким чином, required не пропустить елемент з пустим value,
-              атрибут селект зробить його автоматично вибраним, а disable відключить його
-              для вибору користувачем в тезі select. Таким чином користувач 100% вибере одне
-              з наведених нижче значень.
-            </p>
-          </div>
-          <pre><code class="language-html view-as-code learn-html-code"><form action="">
-            <label for="selector">Виберіть: </label>
-            <select name="selector-id" id="selector" required>
+      </div>
+      <div class="learn-html-block" id="select-option">
+        <div class="learn-html-desription">
+          <p>
+            Тег select - парний тег, використовується разом з дочірніми елементами option
+            як варіантами під вибір. Стилізувати через css не можливо. Для того щоб зробити обовязковий
+            вибір елемента використовуються: <br> пусте значення value, disable - для неможливості вибору
+            елемента, та selected щоб вибрати його за замовчуванням.
+            Також для самого select прописати required для обовязкового вибору.
+            <br> <br>
+            Таким чином, required не пропустить елемент з пустим value,
+            атрибут селект зробить його автоматично вибраним, а disable відключить його
+            для вибору користувачем в тезі select. Таким чином користувач 100% вибере одне
+            з наведених нижче значень.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code"><form action="">
+          <label for="selector">Виберіть: </label>
+          <select name="selector-id" id="selector" required>
+            <option value="" disabled selected>Не вибрано</option>
+            <option value="urk">Ukraine</option>
+            <option value="fra">French</option>
+            <option value="pol">Poland</option>
+          </select>
+          <p>
+            <button type="submit"> Відправити </button>
+          </p>
+        </form>
+
+         Ще в середині можна поділити на під групи в селекторі, робиться це так
+
+        <form action="">
+          <label for="select1">Виберіть</label>
+          <select name="select-which" id="select1">
+            <optgroup label="Центр">
+              <option value="Київ"> Київ</option>
+              <option value="Кривий ріг"> Кривий ріг</option>
+            </optgroup>
+            <optgroup label="Схід">
+              <option value="Харків"> Харків</option>
+              <option value="Донецьк"> Донецьк</option>
+            </optgroup>
+          </select>
+        </form>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--input">
+          <form action="">
+            <label for="selector-">Виберіть: </label>
+            <select name="selector-id" id="selector-" required>
               <option value="" disabled selected>Не вибрано</option>
               <option value="urk">Ukraine</option>
               <option value="fra">French</option>
               <option value="pol">Poland</option>
             </select>
             <p>
-              <button type="submit"> Відправити </button>
+              <button type="submit"> Выдправити </button>
             </p>
           </form>
-
-           Ще в середині можна поділити на під групи в селекторі, робиться це так
-
           <form action="">
-            <label for="select1">Виберіть</label>
-            <select name="select-which" id="select1">
+            <label for="select-">Виберіть</label>
+            <select name="select-which" id="select-">
               <optgroup label="Центр">
                 <option value="Київ"> Київ</option>
                 <option value="Кривий ріг"> Кривий ріг</option>
@@ -1426,258 +1454,230 @@
               </optgroup>
             </select>
           </form>
-          </code></pre>
-          <span class="example">Example:</span>
-          <div class="learn-html-example learn-html-example--input">
-            <form action="">
-              <label for="selector-">Виберіть: </label>
-              <select name="selector-id" id="selector-" required>
-                <option value="" disabled selected>Не вибрано</option>
-                <option value="urk">Ukraine</option>
-                <option value="fra">French</option>
-                <option value="pol">Poland</option>
-              </select>
-              <p>
-                <button type="submit"> Выдправити </button>
-              </p>
-            </form>
-            <form action="">
-              <label for="select-">Виберіть</label>
-              <select name="select-which" id="select-">
-                <optgroup label="Центр">
-                  <option value="Київ"> Київ</option>
-                  <option value="Кривий ріг"> Кривий ріг</option>
-                </optgroup>
-                <optgroup label="Схід">
-                  <option value="Харків"> Харків</option>
-                  <option value="Донецьк"> Донецьк</option>
-                </optgroup>
-              </select>
-            </form>
-          </div>
         </div>
-        <div class="learn-html-block" id="semantik-tags">
-          <div class="learn-html-desription">
-            <p>
-              Семантика в веброзробці означає використання тегів, які не лише впливають на відображення елемента (як це роблять div або span),
-              а й передають значення та функцію вмісту цього елемента як для браузерів, так і для пошукових систем (SEO) та допоміжних технологій
-              (наприклад, для читання з екрана).
-              Це робить структуру документа зрозумілішою та доступнішою.
-              Основні сематичні теги. <br>
-              header - Вступний вміст або група навігаційних посилань.	Логотип, заголовок сайту, слоган, панель пошуку, навігаційні посилання.
-              <br>
-              nav	- Група навігаційних посилань (меню).	Основне меню сайту, хлібні крихти (breadcrumbs), посилання "Зміст".
-              main - Основний, унікальний вміст документа.	Все, що не повторюється на інших сторінках (бічні панелі, підвали, навігація).
-              На сторінці може бути лише один main. article	Незалежний, самодостатній вміст.
-              Повідомлення в блозі, новинна стаття, коментар, товар у каталозі, віджет. Якщо видалити решту сторінки,
-              вміст article все ще має бути зрозумілим. <br> section - Загальний тематичний розділ вмісту.	Групування логічно пов'язаного
-              вмісту в межах main або article. Кожен section зазвичай повинен мати заголовок (h2-h6).
-              <br> aside - Вміст, пов'язаний із основним вмістом, але який може бути виділений окремо.	Бічна панель, цитати, виноски, реклама,
-              додаткові посилання. <br> footer -	Нижній колонтитул або завершальний розділ.
-              Інформація про автора/авторські права, контактна інформація, вторинна навігація.
-              <br>
-              <br>
-              <br>
-              figure / figcaption	Для розміщення зображення, діаграми, коду, ілюстрації (figure) з його описом або підписом (figcaption).
-              <br>
-              time	Представляє час (наприклад, для дати публікації). <br>
-              mark	Виділяє (маркує) текст, який є особливо актуальним. <br>
-              cite	Назва твору (книги, пісні, фільму). <br>
-              q / blockquote	Коротка цитата (q) або великий блок цитованого тексту (blockquote).
-              <br>
-            </p>
-          </div>
-          <pre><code class="language-html view-as-code learn-html-code">
-            <header>
-                <h1>Назва Вебсайту</h1>
-                <nav>
-                  <ul>
-                    <li><a href="/">Головна</a></li>
-                    <li><a href="/about">Про нас</a></li>
-                    <li><a href="/contacts">Контакти</a></li>
-                  </ul>
-                </nav>
-                <form role="search">
-                  <input type="search" placeholder="Пошук...">
-                </form>
-            </header>
-            <main>
-              <article>
-                  <h2>Семантика в HTML5: Чому це важливо</h2>
-
-                  <figure>
-                      <img src="path/to/image.jpg" alt="Опис зображення">
-                      <figcaption>Ілюстрація семантичних тегів.</figcaption>
-                  </figure>
-
-                  <section>
-                      <h3>Вступ до семантики</h3>
-                      <p>Семантичні теги додають значення структурі документа...</p>
-                  </section>
-
-                  <section>
-                      <h3>Практичне використання</h3>
-                      <p>Важливо використовувати <code>&lt;nav&gt;</code> для навігації, а не просто <code>&lt;div&gt;</code>.</p>
-                  </section>
-              </article>
-
-              <aside>
-                  <h4>Схожі Статті</h4>
-                  <nav>
-                      <ul>
-                          <li><a href="/article-2">Основи CSS</a></li>
-                          <li><a href="/article-3">JavaScript для початківців</a></li>
-                      </ul>
-                  </nav>
-              </aside>
-            </main>
-            <footer>
-                <nav>
-                    <a href="/terms">Умови використання</a>
-                    <a href="/privacy">Політика конфіденційності</a>
-                </nav>
-                <p><small>&copy; <time datetime="2025">2025</time> Назва Вебсайту.</small></p>
-            </footer>
-          </code></pre>
+      </div>
+      <div class="learn-html-block" id="semantik-tags">
+        <div class="learn-html-desription">
+          <p>
+            Семантика в веброзробці означає використання тегів, які не лише впливають на відображення елемента (як це роблять div або span),
+            а й передають значення та функцію вмісту цього елемента як для браузерів, так і для пошукових систем (SEO) та допоміжних технологій
+            (наприклад, для читання з екрана).
+            Це робить структуру документа зрозумілішою та доступнішою.
+            Основні сематичні теги. <br>
+            header - Вступний вміст або група навігаційних посилань.	Логотип, заголовок сайту, слоган, панель пошуку, навігаційні посилання.
+            <br>
+            nav	- Група навігаційних посилань (меню).	Основне меню сайту, хлібні крихти (breadcrumbs), посилання "Зміст".
+            main - Основний, унікальний вміст документа.	Все, що не повторюється на інших сторінках (бічні панелі, підвали, навігація).
+            На сторінці може бути лише один main. article	Незалежний, самодостатній вміст.
+            Повідомлення в блозі, новинна стаття, коментар, товар у каталозі, віджет. Якщо видалити решту сторінки,
+            вміст article все ще має бути зрозумілим. <br> section - Загальний тематичний розділ вмісту.	Групування логічно пов'язаного
+            вмісту в межах main або article. Кожен section зазвичай повинен мати заголовок (h2-h6).
+            <br> aside - Вміст, пов'язаний із основним вмістом, але який може бути виділений окремо.	Бічна панель, цитати, виноски, реклама,
+            додаткові посилання. <br> footer -	Нижній колонтитул або завершальний розділ.
+            Інформація про автора/авторські права, контактна інформація, вторинна навігація.
+            <br>
+            <br>
+            <br>
+            figure / figcaption	Для розміщення зображення, діаграми, коду, ілюстрації (figure) з його описом або підписом (figcaption).
+            <br>
+            time	Представляє час (наприклад, для дати публікації). <br>
+            mark	Виділяє (маркує) текст, який є особливо актуальним. <br>
+            cite	Назва твору (книги, пісні, фільму). <br>
+            q / blockquote	Коротка цитата (q) або великий блок цитованого тексту (blockquote).
+            <br>
+          </p>
         </div>
-        <div class="learn-html-block" id="optimizing-media">
-          <div class="learn-html-desription">
-            <p>
-              Оптимізація загрузки медіа для швидкого завантаження сайту. <br>
-              <br>
-              Найперше про що потрібно сказати. Задавати img / video розміри одразу,
-              <br>
-              щоб перед загрузкою сайту їм виділялось місце. Як вказано в прикладі.
-              Важливими значеннями для оптимізації є <br> <br>
-              img {max-width:100%; height:auto} <br> <br>
-              Задається в css і потрібно для того щоб зоображення не займало більше а ніж
-              <br>
-              має, та зменшувалось в пропорціях якщо воно просто не поміщається в якийсь обєкт
-              <br> <br>
-              Тепер розглянем оптимізацію під щільність пікселів. <br>
-              На різних девайсах різна шільність пікселів. <br>
-              Наприклад у ноутбука x2 а у телефона x3. <br>
-              Це можна перевірити на сайті pixelratio <br>
-              <br>
-              Для того щоб дати браузеру вибір завантажуваної картинки <br>
-              В фігмі ми вигружаємо img в 3 різних варіантах. x1 x2 x3. <br>
-              Це потрібно для якісного відораження картинки. <br>
-              Вказано в прикладі. <br>
-              Дескріптор плотності пікселів вказується черед декілька пробілів в функції srcset.
-              Але питання, для чого нам вигружати на телефон, то саме зоображення якщо там воно менше.
-              <br> <br>
-              Для цього ми робимо два різних файли для desktop та mobile. <br>
-              Вказано в прикладі. <br> <br>
-              Також для оптимізації можна використати оптимізовані формати файлів для завантаження сторінки.
-              Починаючи з найменш великого формата закінчуючи найбільш. Вказано в прикладі.
-              <br>
-              <br>
-              В самому низу наведений приклад оптимізованого завантаження background.
-            </p>
-          </div>
-          <pre><code class="language-html view-as-code learn-html-code">
-            Задаємо висоту та ширину з початку.
-            <img src="/"
-                 alt="Зообрвження"
-                 width="100" height="100">
-            Оптимізація по щільності пікселів
+        <pre><code class="language-html view-as-code learn-html-code">
+          <header>
+              <h1>Назва Вебсайту</h1>
+              <nav>
+                <ul>
+                  <li><a href="/">Головна</a></li>
+                  <li><a href="/about">Про нас</a></li>
+                  <li><a href="/contacts">Контакти</a></li>
+                </ul>
+              </nav>
+              <form role="search">
+                <input type="search" placeholder="Пошук...">
+              </form>
+          </header>
+          <main>
+            <article>
+                <h2>Семантика в HTML5: Чому це важливо</h2>
+
+                <figure>
+                    <img src="path/to/image.jpg" alt="Опис зображення">
+                    <figcaption>Ілюстрація семантичних тегів.</figcaption>
+                </figure>
+
+                <section>
+                    <h3>Вступ до семантики</h3>
+                    <p>Семантичні теги додають значення структурі документа...</p>
+                </section>
+
+                <section>
+                    <h3>Практичне використання</h3>
+                    <p>Важливо використовувати <code>&lt;nav&gt;</code> для навігації, а не просто <code>&lt;div&gt;</code>.</p>
+                </section>
+            </article>
+
+            <aside>
+                <h4>Схожі Статті</h4>
+                <nav>
+                    <ul>
+                        <li><a href="/article-2">Основи CSS</a></li>
+                        <li><a href="/article-3">JavaScript для початківців</a></li>
+                    </ul>
+                </nav>
+            </aside>
+          </main>
+          <footer>
+              <nav>
+                  <a href="/terms">Умови використання</a>
+                  <a href="/privacy">Політика конфіденційності</a>
+              </nav>
+              <p><small>&copy; <time datetime="2025">2025</time> Назва Вебсайту.</small></p>
+          </footer>
+        </code></pre>
+      </div>
+      <div class="learn-html-block" id="optimizing-media">
+        <div class="learn-html-desription">
+          <p>
+            Оптимізація загрузки медіа для швидкого завантаження сайту. <br>
+            <br>
+            Найперше про що потрібно сказати. Задавати img / video розміри одразу,
+            <br>
+            щоб перед загрузкою сайту їм виділялось місце. Як вказано в прикладі.
+            Важливими значеннями для оптимізації є <br> <br>
+            img {max-width:100%; height:auto} <br> <br>
+            Задається в css і потрібно для того щоб зоображення не займало більше а ніж
+            <br>
+            має, та зменшувалось в пропорціях якщо воно просто не поміщається в якийсь обєкт
+            <br> <br>
+            Тепер розглянем оптимізацію під щільність пікселів. <br>
+            На різних девайсах різна шільність пікселів. <br>
+            Наприклад у ноутбука x2 а у телефона x3. <br>
+            Це можна перевірити на сайті pixelratio <br>
+            <br>
+            Для того щоб дати браузеру вибір завантажуваної картинки <br>
+            В фігмі ми вигружаємо img в 3 різних варіантах. x1 x2 x3. <br>
+            Це потрібно для якісного відораження картинки. <br>
+            Вказано в прикладі. <br>
+            Дескріптор плотності пікселів вказується черед декілька пробілів в функції srcset.
+            Але питання, для чого нам вигружати на телефон, то саме зоображення якщо там воно менше.
+            <br> <br>
+            Для цього ми робимо два різних файли для desktop та mobile. <br>
+            Вказано в прикладі. <br> <br>
+            Також для оптимізації можна використати оптимізовані формати файлів для завантаження сторінки.
+            Починаючи з найменш великого формата закінчуючи найбільш. Вказано в прикладі.
+            <br>
+            <br>
+            В самому низу наведений приклад оптимізованого завантаження background.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          Задаємо висоту та ширину з початку.
+          <img src="/"
+               alt="Зообрвження"
+               width="100" height="100">
+          Оптимізація по щільності пікселів
+          <img
+            src="images/cat.jpg"
+            srcset="
+            images/cat.jpg    1x,
+            images/cat_x2.jpg 2x,
+            images/cat_x3.jpg 3x,"
+            alt=""
+          >
+          Оптимізоване завантаження зоображень під телефон та desktop
+          <picture>
+            <source srcset="mobile_cat"
+                    media="(max-width: 500px)">
             <img
-              src="images/cat.jpg"
-              srcset="
-              images/cat.jpg    1x,
-              images/cat_x2.jpg 2x,
-              images/cat_x3.jpg 3x,"
-              alt=""
+              src="desktop_cat"
+              alt="Кіт"
+              width="500" height="500"
             >
-            Оптимізоване завантаження зоображень під телефон та desktop
-            <picture>
-              <source srcset="mobile_cat"
-                      media="(max-width: 500px)">
-              <img
-                src="desktop_cat"
-                alt="Кіт"
-                width="500" height="500"
-              >
-            </picture>
-            Оптимізація по форматам зоображень
-            <picture>
-              <source srcset="cat.avif" type="image/avif">
-              <source srcset="cat.webp" type="image/webp">
-              <img src="cat.jpg" alt="Морда кота" width="100" height="100">
-            </picture>
-            Обєднані всі способи оптимізації
-            <picture>
-              <source srcset="cat_mobile.avif" media="(max-width: 500px)" type="image/avif">
-              <source srcset="cat_mobile.webp" media="(max-width: 500px)" type="image/webp">
-              <source srcset="cat_mobile.jpg" media="(max-width: 500px)">
-              <source srcset="cat_desktop.avif"  type="image/avif">
-              <source srcset="cat_desktop.webp"  type="image/webp">
-              <img src="cat_desktop.jpg" alt="Кіт" width="100" height="100">
-            </picture>
-            Оптимізоване підключення background через css
-            <style>
-            .new_item {
-              background-repeat: no-repeat;
-              background-image: image-set(
-                url('/') type('image/avif'),
-                url('/') type('image/webp'),
-                url('/') type('image/jpeg')
-              );
-            }
-            </style>
-          </code></pre>
-        </div>
-      </section>
-    </main>
-    <footer>
-    </footer>
-  <script>
-    function formatCodeElements() {
-      const codeElements = document.querySelectorAll('code.view-as-code');
-      codeElements.forEach(codeElement => {
-        let htmlContent = codeElement.innerHTML;
-        const lines = htmlContent.split('\n');
-        let minIndent = Infinity;
-        lines.slice(1, -1).forEach(line => {
-          if (line.trim().length > 0) {
-            const leadingSpaces = line.search(/\S/);
-            if (leadingSpaces !== -1) {
-              minIndent = Math.min(minIndent, leadingSpaces);
-            }
+          </picture>
+          Оптимізація по форматам зоображень
+          <picture>
+            <source srcset="cat.avif" type="image/avif">
+            <source srcset="cat.webp" type="image/webp">
+            <img src="cat.jpg" alt="Морда кота" width="100" height="100">
+          </picture>
+          Обєднані всі способи оптимізації
+          <picture>
+            <source srcset="cat_mobile.avif" media="(max-width: 500px)" type="image/avif">
+            <source srcset="cat_mobile.webp" media="(max-width: 500px)" type="image/webp">
+            <source srcset="cat_mobile.jpg" media="(max-width: 500px)">
+            <source srcset="cat_desktop.avif"  type="image/avif">
+            <source srcset="cat_desktop.webp"  type="image/webp">
+            <img src="cat_desktop.jpg" alt="Кіт" width="100" height="100">
+          </picture>
+          Оптимізоване підключення background через css
+          <style>
+          .new_item {
+            background-repeat: no-repeat;
+            background-image: image-set(
+              url('/') type('image/avif'),
+              url('/') type('image/webp'),
+              url('/') type('image/jpeg')
+            );
           }
-        });
-
-
-        if (minIndent !== Infinity && minIndent > 0) {
-          const indentRegex = new RegExp(`^\\s{${minIndent}}`, 'gm');
-          htmlContent = htmlContent.replace(indentRegex, '');
-        }
-
-
-
-        let escaped = htmlContent
-          .replace(/&(?!(?:amp|lt|gt|quot|#39);)/g, '&amp;')
-          .replace(/</g, '&lt;')
-          .replace(/>/g, '&gt;');
-
-        codeElement.innerHTML = escaped.trim();
-
-        if (!codeElement.style.whiteSpace) {
-          codeElement.style.whiteSpace = 'pre-wrap';
+          </style>
+        </code></pre>
+      </div>
+    </section>
+  </main>
+  <footer>
+  </footer>
+<script>
+  function formatCodeElements() {
+    const codeElements = document.querySelectorAll('code.view-as-code');
+    codeElements.forEach(codeElement => {
+      let htmlContent = codeElement.innerHTML;
+      const lines = htmlContent.split('\n');
+      let minIndent = Infinity;
+      lines.slice(1, -1).forEach(line => {
+        if (line.trim().length > 0) {
+          const leadingSpaces = line.search(/\S/);
+          if (leadingSpaces !== -1) {
+            minIndent = Math.min(minIndent, leadingSpaces);
+          }
         }
       });
 
-      if (window.hljs) {
-        hljs.highlightAll();
-      }
-    }
 
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', formatCodeElements);
-    } else {
-      formatCodeElements();
+      if (minIndent !== Infinity && minIndent > 0) {
+        const indentRegex = new RegExp(`^\\s{${minIndent}}`, 'gm');
+        htmlContent = htmlContent.replace(indentRegex, '');
+      }
+
+
+
+      let escaped = htmlContent
+        .replace(/&(?!(?:amp|lt|gt|quot|#39);)/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+
+      codeElement.innerHTML = escaped.trim();
+
+      if (!codeElement.style.whiteSpace) {
+        codeElement.style.whiteSpace = 'pre-wrap';
+      }
+    });
+
+    if (window.hljs) {
+      hljs.highlightAll();
     }
-  </script>
-  </body>
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', formatCodeElements);
+  } else {
+    formatCodeElements();
+  }
+</script>
+</body>
 
 </html>

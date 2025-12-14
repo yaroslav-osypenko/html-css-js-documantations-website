@@ -10,9 +10,187 @@
     http-equiv="X-UA-Compatible"
     content="ie=edge"
   >
+  <link
+    rel="stylesheet"
+    href="./css/main.css"
+  >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>–
+  <script>hljs.highlightAll();</script>
   <title>CSS Documentation</title>
 </head>
-  <body>
+<body>
+  <header class="main-header">
+    <section class="header">
+      <header class="header-main">
+        <p>HTML/CSS Documentation</p>
+        <a href="./index.html">HTML</a>
+      </header>
+    </section>
+  </header>
+  <main>
+    <aside>
+      <section class="navigation-container">
+        <nav class="navigation-menu">
+          <span>Навігація</span>
+          <ul class="navigation-list">
+            <li class="navigation-item navigation-item-inner">
+              <a href="#" class="navigation-link">Специфічність CSS</a>
+            </li>
+            <li class="navigation-item">
+              <details>
+                <summary>
+                  <span>Звернення по класам</span>
+                </summary>
+                <ul>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#" class="navigation-link"></a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#" class="navigation-link"></a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link"></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </aside>
+    <section class="learn-html container">
+      <div class="learn-html-block" id="specification">
+        <div class="learn-html-desription">
+          <p>
+            Специфічність CSS важлива тема - особливо в великих проектах.
+            це механізм, який використовує браузер для визначення, які стилі слід застосувати до елемента,
+            якщо цей елемент має суперечливі правила CSS із різних селекторів. Це, по суті, система пріоритетів для CSS-правил.
+            Чим вищою є специфічність селектора, тим більший пріоритет він матиме, і його стилі будуть застосовані,
+            ігноруючи стилі з меншою специфічністю. <br> <br>
+            Специфічність обчислюється як чотиризначне число (A, B, C, D), де кожна позиція відповідає
+            певному типу селектора. Жодна кількість селекторів нижчого рівня не може перевищити одиницю
+            вищого рівня. Починається від A закінчується D. Також грає роль положення в самому CSS, якщо
+            специфічність для елементів буде одинаковою, то свойство візьменться з нижчого селектора.
+            <br>
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+            Інлайн-стилі (Inline Styles)
+            Значення A: 1
+            Це стилі, застосовані безпосередньо в атрибуті style HTML-елемента.
+            Приклад:
+            <p style="color: red"></p>
+            Специфічність: 1,0,0,0 - тобто вищий бал до специфічності.
+            .
+            Значення B. ID-селектори
+            Кількість ID-селекторів (#id).
+            Приклад: #main-nav
+            Специфічність: (0, 1, 0, 0)
+            .
+            Значення C: Класи, Атрибути та Псевдокласи. Кількість селекторів класів (.class),
+            селекторів атрибутів ([type="text"]) та псевдокласів (:hover, :first-child).
+            Приклад: .active[data-state="open"]:hover
+            Специфічність: (0, 0, 3, 0)
+            .
+            Важливо розуміти. Чим більше псевдоелментів ми додаємо, тим більша специфічність в класу.
+            Так само можна звернутись до класу наприклад example
+            Якщо ми пропишемо .example.example {} То специфічність буде 0.0.2.0
+            .
+            D.  Елементи та Псевдоелементи
+            Кількість селекторів елементів (тегів: p, h1, div)
+            та псевдоелементів (::before, ::after).
+            Приклад: div p::first-lineСпецифічність: (0, 0, 0, 2)
+            .
+            Особливі Випадки та Винятки.
+            Універсальний селектор (*) та Комбінатори
+            Універсальний селектор (*), комбінатори (>, +, ~)
+            та псевдоклас :not() мають специфічність 0.
+            Вони не впливають на підрахунок.
+            Приклад: div > p має специфічність (0, 0, 0, 2)
+            .
+            Псевдоклас :not()
+            Сам по собі :not() не додає специфічності, але він переймає специфічність селекторів,
+            які знаходяться всередині нього.
+            Приклад: div:not(.special) має специфічність (0, 0, 1, 1) (1 клас + 1 елемент).
+            .
+            Псевдокласи :is() та :where()
+            :is(): Бере специфічність найбільш специфічного селектора в його аргументах.
+            Приклад: :is(#id-test, .class-test) матиме специфічність (0, 1, 0, 0)
+            (специфічність #id-test).
+            :where(): Завжди має нульову специфічність (0, 0, 0, 0).
+            Це корисно для створення стилів, які легко перевизначити.
+            .
+            4. Вплив !importantКлючове слово !important є спеціальним винятком із правил
+            специфічності і його слід використовувати дуже рідко.!important ігнорує всі попередні
+            розрахунки специфічності.Правило з !important матиме пріоритет над будь-яким іншим правилом
+            (включаючи ID-селектори та інлайн-стилі), яке його не містить.
+            Конфлікти з !important: Якщо два правила містять !important, перемагає те, що має вищу початкову специфічність.
+            Якщо специфічність однакова, перемагає правило, оголошене пізніше у коді.
+            Рекомендація: Уникайте використання !important, оскільки він ускладнює подальше налагодження та підтримку CSS-коду.
+            Використовуйте його лише як крайній захід, наприклад, для тимчасових утилітарних класів.
+            .
+            5. Правило Тибрець (Tie-breaker)
+            Якщо два селектори мають абсолютно однакову специфічність, застосовується правило послідовності:
+            Перемагає правило, яке було оголошено пізніше в таблиці стилів.
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <h1>!DOCTYPE html</h1>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+  </footer>
+  <script>
+    function formatCodeElements() {
+      const codeElements = document.querySelectorAll('code.view-as-code');
+      codeElements.forEach(codeElement => {
+        let htmlContent = codeElement.innerHTML;
+        const lines = htmlContent.split('\n');
+        let minIndent = Infinity;
+        lines.slice(1, -1).forEach(line => {
+          if (line.trim().length > 0) {
+            const leadingSpaces = line.search(/\S/);
+            if (leadingSpaces !== -1) {
+              minIndent = Math.min(minIndent, leadingSpaces);
+            }
+          }
+        });
 
-  </body>
+
+        if (minIndent !== Infinity && minIndent > 0) {
+          const indentRegex = new RegExp(`^\\s{${minIndent}}`, 'gm');
+          htmlContent = htmlContent.replace(indentRegex, '');
+        }
+
+
+
+        let escaped = htmlContent
+          .replace(/&(?!(?:amp|lt|gt|quot|#39);)/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+
+        codeElement.innerHTML = escaped.trim();
+
+        if (!codeElement.style.whiteSpace) {
+          codeElement.style.whiteSpace = 'pre-wrap';
+        }
+      });
+
+      if (window.hljs) {
+        hljs.highlightAll();
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', formatCodeElements);
+    } else {
+      formatCodeElements();
+    }
+  </script>
+</body>
+
 </html>
