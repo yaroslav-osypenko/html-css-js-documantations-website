@@ -41,14 +41,35 @@
             <li class="navigation-item">
               <details>
                 <summary>
-                  <span>Звернення по класам</span>
+                  <span>Звернення до елементів</span>
                 </summary>
                 <ul>
                   <li class="navigation-item navigation-item-inner">
-                    <a href="#" class="navigation-link"></a>
+                    <a href="#po-id" class="navigation-link">По id</a>
                   </li>
                   <li class="navigation-item navigation-item-inner">
-                    <a href="#" class="navigation-link"></a>
+                    <a href="#" class="navigation-link">Селектор по атрибуту</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#" class="navigation-link">Вибіркою по атрмбутам</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#" class="navigation-link">Селектор *</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#" class="navigation-link">Звернення по вложеності</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#" class="navigation-link">Декілька обєктів одночасно</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#" class="navigation-link">До обєкта з двома класами</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#" class="navigation-link">До прямого дочірнього обєкта елемента</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#" class="navigation-link">До першого наступного елемента з одинаковою вкладеністю</a>
                   </li>
                 </ul>
               </details>
@@ -135,9 +156,74 @@
             Якщо два селектори мають абсолютно однакову специфічність, застосовується правило послідовності:
             Перемагає правило, яке було оголошено пізніше в таблиці стилів.
         </code></pre>
+
+      </div>
+      <div class="learn-html-block" id="po-id">
+        <div class="learn-html-desription">
+          <p>
+            Звернення до обєктів в css може відбуватись різними способами.
+            Розглянемо всі приклади та способи вибірки елементів HTML в CSS
+            Звернення до елемента по ID
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <p id="for-id-example">Example</p>
+          <style>
+            #for-id-example {
+              color: red;
+            }
+          </style>
+        </code></pre>
         <span class="example">Example:</span>
         <div class="learn-html-example">
-          <h1>!DOCTYPE html</h1>
+          <p id="for-id-example-">Example</p>
+          <style>
+            #for-id-example- {
+              color: red;
+            }
+          </style>
+        </div>
+      </div>
+      <div class="learn-html-block" id="for-atribute">
+        <div class="learn-html-desription">
+          <p>
+             Звернення по атрибуту - в обєктів html можуть бути різні атрибути. По них
+             ми можемо звернутись до обєктів які мають такі ж атрибути.
+             Розглянемо це на прикладі
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <input type="text">
+          <input type="number" placeholder="Возраст.">
+
+          <style>
+            [type="text"] {
+              border: 1px solid red;
+            }
+            [type="number"] {
+              border: 1px solid;
+            }
+            [placeholder] {
+              border: 1px solid;
+            }
+          </style>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <input type="text">
+          <input type="number" placeholder="Вік">
+
+          <style>
+            [type="text"] {
+              border: 1px solid red;
+            }
+            [type="number"] {
+              border: 1px solid red;
+            }
+            [placeholder] {
+              color: darkblue;
+            }
+          </style>
         </div>
       </div>
     </section>
