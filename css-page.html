@@ -63,13 +63,16 @@
                     <a href="#many-select" class="navigation-link">Декілька обєктів одночасно</a>
                   </li>
                   <li class="navigation-item navigation-item-inner">
-                    <a href="#" class="navigation-link">До обєкта з двома класами</a>
+                    <a href="#select-with-plus-1-class" class="navigation-link">До обєкта з двома класами</a>
                   </li>
                   <li class="navigation-item navigation-item-inner">
-                    <a href="#" class="navigation-link">До прямого дочірнього обєкта елемента</a>
+                    <a href="#select-douther-element-first-lvl" class="navigation-link">До прямого дочірнього обєкта елемента</a>
                   </li>
                   <li class="navigation-item navigation-item-inner">
-                    <a href="#" class="navigation-link">До першого наступного елемента з одинаковою вкладеністю</a>
+                    <a href="#select-next-element-with-same-lvl" class="navigation-link">До першого наступного елемента з одинаковою вкладеністю</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#select-next-elements-with-same-classes" class="navigation-link">До елементів на одному рівні вкладеності з такими ж класами</a>
                   </li>
                 </ul>
               </details>
@@ -430,7 +433,7 @@
           <h1>Небо</h1>
           <h2>Небо</h2>
           <h3>Небо</h3>
-
+          .
           <style>
             h1,
             h2,
@@ -440,6 +443,109 @@
             }
 
           </style>
+        </code></pre>
+<!--        <span class="example">Example:</span>-->
+<!--        <div class="learn-html-example">-->
+
+<!--        </div>-->
+      </div>
+      <div class="learn-html-block" id="select-with-plus-1-class">
+        <div class="learn-html-desription">
+          <p>
+            Звернення до обєктів які мають 2 або більше класи. Тобто може бути декілька обєктів з однаковим класом
+            Але в якогось із них може бути ще один клас. І щоб звернутись саме до обєкта який має ще один клас окрім стандартних
+            потрібно прописати наступну конструкцію
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <a href="" class="under-footer"></a>
+          <a href="" class="under-footer footer"></a>
+
+          <style>
+            .under-footer.footer {
+              background-color: yellow;
+            }
+          </style>
+        </code></pre>
+<!--        <span class="example">Example:</span>-->
+<!--        <div class="learn-html-example">-->
+
+<!--        </div>-->
+      </div>
+      <div class="learn-html-block" id="select-douther-element-first-lvl">
+        <div class="learn-html-desription">
+          <p>
+            Щоб звернутись до прямого дочірнього елемнту обєкта, використовується наступна конструкція.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <section>
+            <h2>Елемент до якого звертаємось</h2>
+            <div>
+              <h2>Елемент до якого не звертаємось</h2>
+            </div>
+          </section>
+
+          <style>
+            /* Тільки безпосередні діти section */
+            section > h2 {
+              background-color: red;
+            }
+          </style>
+
+        </code></pre>
+<!--        <span class="example">Example:</span>-->
+<!--        <div class="learn-html-example">-->
+
+<!--        </div>-->
+      </div>
+      <div class="learn-html-block" id="select-next-element-with-same-lvl">
+        <div class="learn-html-desription">
+          <p>
+            Якщо потрібно звернутись до наступного елемента на одному рівні вложеності,
+            використовуємо + між класами.
+            Покраситься елемент до якого звертались та перший наступний елемент.
+            Приклад:
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <div class="container"></div>
+          <p class="captuer"></p>
+          <p class="captuer"></p>
+          <p class="captuer"></p>
+
+          <style>
+            .container + .captuer {
+              background-color: wheat;
+            }
+          </style>
+
+        </code></pre>
+<!--        <span class="example">Example:</span>-->
+<!--        <div class="learn-html-example">-->
+
+<!--        </div>-->
+      </div>
+      <div class="learn-html-block" id="select-next-elements-with-same-classes">
+        <div class="learn-html-desription">
+          <p>
+            Якщо потрібно звернутись до наступних елементів на одному рівні вкладеності,
+            використовуємо + між класами.
+            Покрасяться всі елементи на одному рівні вкладеності які йдуть наступними та мають однакові класи
+            Приклад:
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <div class="container"></div>
+          <p class="captuer"></p>
+          <p class="captuer"></p>
+          <p class="captuer"></p>
+          <style>
+            .container ~ .captuer {
+              background-color: wheat;
+            }
+          </style>
+
         </code></pre>
 <!--        <span class="example">Example:</span>-->
 <!--        <div class="learn-html-example">-->
