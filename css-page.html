@@ -36,7 +36,7 @@
           <span>Навігація</span>
           <ul class="navigation-list">
             <li class="navigation-item navigation-item-inner">
-              <a href="#" class="navigation-link">Специфічність CSS</a>
+              <a href="#specification" class="navigation-link">Специфічність CSS</a>
             </li>
             <li class="navigation-item">
               <details>
@@ -48,19 +48,19 @@
                     <a href="#po-id" class="navigation-link">По id</a>
                   </li>
                   <li class="navigation-item navigation-item-inner">
-                    <a href="#" class="navigation-link">Селектор по атрибуту</a>
+                    <a href="#for-atribute" class="navigation-link">Селектор по атрибуту</a>
                   </li>
                   <li class="navigation-item navigation-item-inner">
-                    <a href="#" class="navigation-link">Вибіркою по атрмбутам</a>
+                    <a href="#list-in-atribute" class="navigation-link">Вибіркою по атрмбутам</a>
                   </li>
                   <li class="navigation-item navigation-item-inner">
-                    <a href="#" class="navigation-link">Селектор *</a>
+                    <a href="#selector-with-star" class="navigation-link">Селектор *</a>
                   </li>
                   <li class="navigation-item navigation-item-inner">
-                    <a href="#" class="navigation-link">Звернення по вложеності</a>
+                    <a href="#selector-po-wlozh" class="navigation-link">Звернення по вложеності</a>
                   </li>
                   <li class="navigation-item navigation-item-inner">
-                    <a href="#" class="navigation-link">Декілька обєктів одночасно</a>
+                    <a href="#many-select" class="navigation-link">Декілька обєктів одночасно</a>
                   </li>
                   <li class="navigation-item navigation-item-inner">
                     <a href="#" class="navigation-link">До обєкта з двома класами</a>
@@ -156,7 +156,6 @@
             Якщо два селектори мають абсолютно однакову специфічність, застосовується правило послідовності:
             Перемагає правило, яке було оголошено пізніше в таблиці стилів.
         </code></pre>
-
       </div>
       <div class="learn-html-block" id="po-id">
         <div class="learn-html-desription">
@@ -195,7 +194,6 @@
         <pre><code class="language-html view-as-code learn-html-code">
           <input type="text">
           <input type="number" placeholder="Возраст.">
-
           <style>
             [type="text"] {
               border: 1px solid red;
@@ -212,7 +210,6 @@
         <div class="learn-html-example">
           <input type="text">
           <input type="number" placeholder="Вік">
-
           <style>
             [type="text"] {
               border: 1px solid red;
@@ -225,6 +222,229 @@
             }
           </style>
         </div>
+      </div>
+      <div class="learn-html-block" id="list-in-atribute">
+        <div class="learn-html-desription">
+          <p>
+            Звернення по вибірці значень з атрибуту.
+            Є декілька варіантів використання і кожен працює по різному. <br>
+            <br>
+            [href*="hh.ua"] - звертаємось до всіх обєктів, які мають в собі hh.ua, навіть якщо
+            вони безпосередньо містять багато інших символів, якщо в їхній вибірці є hh.ua
+            вони підпадуть під селектор. <br> <br>
+            [href^="https"] - Використовуючи вибірку ^= ми вибираємо елементи з атрибутом href які починаються на https
+            <br> <br>
+            [href$=".ua"] - Вибираэмо елементи які закінчуються на .ua <br> <br>
+            [alt~="кіт"] - По аналогії з з виборкою *= де ми шукаємо певні не відокремлені символи в атрибутах
+            Можна також шукати окремі слова в атрибутах. Під вибірку потрпалять атрибути в яких є відокремлене слово кіт
+            <br> <br>
+            [class|="warning"] - Також можна вибрати тільки по слові, по якому починається клас, і далі іде дефіс, або
+            слово одразу закінчується і містить тільки це слово.
+            <br> <br>
+            [class*="cat" i] - Атрибут i в кінці буде відповідати за ігнорування регістру в вибірці.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <a href="hh.ua"></a>
+          <a href="https://hh.ua"></a>
+
+          <style>
+            [href*="hh.ua"] {
+              background-color: red;
+            }
+          </style>
+          .
+          <a href="https://ua"></a>
+          <a href="https://ua.com"></a>
+
+          <style>
+            [href^="https"] {
+              background-color: red;
+            }
+          </style>
+          .
+          <a href="https://google.ua"></a>
+          <a href="https://google.pl"></a>
+          <a href="https://google.fr"></a>
+          <style>
+            [href$=".ua"] {
+              background-color: yellow;
+            }
+            [href$=".pl"] {
+              background-color: white;
+            }
+            [href$=".fr"] {
+              background-color: blue;
+            }
+          </style>
+          .
+          <img src="image/alt" alt="кіт некіт">
+          <style>
+            [alt~="кіт"] {
+              background-color: yellow;
+            }
+          </style>
+          .
+          <a class="warning" href=""></a>
+          <a class="warnings" href=""></a>
+          <a class="warning-link" href=""></a>
+
+          <style>
+            [class|="warning"] {
+              background-color: red;
+            }
+          </style>
+          .
+          <a class="cat" href=""></a>
+          <a class="CAT" href=""></a>
+
+          <style>
+            [class*="cat" i] {
+              background-color: blue;
+            }
+          </style>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <a href="hh.ua">Google</a>
+          <a href="https://hh.ua">Google</a>
+
+          <style>
+            [href*="hh.ua"] {
+              background-color: red;
+            }
+          </style>
+          .
+          <a href="https://ua">Google</a>
+          <a href="https://ua.com">Google</a>
+
+          <style>
+            [href^="https"] {
+              background-color: red;
+            }
+          </style>
+          .
+          <a href="https://google.ua">Google</a>
+          <a href="https://google.pl">Google</a>
+          <a href="https://google.fr">Google</a>
+          <style>
+            [href$=".ua"] {
+              background-color: yellow;
+            }
+            [href$=".pl"] {
+              background-color: white;
+            }
+            [href$=".fr"] {
+              background-color: blue;
+            }
+          </style>
+          .
+          <img src="image/alt" alt="кіт некіт">
+          <style>
+            [alt~="кіт"] {
+              background-color: yellow;
+            }
+          </style>
+          .
+          <a class="warning" href="">Google</a>
+          <a class="warnings" href="">Google</a>
+          <a class="warning-link" href="">Google</a>
+
+          <style>
+            [class|="warning"] {
+              background-color: red;
+            }
+          </style>
+          .
+          <a class="cat" href="">Google</a>
+          <a class="CAT" href="">Google</a>
+
+          <style>
+            [class*="cat" i] {
+              background-color: blue;
+            }
+          </style>
+        </div>
+      </div>
+      <div class="learn-html-block" id="selector-with-star">
+        <div class="learn-html-desription">
+          <p>
+            Селектор *. Задає всім елемнтам на сторінці (окрім бефор і афтер) якийсь стиль
+            Часто використовується для обнулення стилів.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <style>
+            * {
+              font-family: Arial, Helvetica, sans-serif;
+            }
+          </style>
+        </code></pre>
+<!--        <span class="example">Example:</span>-->
+<!--        <div class="learn-html-example">-->
+<!--         -->
+<!--        </div>-->
+      </div>
+      <div class="learn-html-block" id="selector-po-wlozh">
+        <div class="learn-html-desription">
+          <p>
+            Можна звертатись до елементів в середині інших елементів.
+            Конкретний приклад:
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <p>
+            <a href="">
+              <span></span>
+            </a>
+          </p>
+
+          Щоб звернутись до ссилки в середині параграфа можна прописати:
+          <style>
+            p a {
+              background-color: red;
+            }
+          </style>
+          .
+          Щоб звернутись до спана ще глибше, можна використати
+          .
+          <style>
+            p a span {
+              background-color: blue;
+            }
+          </style>
+        </code></pre>
+<!--        <span class="example">Example:</span>-->
+<!--        <div class="learn-html-example">-->
+
+<!--        </div>-->
+      </div>
+      <div class="learn-html-block" id="many-select">
+        <div class="learn-html-desription">
+          <p>
+            Звернення до декількох елементів одночасно
+            Приклад:
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <h1>Небо</h1>
+          <h2>Небо</h2>
+          <h3>Небо</h3>
+
+          <style>
+            h1,
+            h2,
+            h3 {
+              background-color: black;
+              color: wheat;
+            }
+
+          </style>
+        </code></pre>
+<!--        <span class="example">Example:</span>-->
+<!--        <div class="learn-html-example">-->
+
+<!--        </div>-->
       </div>
     </section>
   </main>
