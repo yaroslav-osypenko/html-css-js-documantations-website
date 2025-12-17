@@ -81,6 +81,12 @@
               <a href="#display-every" class="navigation-link">Властивість display</a>
             </li>
             <li class="navigation-item">
+              <a href="#display-flex" class="navigation-link">Властивість - display: flex</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">Властивість - display: grid</a>
+            </li>
+            <li class="navigation-item">
               <a href="#" class="navigation-link"></a>
             </li>
           </ul>
@@ -615,6 +621,63 @@
               background-color: gray;
               color: brown;
               height: 100px;
+            }
+          </style>
+        </div>
+      </div>
+      <div class="learn-html-block" id="display-flex">
+        <div class="learn-html-desription">
+          <p>
+            display: flex (Flexbox) <br>
+            Суть: Одномірне макетування (контроль або по горизонталі, або по вертикалі).
+            <br>
+            Для чого: Ідеально підходить для вирівнювання елементів у рядок, центрування вмісту,
+            розподілу простору між кнопками меню. Це зараз "золотий стандарт" для верстки компонентів.
+            При заданні боксу display: flex, елемент стане блочним, а елементи всередині нього строчними.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <div class="container-example-display-flex">
+            <div class="example-display-flex">Block-inside</div>
+            <div class="example-display-flex">Block-inside</div>
+            <div class="example-display-flex">Block-inside</div>
+          </div>
+          <div class="container-example-display-flex">
+            <div class="example-display-flex">Block-inside</div>
+            <div class="example-display-flex">Block-inside</div>
+            <div class="example-display-flex">Block-inside</div>
+          </div>
+          <style>
+            .container-example-display-flex {
+              display: flex;
+            }
+            .container-example-display-flex .example-display-flex {
+              border: 1px solid black;
+              color: brown;
+              background-color: gray;
+            }
+          </style>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <div class="container-example-display-flex">
+            <div class="example-display-flex">Block-inside</div>
+            <div class="example-display-flex">Block-inside</div>
+            <div class="example-display-flex">Block-inside</div>
+          </div>
+          <div class="container-example-display-flex">
+            <div class="example-display-flex">Block-inside</div>
+            <div class="example-display-flex">Block-inside</div>
+            <div class="example-display-flex">Block-inside</div>
+          </div>
+          <style>
+            .container-example-display-flex {
+              display: flex;
+            }
+            .container-example-display-flex .example-display-flex {
+              border: 1px solid black;
+              color: brown;
+              background-color: gray;
             }
           </style>
         </div>
