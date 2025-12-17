@@ -78,6 +78,9 @@
               </details>
             </li>
             <li class="navigation-item">
+              <a href="#display-every" class="navigation-link">Властивість display</a>
+            </li>
+            <li class="navigation-item">
               <a href="#" class="navigation-link"></a>
             </li>
           </ul>
@@ -551,6 +554,70 @@
 <!--        <div class="learn-html-example">-->
 
 <!--        </div>-->
+      </div>
+      <div class="learn-html-block" id="display-every">
+        <div class="learn-html-desription">
+          <p>
+            Свойство display — це, мабуть, найважливіший інструмент у CSS. Воно визначає "правила гри"
+            для елемента: як він виглядатиме, як займатиме простір і як взаємодіятиме із сусідніми елементами.
+            <br> <br>
+            display: block (Блоковий) <br>
+            Поведінка: Елемент займає всю доступну ширину (розтягується від краю до краю) і завжди починається з нового рядка.
+            <br>
+            Особливості: Можна задавати ширину (width) та висоту (height). Відступи (margin, padding) працюють з усіх боків.
+            <br>
+            Приклади за замовчуванням: div, p, h1, section. <br> <br>
+            display: inline (Рядковий) <br>
+            Поведінка: Елемент займає лише стільки місця, скільки в ньому є контенту. Він не переноситься на новий рядок, а йде в рядок із текстом.
+            <br>
+            Особливості: Ширина та висота ігноруються. Вертикальні відступи (margin-top/bottom) зазвичай не працюють або не відштовхують сусідні елементи.
+            <br>
+            Приклади за замовчуванням: span, a, b. <br> <br>
+            display: inline-block (Рядково-блоковий)
+            Поведінка: Гібрид. Елемент стоїть у рядку (як inline), але ви можете керувати його розмірами та відступами (як у block).
+            <br>
+            Використання: Часто використовується для кнопок, іконок або карток, що мають стояти поруч.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <style>
+            .next {
+              display: block;
+              display: inline;
+              display: inline-block;
+            }
+          </style>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <div class="container-example-display">
+            <div class="example-display1">Block</div>
+            <div class="example-display2">Inline</div>
+            <div class="example-display3">inline-block</div>
+          </div>
+          <style>
+
+            .example-display1 {
+              border: 1px solid black;
+              background-color: gray;
+              color: brown;
+              margin-bottom: 5px;
+            }
+            .example-display2 {
+              display: inline;
+              border: 1px solid black;
+              background-color: gray;
+              color: brown;
+            }
+            .example-display3 {
+              display: inline-block;
+              border: 1px solid black;
+              background-color: gray;
+              color: brown;
+              height: 100px;
+            }
+          </style>
+        </div>
       </div>
     </section>
   </main>
