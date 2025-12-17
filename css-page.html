@@ -81,7 +81,46 @@
               <a href="#display-every" class="navigation-link">Властивість display</a>
             </li>
             <li class="navigation-item">
-              <a href="#display-flex" class="navigation-link">Властивість - display: flex</a>
+              <details>
+                <summary>
+                  <span>Властивість - display: flex та похідні</span>
+                </summary>
+                <ul>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#display-flex" class="navigation-link">Властивіть display: flex</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#flex-direction" class="navigation-link">Властивість flex-direction</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#flex-wrap" class="navigation-link">Властивість flex-wrap</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#flex-grow" class="navigation-link">Властивість flex-grow</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#flex-basis" class="navigation-link">Властивість flex-basis</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#flex-shrink" class="navigation-link">Властивість flex-shrink</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#flex-grow-basis-shrink" class="navigation-link">Узагальнене - flex</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#order" class="navigation-link">Властивість - order</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#justify-content-display-flex" class="navigation-link">Властивість - justify-content</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#align-items-display-flex" class="navigation-link">Властивість - align-items</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
+                    <a href="#display-gap-column-gap-row-gap" class="navigation-link">Властивість - gap/column-gap/row-gap</a>
+                  </li>
+                </ul>
+              </details>
             </li>
             <li class="navigation-item">
               <a href="#" class="navigation-link">Властивість - display: grid</a>
@@ -583,6 +622,9 @@
             Поведінка: Гібрид. Елемент стоїть у рядку (як inline), але ви можете керувати його розмірами та відступами (як у block).
             <br>
             Використання: Часто використовується для кнопок, іконок або карток, що мають стояти поруч.
+            <br>
+            display: none - використовується для відключення елемента.
+            Елемент перестає бути наявним, не відображається на макеті взагалі.
           </p>
         </div>
         <pre><code class="language-html view-as-code learn-html-code">
@@ -591,6 +633,7 @@
               display: block;
               display: inline;
               display: inline-block;
+              display: none;
             }
           </style>
         </code></pre>
@@ -634,6 +677,9 @@
             Для чого: Ідеально підходить для вирівнювання елементів у рядок, центрування вмісту,
             розподілу простору між кнопками меню. Це зараз "золотий стандарт" для верстки компонентів.
             При заданні боксу display: flex, елемент стане блочним, а елементи всередині нього строчними.
+            <br> <br>
+            display: inline-flex - При задані inline-flex, сам елемент якому задано стане строчним, і буде підлаштовуватись
+            під ширину та висоту елементів всередині нього
           </p>
         </div>
         <pre><code class="language-html view-as-code learn-html-code">
@@ -680,6 +726,146 @@
               background-color: gray;
             }
           </style>
+        </div>
+      </div>
+      <div class="learn-html-block" id="flex-direction">
+        <div class="learn-html-desription">
+          <p>
+
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+
+        </div>
+      </div>
+      <div class="learn-html-block" id="flex-wrap">
+        <div class="learn-html-desription">
+          <p>
+
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+
+        </div>
+      </div>
+      <div class="learn-html-block" id="flex-grow">
+        <div class="learn-html-desription">
+          <p>
+
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+
+        </div>
+      </div>
+      <div class="learn-html-block" id="flex-basis">
+        <div class="learn-html-desription">
+          <p>
+
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+
+        </div>
+      </div>
+      <div class="learn-html-block" id="flex-shrink">
+        <div class="learn-html-desription">
+          <p>
+
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+
+        </div>
+      </div>
+      <div class="learn-html-block" id="flex-grow-basis-shrink">
+        <div class="learn-html-desription">
+          <p>
+
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+
+        </div>
+      </div>
+      <div class="learn-html-block" id="order">
+        <div class="learn-html-desription">
+          <p>
+
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+
+        </div>
+      </div>
+      <div class="learn-html-block" id="justify-content-display-flex">
+        <div class="learn-html-desription">
+          <p>
+
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+
+        </div>
+      </div>
+      <div class="learn-html-block" id="align-items-display-flex">
+        <div class="learn-html-desription">
+          <p>
+
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+
+        </div>
+      </div>
+      <div class="learn-html-block" id="display-gap-column-gap-row-gap">
+        <div class="learn-html-desription">
+          <p>
+
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+
         </div>
       </div>
     </section>
