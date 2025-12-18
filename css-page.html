@@ -1127,16 +1127,31 @@
       <div class="learn-html-block" id="flex-shrink">
         <div class="learn-html-desription">
           <p>
-
+            Абсолютна протиставність flex-grow.
+            flex-shrink - вказує елементу наскільки він має зжиматись відносно інших елементів.
+            За замовчуванням стоїть значення flex-shrink: 1. У всіх елементів.
+            В реальній практиці зазвичай виористовується flex-shrink: 0 - щоб
+            елементи займали стільки місця, скільки їм задано та не ігнорували
+            свої значення.
+            <br> <br>
+            grow shrink basis <br>
+            Для задання цих параметрів можна використати узагальнене значення flex
+            <br>
+            В цьому ж порядку задаються ці значення.
           </p>
         </div>
         <pre><code class="language-html view-as-code learn-html-code">
-
+          <div class="flex-shrink-element"></div>
+          <style>
+            .flex-shrink-element {
+              flex-shrink: 2;
+            }
+          </style>
         </code></pre>
-        <span class="example">Example:</span>
-        <div class="learn-html-example">
+<!--        <span class="example">Example:</span>-->
+<!--        <div class="learn-html-example">-->
 
-        </div>
+<!--        </div>-->
       </div>
       <div class="learn-html-block" id="flex-grow-basis-shrink">
         <div class="learn-html-desription">
