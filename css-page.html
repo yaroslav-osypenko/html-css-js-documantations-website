@@ -105,9 +105,6 @@
                     <a href="#flex-shrink" class="navigation-link">Властивість flex-shrink</a>
                   </li>
                   <li class="navigation-item navigation-item-inner">
-                    <a href="#flex-grow-basis-shrink" class="navigation-link">Узагальнене - flex</a>
-                  </li>
-                  <li class="navigation-item navigation-item-inner">
                     <a href="#order" class="navigation-link">Властивість - order</a>
                   </li>
                   <li class="navigation-item navigation-item-inner">
@@ -1135,8 +1132,7 @@
             свої значення.
             <br> <br>
             grow shrink basis <br>
-            Для задання цих параметрів можна використати узагальнене значення flex
-            <br>
+            Для задання цих параметрів можна використати узагальнене значення flex br
             В цьому ж порядку задаються ці значення.
           </p>
         </div>
@@ -1153,32 +1149,83 @@
 
 <!--        </div>-->
       </div>
-      <div class="learn-html-block" id="flex-grow-basis-shrink">
-        <div class="learn-html-desription">
-          <p>
-
-          </p>
-        </div>
-        <pre><code class="language-html view-as-code learn-html-code">
-
-        </code></pre>
-        <span class="example">Example:</span>
-        <div class="learn-html-example">
-
-        </div>
-      </div>
       <div class="learn-html-block" id="order">
         <div class="learn-html-desription">
           <p>
-
+            Властивість order - можливість задавати порядок елементу в флексбоксі.
+            Через значення 1 можемо помістити елемент в кінець. Через значення -1 можемо помістити
+            на початок.
+            Розглянемо це на прикладі
           </p>
         </div>
         <pre><code class="language-html view-as-code learn-html-code">
-
+          <div class="flex-order-example-container--1">
+            <div class="flex-order-example-item--1 order-1">order-1</div>
+            <div class="flex-order-example-item--1">order-2</div>
+            <div class="flex-order-example-item--1">order-3</div>
+            <div class="flex-order-example-item--1">order-4</div>
+          </div>
+          <div class="flex-order-example-container--1">
+            <div class="flex-order-example-item--1">order-1</div>
+            <div class="flex-order-example-item--1">order-2</div>
+            <div class="flex-order-example-item--1">order-3</div>
+            <div class="flex-order-example-item--1 order--1">order-4</div>
+          </div>
+          <style>
+            .flex-order-example-container--1 {
+              background-color: gray;
+              display: flex;
+              border: 1px solid black;
+            }
+            .flex-order-example-item--1 {
+              margin: 5px;
+              flex-grow: 1;
+              background-color: greenyellow;
+              border: 1px solid royalblue;
+              color: #2e5cb8;
+            }
+            .order-1 {
+              order: 1;
+            }
+            .order--1 {
+              order: -1;
+            }
+          </style>
         </code></pre>
         <span class="example">Example:</span>
         <div class="learn-html-example">
-
+          <div class="flex-order-example-container--1">
+            <div class="flex-order-example-item--1 order-1">order-1</div>
+            <div class="flex-order-example-item--1">order-2</div>
+            <div class="flex-order-example-item--1">order-3</div>
+            <div class="flex-order-example-item--1">order-4</div>
+          </div>
+          <div class="flex-order-example-container--1">
+            <div class="flex-order-example-item--1">order-1</div>
+            <div class="flex-order-example-item--1">order-2</div>
+            <div class="flex-order-example-item--1">order-3</div>
+            <div class="flex-order-example-item--1 order--1">order-4</div>
+          </div>
+          <style>
+            .flex-order-example-container--1 {
+              background-color: gray;
+              display: flex;
+              border: 1px solid black;
+            }
+            .flex-order-example-item--1 {
+              margin: 5px;
+              flex-grow: 1;
+              background-color: greenyellow;
+              border: 1px solid royalblue;
+              color: #2e5cb8;
+            }
+            .order-1 {
+              order: 1;
+            }
+            .order--1 {
+              order: -1;
+            }
+          </style>
         </div>
       </div>
       <div class="learn-html-block" id="justify-content-display-flex">
