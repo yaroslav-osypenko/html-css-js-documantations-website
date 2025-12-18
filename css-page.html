@@ -844,6 +844,11 @@
             flex-wrap: wrap, тоді елементи будуть переноситись, з ліва на право і іти в низ.
             <br>
             flex-wrap: wrap-reverse - елементи з ліва на право почнуть іти з низу і до верху.
+            <br>
+            Для цих всіх свойст є узагальнени метод flex-flow <br>
+            flex-flow: column wrap; <br>
+            або <br>
+            flex-flow: row-rewerse wrap;
           </p>
         </div>
         <pre><code class="language-html view-as-code learn-html-code">
@@ -937,15 +942,97 @@
       <div class="learn-html-block" id="flex-grow">
         <div class="learn-html-desription">
           <p>
-
+            flex-grow — це властивість, яка визначає, як елемент має розтягуватися, щоб заповнити вільне місце в контейнері.
+            <br>
+            Принцип роботи: Якщо в контейнері є зайвий простір, елементи з flex-grow > 0 ділять його між собою відповідно до своїх коефіцієнтів.
+            <br>
+            flex-grow: 0 - Значення за замовчуванням: 0 (елемент не росте). <br>
+            flex-grow: 1 - важливе значення. Якщо задати це значення всім елементам - вони розтягнуться на всю доступну їм ширину.
+            <br>
+            Якщо при цьому, задати одному із елементів, grow 2 то, він буде старатись зайняти в два рази більши ширини.
+            Але ключове слово старатись, він може цього не зробити. Тому краще задавати просто окремому одному елементу.
+            <br>
+            Пропорції: Елемент із flex-grow: 2 отримає вдвічі більше вільного місця, ніж елемент із flex-grow: 1.
           </p>
         </div>
         <pre><code class="language-html view-as-code learn-html-code">
+          <div class="flex-grow-container-example-0">
+            <div class="flex-grow-item-example-0"></div>
+          </div>
+          <div class="flex-grow-container-example-0">
+            <div class="flex-grow-item-example-1"></div>
+          </div>
+          <div class="flex-grow-container-example-0">
+            <div class="flex-grow-item-example-2"></div>
+            <div class="flex-grow-item-example-3"></div>
+          </div>
+          <style>
+            .flex-grow-container-example-0 {
+              display: flex;
+            }
+            .flex-grow-item-example-0,
+            .flex-grow-item-example-1,
+            .flex-grow-item-example-2,
+            .flex-grow-item-example-3 {
+              color: #D4C9E9;
+              background-color: gray;
+              border: 1px solid black;
+            }
 
+            .flex-grow-item-example-0 {
+              flex-grow: 0
+            /*  Значення за замовчуванням*/
+            }
+            .flex-grow-item-example-1 {
+              flex-grow: 1;
+            }
+            .flex-grow-item-example-2 {
+              flex-grow: 1;
+            }
+            .flex-grow-item-example-3 {
+              flex-grow: 2;
+            }
+          </style>
         </code></pre>
         <span class="example">Example:</span>
         <div class="learn-html-example">
-
+          <div class="flex-grow-container-example-0">
+            <div class="flex-grow-item-example-0">flex-grow: 0</div>
+          </div>
+          <div class="flex-grow-container-example-0">
+            <div class="flex-grow-item-example-1">flex-grow: 1</div>
+          </div>
+          <div class="flex-grow-container-example-0">
+            <div class="flex-grow-item-example-2">flex-grow: 1</div>
+            <div class="flex-grow-item-example-3">flex-grow: 2</div>
+          </div>
+          <style>
+            .flex-grow-container-example-0 {
+              display: flex;
+            }
+            .flex-grow-item-example-0,
+            .flex-grow-item-example-1,
+            .flex-grow-item-example-2,
+            .flex-grow-item-example-3 {
+              color: #D4C9E9;
+              background-color: gray;
+              border: 1px solid black;
+              margin-bottom: 5px;
+            }
+            .flex-grow-item-example-0 {
+              flex-grow: 0
+              /*  Значення за замовчуванням*/
+            }
+            .flex-grow-item-example-1 {
+              flex-grow: 1;
+            }
+            .flex-grow-item-example-2 {
+              flex-grow: 1;
+            }
+            .flex-grow-item-example-3 {
+              flex-grow: 2;
+            }
+          </style>
         </div>
       </div>
       <div class="learn-html-block" id="flex-basis">
