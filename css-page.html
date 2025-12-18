@@ -731,29 +731,207 @@
       <div class="learn-html-block" id="flex-direction">
         <div class="learn-html-desription">
           <p>
-
+            flex-direction - потрібне для задання направлення блокам всередині flex контейнера
+            Існує декілька значень, а саме: <br> <br>
+            flex-direction: row - це дефолтне значення, де інлайн елементи в середині флекбокса розташовуються з ліва на право,
+            <br>
+            flex-direction: row-rewerse - буде навпаки, елементи починаються з права і на ліво.
+            <br>
+            flex-direction: column, елементи вистраюються в колонку по черзі
+            <br>
+            flex-direction: column-rewerse, елементи починаються з низу і ідуть до верху.
           </p>
         </div>
         <pre><code class="language-html view-as-code learn-html-code">
-
+          <div class="flex-direction-flex-example-container-row">
+            <div class="flex-direction-flex-example-item">Item 1</div>
+            <div class="flex-direction-flex-example-item">Item 2</div>
+          </div>
+          <div class="flex-direction-flex-example-container-row-rewerse">
+            <div class="flex-direction-flex-example-item">Item 1</div>
+            <div class="flex-direction-flex-example-item">Item 2</div>
+          </div>
+          <div class="flex-direction-flex-example-container-column">
+            <div class="flex-direction-flex-example-item">Item 1</div>
+            <div class="flex-direction-flex-example-item">Item 2</div>
+          </div>
+          <div class="flex-direction-flex-example-container-column-reverse">
+            <div class="flex-direction-flex-example-item">Item 1</div>
+            <div class="flex-direction-flex-example-item">Item 2</div>
+          </div>
+          <style>
+            .flex-direction-flex-example-container-row {
+              display: flex;
+              flex-direction: row;
+              margin-bottom: 10px;
+            }
+            .flex-direction-flex-example-container-row-rewerse {
+              display: flex;
+              flex-direction: row-reverse;
+              margin-bottom: 10px;
+            }
+            .flex-direction-flex-example-container-column {
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 10px;
+            }
+            .flex-direction-flex-example-container-column-reverse {
+              display: flex;
+              flex-direction: column-reverse;
+              margin-bottom: 10px;
+            }
+            .flex-direction-flex-example-item {
+              border: 1px solid black;
+              background-color: gray;
+              color: #D4C9E9;
+            }
+          </style>
         </code></pre>
         <span class="example">Example:</span>
         <div class="learn-html-example">
-
+          <div class="flex-direction-flex-example-container-row">
+            <div class="flex-direction-flex-example-item">Item 1</div>
+            <div class="flex-direction-flex-example-item">Item 2</div>
+          </div>
+          <div class="flex-direction-flex-example-container-row-rewerse">
+            <div class="flex-direction-flex-example-item">Item 1</div>
+            <div class="flex-direction-flex-example-item">Item 2</div>
+          </div>
+          <div class="flex-direction-flex-example-container-column">
+            <div class="flex-direction-flex-example-item">Item 1</div>
+            <div class="flex-direction-flex-example-item">Item 2</div>
+          </div>
+          <div class="flex-direction-flex-example-container-column-reverse">
+            <div class="flex-direction-flex-example-item">Item 1</div>
+            <div class="flex-direction-flex-example-item">Item 2</div>
+          </div>
+          <style>
+            .flex-direction-flex-example-container-row {
+              display: flex;
+              flex-direction: row;
+              margin-bottom: 10px;
+            }
+            .flex-direction-flex-example-container-row-rewerse {
+              display: flex;
+              flex-direction: row-reverse;
+              margin-bottom: 10px;
+            }
+            .flex-direction-flex-example-container-column {
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 10px;
+            }
+            .flex-direction-flex-example-container-column-reverse {
+              display: flex;
+              flex-direction: column-reverse;
+              margin-bottom: 10px;
+            }
+            .flex-direction-flex-example-item {
+              border: 1px solid black;
+              background-color: gray;
+              color: #D4C9E9;
+            }
+          </style>
         </div>
       </div>
       <div class="learn-html-block" id="flex-wrap">
         <div class="learn-html-desription">
           <p>
-
+            flex-wrap: nowrap - дефолтне значення для флексбокса.
+            При цьому значенні навіть якщо елементи фізично не вміщаються в заданий флексові розмір, елементи в ньому не будуть переноситись
+            А почнуть зжиматись. <br>
+            Щоб цього не відбувалось потрібно прописувати елементам <br>
+            flex-wrap: wrap, тоді елементи будуть переноситись, з ліва на право і іти в низ.
+            <br>
+            flex-wrap: wrap-reverse - елементи з ліва на право почнуть іти з низу і до верху.
           </p>
         </div>
         <pre><code class="language-html view-as-code learn-html-code">
-
+          <div class="flex-wrap-wrap-example-container-nowrap">
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 1</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 2</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 3</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 4</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 5</div>
+          </div>
+          <div class="flex-wrap-wrap-example-container">
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 1</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 2</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 3</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 4</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 5</div>
+          </div>
+          <div class="flex-wrap-wrap-example-container-1">
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 1</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 2</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 3</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 4</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 5</div>
+          </div>
+          <style>
+            .flex-wrap-wrap-example-item {
+              border: 1px solid black;
+              background-color: gray;
+              color: #D4C9E9;
+            }
+            .flex-wrap-wrap-example-container-nowrap {
+              display: flex;
+              flex-wrap: nowrap;
+            }
+            .flex-wrap-wrap-example-container {
+              display: flex;
+              flex-wrap: wrap;
+            }
+            .flex-wrap-wrap-example-container-1 {
+              display: flex;
+              flex-wrap: wrap-reverse;
+            }
+          </style>
         </code></pre>
         <span class="example">Example:</span>
         <div class="learn-html-example">
-
+          <div class="flex-wrap-wrap-example-container-nowrap">
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 1</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 2</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 3</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 4</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 5</div>
+          </div>
+          <div class="flex-wrap-wrap-example-container">
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 1</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 2</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 3</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 4</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 5</div>
+          </div>
+          <div class="flex-wrap-wrap-example-container-1">
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 1</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 2</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 3</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 4</div>
+            <div class="flex-wrap-wrap-example-item">Item item item item item item 5</div>
+          </div>
+          <style>
+            .flex-wrap-wrap-example-item {
+              border: 1px solid black;
+              background-color: gray;
+              color: #D4C9E9;
+            }
+            .flex-wrap-wrap-example-container-nowrap {
+              display: flex;
+              flex-wrap: nowrap;
+              margin-bottom: 10px;
+            }
+            .flex-wrap-wrap-example-container {
+              display: flex;
+              flex-wrap: wrap;
+              margin-bottom: 10px;
+            }
+            .flex-wrap-wrap-example-container-1 {
+              display: flex;
+              flex-wrap: wrap-reverse;
+            }
+          </style>
         </div>
       </div>
       <div class="learn-html-block" id="flex-grow">
