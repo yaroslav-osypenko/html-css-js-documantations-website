@@ -1038,15 +1038,90 @@
       <div class="learn-html-block" id="flex-basis">
         <div class="learn-html-desription">
           <p>
-
+            flex-basis — це властивість, яка визначає початковий розмір елемента перед тим,
+            як він почне розтягуватися (flex-grow) або стискатися (flex-shrink).
+            <br>
+            Головне про властивість: <br>
+            Значення за замовчуванням: auto (розмір залежить від контенту або властивостей width/height).<br>
+            Що можна вказати: Будь-які одиниці довжини (px, %, em, rem) або ключові слова.
+            <br>
+            Пріоритет: Якщо вказано і width, і flex-basis, то для Flexbox пріоритет має flex-basis.
+            <br>
+            Різниця між auto та 0: <br>
+            flex-basis: auto — бере за основу розмір контенту або задану ширину.
+            <br>
+            flex-basis: 0 — ігнорує розмір контенту (вважає його нульовим), що дозволяє
+            розподіляти простір між елементами максимально рівномірно. <br>
           </p>
         </div>
         <pre><code class="language-html view-as-code learn-html-code">
+          <div class="flex-basis-row-example-container">
+            <div class="flex-basis-column-example-item">1</div>
+            <div class="flex-basis-column-example-item">2</div>
+            <div class="flex-basis-column-example-item">3</div>
+            <div class="flex-basis-column-example-item">4</div>
+          </div>
+          <div class="flex-basis-column-example-container">
+            <div class="flex-basis-column-example-item">1</div>
+            <div class="flex-basis-column-example-item">2</div>
+            <div class="flex-basis-column-example-item">3</div>
+            <div class="flex-basis-column-example-item">4</div>
+          </div>
+          <style>
+            .flex-basis-row-example-container {
+              display: flex;
+              background-color: lightblue;
+            }
+            .flex-basis-column-example-container {
+              display: flex;
+              flex-direction: column;
+              background-color: lightblue;
+            }
+            .flex-basis-column-example-item {
+              width: 50px;
+              height: 50px;
+              color: darkblue;
+              background-color: gray;
+              border: 1px solid black;
 
+              flex-basis: 50px;
+            }
+          </style>
         </code></pre>
         <span class="example">Example:</span>
         <div class="learn-html-example">
+          <div class="flex-basis-row-example-container">
+            <div class="flex-basis-column-example-item">1</div>
+            <div class="flex-basis-column-example-item">2</div>
+            <div class="flex-basis-column-example-item">3</div>
+            <div class="flex-basis-column-example-item">4</div>
+          </div>
+          <div class="flex-basis-column-example-container">
+            <div class="flex-basis-column-example-item">1</div>
+            <div class="flex-basis-column-example-item">2</div>
+            <div class="flex-basis-column-example-item">3</div>
+            <div class="flex-basis-column-example-item">4</div>
+          </div>
+          <style>
+            .flex-basis-row-example-container {
+              display: flex;
+              background-color: lightblue;
+            }
+            .flex-basis-column-example-container {
+              display: flex;
+              flex-direction: column;
+              background-color: lightblue;
+            }
+            .flex-basis-column-example-item {
+              width: 50px;
+              height: 50px;
+              color: darkblue;
+              background-color: gray;
+              border: 1px solid black;
 
+              flex-basis: 100px;
+            }
+          </style>
         </div>
       </div>
       <div class="learn-html-block" id="flex-shrink">
