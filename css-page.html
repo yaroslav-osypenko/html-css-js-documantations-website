@@ -114,6 +114,9 @@
                     <a href="#align-items-display-flex" class="navigation-link">Властивість - align-items</a>
                   </li>
                   <li class="navigation-item navigation-item-inner">
+                    <a href="#align-content-display-flex" class="navigation-link">Властивість - align-content</a>
+                  </li>
+                  <li class="navigation-item navigation-item-inner">
                     <a href="#display-gap-column-gap-row-gap" class="navigation-link">Властивість - gap/column-gap/row-gap</a>
                   </li>
                 </ul>
@@ -1231,6 +1234,153 @@
       <div class="learn-html-block" id="justify-content-display-flex">
         <div class="learn-html-desription">
           <p>
+            justify-content - вирівнювання елементів всередині flexbox по ширині.
+            <br>
+            Якщо flex-direction: row, тобто стандартне, воно буде відповідати за розміщення елементів горизонтально.
+            <br>
+            якщо flex-direction: column, відповідно, вертикально.
+            <br> <br>
+            justify-content: flex-start; - розташуються від старта флексбокса
+            <br>
+            justify-content: flex-end; - розташуються в кінці флексбокса <br>
+            justify-content: center; - розташуються по центру флексбокса <br>
+            justify-content: space-between; - відштовхнуть один одного на однакову найбільш можливу відстань
+            <br>
+            justify-content: space-around; - поділить флексбокс на стільки частин, скільки в ньому є елементів, і розташує в центрі цих частин елементи.
+            <br>
+            justify-content: space-evenly; - відстань між початком, між обєктами та в кінці буде одинаковою, тобто елементи
+            флекс бокса відштовхнуться однаково як і від себе так і від країв.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <div class="flex-justify-content-example-container-flex-start justify-example--ev">
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+          </div>
+          <div class="flex-justify-content-example-container-flex-end justify-example--ev">
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+          </div>
+          <div class="flex-justify-content-example-container-center justify-example--ev">
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+          </div>
+          <div class="flex-justify-content-example-container-space-between justify-example--ev">
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+          </div>
+          <div class="flex-justify-content-example-container-space-around justify-example--ev">
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+          </div>
+          <div class="flex-justify-content-example-container-space-evenly justify-example--ev">
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+          </div>
+          <style>
+            .justify-example--ev {
+              display: flex; background-color: #D4F7C7; border: 1px solid black; margin-bottom: 5px;
+            }
+            .flex-justify-content-example-container-flex-start {
+              justify-content: flex-start;
+            }
+            .flex-justify-content-example-container-flex-end {
+              justify-content: flex-end;
+            }
+            .flex-justify-content-example-container-center {
+              justify-content: center;
+            }
+            .flex-justify-content-example-container-space-between {
+              justify-content: space-between;
+            }
+            .flex-justify-content-example-container-space-around {
+              justify-content: space-around;
+            }
+            .flex-justify-content-example-container-space-evenly {
+              justify-content: space-evenly;
+            }
+
+            .flex-justify-content-example-item {
+              height: 50px;
+              aspect-ratio: 1;
+              background-color: greenyellow;
+              border: 1px solid gray;
+            }
+          </style>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <div class="flex-justify-content-example-container-flex-start justify-example--ev">
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+          </div>
+          <div class="flex-justify-content-example-container-flex-end justify-example--ev">
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+          </div>
+          <div class="flex-justify-content-example-container-center justify-example--ev">
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+          </div>
+          <div class="flex-justify-content-example-container-space-between justify-example--ev">
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+          </div>
+          <div class="flex-justify-content-example-container-space-around justify-example--ev">
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+          </div>
+          <div class="flex-justify-content-example-container-space-evenly justify-example--ev">
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+            <div class="flex-justify-content-example-item"></div>
+          </div>
+          <style>
+            .justify-example--ev {
+              display: flex; background-color: #D4F7C7; border: 1px solid black; margin-bottom: 5px;
+            }
+            .flex-justify-content-example-container-flex-start {
+              justify-content: flex-start;
+            }
+            .flex-justify-content-example-container-flex-end {
+              justify-content: flex-end;
+            }
+            .flex-justify-content-example-container-center {
+              justify-content: center;
+            }
+            .flex-justify-content-example-container-space-between {
+              justify-content: space-between;
+            }
+            .flex-justify-content-example-container-space-around {
+              justify-content: space-around;
+            }
+            .flex-justify-content-example-container-space-evenly {
+              justify-content: space-evenly;
+            }
+
+            .flex-justify-content-example-item {
+              height: 50px;
+              aspect-ratio: 1;
+              background-color: greenyellow;
+              border: 1px solid gray;
+            }
+          </style>
+        </div>
+      </div>
+      <div class="learn-html-block" id="align-items-display-flex">
+        <div class="learn-html-desription">
+          <p>
 
           </p>
         </div>
@@ -1242,7 +1392,7 @@
 
         </div>
       </div>
-      <div class="learn-html-block" id="align-items-display-flex">
+      <div class="learn-html-block" id="align-content-display-flex">
         <div class="learn-html-desription">
           <p>
 
