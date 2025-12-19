@@ -1381,15 +1381,127 @@
       <div class="learn-html-block" id="align-items-display-flex">
         <div class="learn-html-desription">
           <p>
-
+            align-items - вирівнювання по висоті елементів флексбокса. <br>
+            Дефолтне значення align-items: stretch; <br>
+            Робить так що елементи флексбокса розтягуються на всю можливу їм висоту (якщо самим елементам вона не задана.)
+            <br> <br>
+            align-items: flex-start; / start;  - розташування по вертикалі спочатку
+            <br>
+            align-items: flex-end; / end; - розташування по вертикалі в кінці
+            <br>
+            align-items: center; - розташування по вертикальні по центрі. <br>
+            align-items: baseline; - розташовування по низу першої строчки тексту.
+            <br>
+            Конкретніше - в першого елемента, проводиться умовна лінія, по низу першої строчки текста в елементі. Всі наступні
+            елементи, порівняються і розмістяться своїми першими строчками тексту на цій лінії
           </p>
         </div>
         <pre><code class="language-html view-as-code learn-html-code">
+          <div class="flex-align-example-container-flex-start align-items-example-ev">
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+          </div>
+          <div class="flex-align-example-container-flex-end align-items-example-ev">
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+          </div>
+          <div class="flex-align-example-container-center align-items-example-ev">
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+          </div>
+          <div class="flex-align-example-container-baseline align-items-example-ev">
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+          </div>
+          <style>
+            .align-items-example-ev {
+              display: flex; background-color: #D4F7C7; border: 1px solid black; margin-bottom: 5px; height: 50px;
+            }
+            .flex-align-example-container-flex-start {
+              align-items: flex-start;
+            }
+            .flex-align-example-container-flex-end {
+              align-items: flex-end;
+            }
+            .flex-align-example-container-center {
+              align-items: center;
+            }
+            .flex-align-example-container-baseline {
+              align-items: baseline;
+            }
+            .flex-align-example-item {
+              height: 30px;
+              aspect-ratio: 1;
+              background-color: greenyellow;
+              border: 1px solid black;
+            }
 
+          </style>
         </code></pre>
         <span class="example">Example:</span>
         <div class="learn-html-example">
-
+          <div class="flex-align-example-container-flex-start align-items-example-ev">
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+          </div>
+          <div class="flex-align-example-container-flex-end align-items-example-ev">
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+          </div>
+          <div class="flex-align-example-container-center align-items-example-ev">
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+            <div class="flex-align-example-item"></div>
+          </div>
+          <div class="flex-align-example-container-baseline align-items-example-ev">
+            <div class="flex-align-example-item flex-align-example-item--ev">Текст</div>
+            <div class="flex-align-example-item">Текст</div>
+            <div class="flex-align-example-item">Текст</div>
+            <div class="flex-align-example-item">Текст</div>
+          </div>
+          <style>
+            .align-items-example-ev {
+              display: flex; background-color: #D4F7C7; border: 1px solid black; margin-bottom: 5px; height: 100px;
+            }
+            .flex-align-example-container-flex-start {
+              align-items: flex-start;
+            }
+            .flex-align-example-container-flex-end {
+              align-items: flex-end;
+            }
+            .flex-align-example-container-center {
+              align-items: center;
+            }
+            .flex-align-example-container-baseline {
+              justify-content: center;
+              align-items: baseline;
+            }
+            .flex-align-example-item {
+              height: 30px;
+              aspect-ratio: 1;
+              background-color: greenyellow;
+              border: 1px solid black;
+            }
+            .flex-align-example-item--ev {
+              display: flex;
+              align-items: center;
+              font-size: 20px;
+              height: 50px;
+            }
+          </style>
         </div>
       </div>
       <div class="learn-html-block" id="align-content-display-flex">
