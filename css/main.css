@@ -325,6 +325,10 @@ pre {
   flex-direction: column;
 }
 
+.learn-html-example-align-items {
+  justify-content: center;
+}
+
 details ul{
   padding: 8px;
 }

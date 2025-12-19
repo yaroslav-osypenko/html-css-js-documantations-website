@@ -1507,15 +1507,189 @@
       <div class="learn-html-block" id="align-content-display-flex">
         <div class="learn-html-desription">
           <p>
+            align-content - упрвління не окремими елементами, а лініями контента.
+            <br>
+            align-content: space-between - перший рядок, залишиться з верху, а другий рядок переміститься в низ
+            <br>
+            align-content: stretch - ряди будуть розтягуватись одинаково, і будуть займати одинаковий простір.
+            <br>
+            align-content: flex-start - всі ряди розташуються з початку. <br>
+            align-content: flex-end - розтагуються в низу <br>
+            align-content: center - розташуються по центрі <br>
+            align-content: space-around; - поділить флексбокс на стільки частин, скільки в ньому є рядів,
+            і розташує по їх центру елементи. <br>
+            align-content: space-evenly; - відстань між початком, між рядами та в кінці буде одинаковою, тобто ряди
+            флекс бокса відштовхнуться однаково як і від себе так і від країв.
+            <br>
 
+            align-content управляє поперечними рядами від основної осі. По дефолту flex-direction: row, поперечна йому column, тобто по вертикалі керує рядами
+            flex-direction: column - будемо розкидати ряди в право та ліво, а не вверх та вниз, тобто паралельно до column
           </p>
         </div>
         <pre><code class="language-html view-as-code learn-html-code">
-
+          <div class="flex-align-content-example-container flex-align-content-container-space-between">
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+          </div>
+          <div class="flex-align-content-example-container flex-align-content-container-stretch">
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+          </div>
+          <div class="flex-align-content-example-container flex-align-content-container-flex-start">
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+          </div>
+          <div class="flex-align-content-example-container flex-align-content-container-flex-end">
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+          </div>
+          <div class="flex-align-content-example-container flex-align-content-container-center">
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+          </div>
+          <div class="flex-align-content-example-container flex-align-content-container-space-around">
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+          </div>
+          <div class="flex-align-content-example-container flex-align-content-container-space-evenly">
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+          </div>
+          <style>
+            .flex-align-content-item {
+              min-width: 180px;
+              background-color: #2e5cb8;
+              border: 1px solid black;
+              /*flex-wrap: wrap;*/
+            }
+            .flex-align-content-example-container {
+              flex-wrap: wrap;
+              display: flex;
+              max-width: 400px;
+              background-color: #B4D5E0;
+              border: 1px solid black;
+              height: 100px;
+              margin-bottom: 10px;
+            }
+            .flex-align-content-container-space-between {
+              align-content: space-between;
+            }
+            .flex-align-content-container-stretch {
+              align-content: stretch;
+            }
+            .flex-align-content-container-flex-start {
+              align-content: flex-start;
+            }
+            .flex-align-content-container-flex-end {
+              align-content: flex-end;
+            }
+            .flex-align-content-container-center {
+              align-content: center;
+            }
+            .flex-align-content-container-space-around {
+              align-content: space-around;
+            }
+            .flex-align-content-container-space-evenly {
+              align-content: space-evenly;
+            }
+          </style>
         </code></pre>
         <span class="example">Example:</span>
-        <div class="learn-html-example">
-
+        <div class="learn-html-example learn-html-example-align-items">
+          <div class="flex-align-content-example-container flex-align-content-container-space-between">
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+          </div>
+          <div class="flex-align-content-example-container flex-align-content-container-stretch">
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+          </div>
+          <div class="flex-align-content-example-container flex-align-content-container-flex-start">
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+          </div>
+          <div class="flex-align-content-example-container flex-align-content-container-flex-end">
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+          </div>
+          <div class="flex-align-content-example-container flex-align-content-container-center">
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+          </div>
+          <div class="flex-align-content-example-container flex-align-content-container-space-around">
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+          </div>
+          <div class="flex-align-content-example-container flex-align-content-container-space-evenly">
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+            <div class="flex-align-content-item">item</div>
+          </div>
+          <style>
+            .flex-align-content-item {
+              min-width: 180px;
+              background-color: #2e5cb8;
+              border: 1px solid black;
+              /*flex-wrap: wrap;*/
+            }
+            .flex-align-content-example-container {
+              flex-wrap: wrap;
+              display: flex;
+              max-width: 400px;
+              background-color: #B4D5E0;
+              border: 1px solid black;
+              height: 100px;
+              margin-bottom: 10px;
+            }
+            .flex-align-content-container-space-between {
+              align-content: space-between;
+            }
+            .flex-align-content-container-stretch {
+              align-content: stretch;
+            }
+            .flex-align-content-container-flex-start {
+              align-content: flex-start;
+            }
+            .flex-align-content-container-flex-end {
+              align-content: flex-end;
+            }
+            .flex-align-content-container-center {
+              align-content: center;
+            }
+            .flex-align-content-container-space-around {
+              align-content: space-around;
+            }
+            .flex-align-content-container-space-evenly {
+              align-content: space-evenly;
+            }
+          </style>
         </div>
       </div>
       <div class="learn-html-block" id="display-gap-column-gap-row-gap">
