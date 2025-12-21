@@ -1695,15 +1695,114 @@
       <div class="learn-html-block" id="display-gap-column-gap-row-gap">
         <div class="learn-html-desription">
           <p>
-
+            gap - керування відступами між елементами флексбокса
+            gap: 50px; - задасть відступ між елементами флексів вертикально і горизонтально по 50 пікселів.
+            column-gap: 50px; - буде заданий відступ між колонками (горизонтально між колонками.)
+            row-gap: 50px; - буде заданий відступ між рядками (вертикально між рядками)
           </p>
         </div>
         <pre><code class="language-html view-as-code learn-html-code">
+          <div class="flex-gap-conteiner-example--gap">
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+          </div>
+          <div class="flex-gap-conteiner-example--column-gap">
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+          </div>
+          <div class="flex-gap-conteiner-example--row-gap">
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+          </div>
 
+          <style>
+            .flex-gap-conteiner-example--gap,
+            .flex-gap-conteiner-example--column-gap,
+            .flex-gap-conteiner-example--row-gap {
+              display: flex;
+              border: 1px solid black;
+              margin-bottom: 10px;
+              flex-wrap: wrap;
+            }
+            .flex-gap-conteiner-example--gap {
+              gap: 10px;
+            }
+            .flex-gap-conteiner-example--row-gap {
+              row-gap: 10px;
+            }
+            .flex-gap-conteiner-example--column-gap {
+              column-gap: 10px;
+            }
+            .flex-gap-example-item {
+              background-color: #D4C9E9;
+              flex: 0 0 calc(33.3% - 10px);
+              border: 1px solid black;
+            }
+          </style>
         </code></pre>
         <span class="example">Example:</span>
         <div class="learn-html-example">
+          <div class="flex-gap-conteiner-example--gap">
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+          </div>
+          <div class="flex-gap-conteiner-example--column-gap">
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+          </div>
+          <div class="flex-gap-conteiner-example--row-gap">
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item">Item</div>
+          </div>
 
+          <style>
+            .flex-gap-conteiner-example--gap,
+            .flex-gap-conteiner-example--column-gap,
+            .flex-gap-conteiner-example--row-gap {
+              display: flex;
+              border: 1px solid black;
+              margin-bottom: 10px;
+              flex-wrap: wrap;
+            }
+            .flex-gap-conteiner-example--gap {
+              gap: 10px;
+            }
+            .flex-gap-conteiner-example--row-gap {
+              row-gap: 10px;
+            }
+            .flex-gap-conteiner-example--column-gap {
+              column-gap: 10px;
+            }
+            .flex-gap-example-item {
+              background-color: #D4C9E9;
+              flex: 0 0 calc(33.3% - 10px);
+              border: 1px solid black;
+            }
+          </style>
         </div>
       </div>
     </section>
