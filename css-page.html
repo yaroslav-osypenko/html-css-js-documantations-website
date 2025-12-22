@@ -1719,14 +1719,13 @@
             <div class="flex-gap-example-item">Item</div>
           </div>
           <div class="flex-gap-conteiner-example--row-gap">
-            <div class="flex-gap-example-item">Item</div>
-            <div class="flex-gap-example-item">Item</div>
-            <div class="flex-gap-example-item">Item</div>
-            <div class="flex-gap-example-item">Item</div>
-            <div class="flex-gap-example-item">Item</div>
-            <div class="flex-gap-example-item">Item</div>
+            <div class="flex-gap-example-item--ev">Item</div>
+            <div class="flex-gap-example-item--ev">Item</div>
+            <div class="flex-gap-example-item--ev">Item</div>
+            <div class="flex-gap-example-item--ev">Item</div>
+            <div class="flex-gap-example-item--ev">Item</div>
+            <div class="flex-gap-example-item--ev">Item</div>
           </div>
-
           <style>
             .flex-gap-conteiner-example--gap,
             .flex-gap-conteiner-example--column-gap,
@@ -1745,10 +1744,14 @@
             .flex-gap-conteiner-example--column-gap {
               column-gap: 10px;
             }
+            .flex-gap-example-item--ev,
             .flex-gap-example-item {
               background-color: #D4C9E9;
               flex: 0 0 calc(33.3% - 10px);
               border: 1px solid black;
+            }
+            .flex-gap-example-item--ev {
+              flex: 0 0 calc(33.3%);
             }
           </style>
         </code></pre>
