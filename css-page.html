@@ -123,7 +123,10 @@
               </details>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link">Властивість - display: grid</a>
+              <a href="#padding" class="navigation-link">Властивість - padding</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#margin" class="navigation-link">Властивість - margin</a>
             </li>
             <li class="navigation-item">
               <a href="#" class="navigation-link"></a>
@@ -1830,14 +1833,33 @@
           <div class="padding-example-container">
             <div class="padding-example-item">Item 1</div>
           </div>
+          <div class="padding-example-container">
+            <div class="padding-example-item--2">Item 1</div>
+          </div>
+          <div class="padding-example-container">
+            <div class="padding-example-item--3">Item 1</div>
+          </div>
           <style>
             .padding-example-container {
               border: 1px solid black;
               background-color: #2e5cb8;
+              margin-bottom: 5px;
+              height: 50px;
+            }
+            .padding-example-item,
+            .padding-example-item--2,
+            .padding-example-item--3 {
+              border: 1px solid black;
+              background-color: greenyellow;
             }
             .padding-example-item {
-              border: 1px solid black;
               padding: 10px;
+            }
+            .padding-example-item--2 {
+              padding: 15px 10px;
+            }
+            .padding-example-item--3 {
+              padding: 10px 12px 15px 14px;
             }
           </style>
         </code></pre>
@@ -1873,6 +1895,89 @@
             }
             .padding-example-item--3 {
               padding: 10px 12px 15px 14px;
+            }
+          </style>
+        </div>
+      </div>
+      <div class="learn-html-block" id="margin">
+        <div class="learn-html-desription">
+          <p>
+            margin - зовнішні відступи.
+            margin задає зовнішні відступи обєктам, від їхніх країв а не їх контента.
+            Це добре видно відносно верхнього прикладу padding
+            Задається схожим чином <br> <br>
+            margin: 10px; - задасть зовнішні відступи з усіх сторін <br>
+            margin: 10px 12px; - задасть зовнішні відступи в 10 пікселів зверху і знизу. 12 з ліва і права.
+            <br>
+            margin: 10px 12px 10px 15px; - задасть зовнішній відступ в 10px з верзу, 12px з права, 10px з низу, 15px з ліва.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <div class="margin-example-container">
+            <div class="margin-example-item">Item 1</div>
+          </div>
+          <div class="margin-example-container">
+            <div class="margin-example-item--2">Item 1</div>
+          </div>
+          <div class="margin-example-container">
+            <div class="margin-example-item--3">Item 1</div>
+          </div>
+          <style>
+            .margin-example-container {
+              border: 1px solid black;
+              background-color: #2e5cb8;
+              margin-bottom: 5px;
+              height: 50px;
+            }
+            .margin-example-item,
+            .margin-example-item--2,
+            .margin-example-item--3 {
+              border: 1px solid black;
+              background-color: greenyellow;
+            }
+            .margin-example-item {
+              margin: 10px;
+            }
+            .margin-example-item--2 {
+              margin: 15px 10px;
+            }
+            .margin-example-item--3 {
+              margin: 10px 12px 15px 14px;
+            }
+          </style>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <div class="margin-example-container">
+            <div class="margin-example-item">Item 1</div>
+          </div>
+          <div class="margin-example-container">
+            <div class="margin-example-item--2">Item 1</div>
+          </div>
+          <div class="margin-example-container">
+            <div class="margin-example-item--3">Item 1</div>
+          </div>
+          <style>
+            .margin-example-container {
+              border: 1px solid black;
+              background-color: #2e5cb8;
+              margin-bottom: 5px;
+              height: 50px;
+            }
+            .margin-example-item,
+            .margin-example-item--2,
+            .margin-example-item--3 {
+              border: 1px solid black;
+              background-color: greenyellow;
+            }
+            .margin-example-item {
+              margin: 10px;
+            }
+            .margin-example-item--2 {
+              margin: 15px 10px;
+            }
+            .margin-example-item--3 {
+              margin: 10px 12px 15px 14px;
             }
           </style>
         </div>
