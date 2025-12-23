@@ -1812,6 +1812,71 @@
           </style>
         </div>
       </div>
+      <div class="learn-html-block" id="padding">
+        <div class="learn-html-desription">
+          <p>
+            padding - внутрішні відступи елемента.
+            Додає внутрішні відступи до блока, які додаються до основної висоти та ширини обєкта, на нього діють всі ті самі стилі
+            Але контент не буде лізти в цю область. <br> <br>
+
+            padding: 10px; - додасть падінг з усіх 4 сторін <br>
+            padding: 10px 15px; - додасть падінг 10 пікселів з верху та низу, 15 з ліва і права<br>
+            padding: 10px 10px 10px 10px; Додасть падінги з усіх сторін. 10 зверху, 10 з права, 10 з низу, 10 з ліва. Саме в такому порядку
+            задаються падінги.
+            Важливий нюанс, бордер буде на межах педінга, не навколо обєкта
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <div class="padding-example-container">
+            <div class="padding-example-item">Item 1</div>
+          </div>
+          <style>
+            .padding-example-container {
+              border: 1px solid black;
+              background-color: #2e5cb8;
+            }
+            .padding-example-item {
+              border: 1px solid black;
+              padding: 10px;
+            }
+          </style>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <div class="padding-example-container">
+            <div class="padding-example-item">Item 1</div>
+          </div>
+          <div class="padding-example-container">
+            <div class="padding-example-item--2">Item 1</div>
+          </div>
+          <div class="padding-example-container">
+            <div class="padding-example-item--3">Item 1</div>
+          </div>
+          <style>
+            .padding-example-container {
+              border: 1px solid black;
+              background-color: #2e5cb8;
+              margin-bottom: 5px;
+              height: 50px;
+            }
+            .padding-example-item,
+            .padding-example-item--2,
+            .padding-example-item--3 {
+              border: 1px solid black;
+              background-color: greenyellow;
+            }
+            .padding-example-item {
+              padding: 10px;
+            }
+            .padding-example-item--2 {
+              padding: 15px 10px;
+            }
+            .padding-example-item--3 {
+              padding: 10px 12px 15px 14px;
+            }
+          </style>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
