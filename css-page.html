@@ -129,6 +129,9 @@
               <a href="#margin" class="navigation-link">Властивість - margin</a>
             </li>
             <li class="navigation-item">
+              <a href="#box-sizing" class="navigation-link"></a>
+            </li>
+            <li class="navigation-item">
               <a href="#" class="navigation-link"></a>
             </li>
           </ul>
@@ -1981,6 +1984,93 @@
             }
           </style>
         </div>
+      </div>
+      <div class="learn-html-block" id="border">
+        <div class="learn-html-desription">
+          <p>
+            border - властивість для задання видимих рамок.
+            Використовується з трьома свойствами одначасно.
+            Параметр товщини римки - 10px.
+            Параметр тип рамки - solid або інші.
+            Параметр кольору рамки.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <div class="border-example-container">
+            <div class="border-example-item">Приклад</div>
+          </div>
+          <style>
+            .border-example-container {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 5px solid red;
+            }
+            .border-example-item {
+              flex-grow: 1;
+            }
+          </style>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <div class="border-example-container">
+            <div class="border-example-item">Приклад</div>
+          </div>
+          <style>
+            .border-example-container {
+              display: flex;
+              border: 5px solid red;
+            }
+            .border-example-item {
+              flex-grow: 1;
+              text-align: center;
+            }
+          </style>
+        </div>
+      </div>
+      <div class="learn-html-block" id="box-sizing">
+        <div class="learn-html-desription">
+          <p>
+            box-sizing: border-box <br> <br>
+            Як працює стандартна модель (content-box) <br>
+            Це значення стоїть у браузері за замовчуванням. Логіка: Ширина (width),
+            яку ви вказали — це ширина тільки внутрішнього контенту. <br>
+            Падінги (padding) та рамки (border) додаються зверху до цієї ширини.
+            <br>
+            Проблема: Ви створюєте блок width: 100%, додаєте йому padding: 20px,
+            і блок вилізає за межі екрана, створюючи горизонтальну прокрутку.
+            <br>
+            Це максимально незручно. <br>
+            Як працює сучасна модель (border-box)Це саме те значення, яке прописують майже всі розробники.
+            <br>
+            Логіка: Ширина (width), яку ви вказали — це остаточна ширина блоку.
+            <br>
+            Падінги та рамки "вдавлюються" всередину, не розтягуючи блок зовні.
+            <br>
+            Формула: Загальна ширина = width (вже включає padding та border)
+            <br>
+            Перевага: Якщо ви дали блоку width: 300px, він залишиться 300px, скільки б паддінгів ви йому не накинули. Контент всередині просто стиснеться.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          box-sizing: border-box
+        </code></pre>
+<!--        <span class="example">Example:</span>-->
+<!--        <div class="learn-html-example">-->
+<!--          <div class="border-example-container">-->
+<!--            <div class="border-example-item">Приклад</div>-->
+<!--          </div>-->
+<!--          <style>-->
+<!--            .border-example-container {-->
+<!--              display: flex;-->
+<!--              border: 5px solid red;-->
+<!--            }-->
+<!--            .border-example-item {-->
+<!--              flex-grow: 1;-->
+<!--              text-align: center;-->
+<!--            }-->
+<!--          </style>-->
+<!--        </div>-->
       </div>
     </section>
   </main>
