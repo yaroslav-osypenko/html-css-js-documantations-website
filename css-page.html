@@ -129,13 +129,13 @@
               <a href="#margin" class="navigation-link">Властивість - margin</a>
             </li>
             <li class="navigation-item">
-              <a href="#border" class="navigation-link"></a>
+              <a href="#border" class="navigation-link">Властивість - border</a>
             </li>
             <li class="navigation-item">
-              <a href="#box-sizing" class="navigation-link"></a>
+              <a href="#box-sizing" class="navigation-link">Властивість - box-sizing</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link"></a>
+              <a href="#normalazing" class="navigation-link">Нормалізація стилів</a>
             </li>
           </ul>
         </nav>
@@ -1916,6 +1916,15 @@
             margin: 10px 12px; - задасть зовнішні відступи в 10 пікселів зверху і знизу. 12 з ліва і права.
             <br>
             margin: 10px 12px 10px 15px; - задасть зовнішній відступ в 10px з верзу, 12px з права, 10px з низу, 15px з ліва.
+            <br>
+            margin-inline: auto - відцентрування по ширині <br>
+            margin-block: auto - відцентрування по висоті <br>
+            Відємні мерджини - потрібно для того щоб обєкт своїм контентом залазив поверх іншого контенту не рухаючи його
+            <br>
+            Наприклад: margin-top: -50px <br>
+            Відступи елемнтів з мерджинами не сумується. Бразуер відобразит тільки
+            <br>
+            мерджин з найбільшим значенням якщо в обох елементах він був відповідно заданий.
           </p>
         </div>
         <pre><code class="language-html view-as-code learn-html-code">
@@ -2057,6 +2066,89 @@
         </div>
         <pre><code class="language-html view-as-code learn-html-code">
           box-sizing: border-box
+        </code></pre>
+<!--        <span class="example">Example:</span>-->
+<!--        <div class="learn-html-example">-->
+<!--          <div class="border-example-container">-->
+<!--            <div class="border-example-item">Приклад</div>-->
+<!--          </div>-->
+<!--          <style>-->
+<!--            .border-example-container {-->
+<!--              display: flex;-->
+<!--              border: 5px solid red;-->
+<!--            }-->
+<!--            .border-example-item {-->
+<!--              flex-grow: 1;-->
+<!--              text-align: center;-->
+<!--            }-->
+<!--          </style>-->
+<!--        </div>-->
+      </div>
+      <div class="learn-html-block" id="normalazing">
+        <div class="learn-html-desription">
+          <p>
+            Для чого потрібна нормалізація стилів: <br> <br>
+            1. Усунення розбіжностей між браузерами <br>
+            Кожен браузер (Chrome, Firefox, Safari, Edge) має свій власний «стиль за замовчуванням» (User Agent Stylesheet).
+            <br>
+            Наприклад: Один браузер додає margin до списків ul, а інший — padding.
+            <br>
+            Заголовки h1 можуть мати різний розмір шрифту або відступи. Нормалізація робить так, щоб ваш сайт виглядав максимально однаково всюди.
+            <br> <br>
+            2. Створення «чистого аркуша» <br>
+            Замість того, щоб боротися зі стандартними відступами, які ви не додавали, ви їх скидаєте або стандартизуєте.
+            <br>
+            Це дозволяє вам будувати дизайн з нуля, контролюючи кожен піксель.
+            <br> <br>
+            3. Виправлення поширених багів
+            Бібліотеки для нормалізації (наприклад, Normalize.css) часто містять виправлення для дрібних помилок браузерів,
+            які не стосуються дизайну напряму (наприклад, відображення елементів форм або коректна робота HTML5-тегів у старих версіях).
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          html, body, div, span, applet, object, iframe,
+          h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+          a, abbr, acronym, address, big, cite,
+          del, dfn, img, ins, kbd, q, s, samp, strike, tt, var, u, center,
+          dl, dt, dd, ol, ul, li,
+          fieldset, form, label, legend,
+          article, aside, canvas, details, embed,
+          figure, figcaption, footer, header, hgroup,
+          menu, nav, output, ruby, section, summary,
+          time, mark {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+          }
+
+          *,
+          *::before,
+          *::after {
+            box-sizing: border-box;
+          }
+
+          /* HTML5 display-role reset for older browsers */
+          article, aside, details, figcaption, figure,
+          footer, header, hgroup, menu, nav, section {
+            display: block;
+          }
+          body {
+            line-height: 1;
+          }
+          ol, ul {
+            list-style: none;
+          }
+          blockquote, q {
+            quotes: none;
+          }
+          blockquote:before, blockquote:after,
+          q:before, q:after {
+            content: '';
+            content: none;
+          }
         </code></pre>
 <!--        <span class="example">Example:</span>-->
 <!--        <div class="learn-html-example">-->
