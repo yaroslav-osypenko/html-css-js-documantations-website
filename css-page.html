@@ -140,6 +140,9 @@
             <li class="navigation-item">
               <a href="#link-fonts" class="navigation-link">Підключення шрифтів</a>
             </li>
+            <li class="navigation-item">
+              <a href="#color" class="navigation-link">Кольори та їх типи.</a>
+            </li>
           </ul>
         </nav>
       </section>
@@ -2178,7 +2181,19 @@
             <br>
             Існує два способи, через html з тегом link, через css з тегом @import
             <br>
-            Та підключення напряму через файли проекта. Всі приклади нижче
+            Та підключення напряму через файли проекта. Всі приклади нижче <br>
+            Найкращим форматом файлів шрифтів є woff2. <br>
+            <br>
+            font-weight - відповідності чисел до назв. <br>
+            100	- Thin (Hairline) -	Найтонше накреслення <br>
+            200 -	Extra Light (Ultra Light) -	Дуже тонке <br>
+            300	- Light -	Легке <br>
+            400	- Normal (Regular) - 	Стандартний шрифт <br>
+            500	- Medium	- Середній (трохи жирніший за звичайний) <br>
+            600	- Semi Bold (Demi Bold) -	Напівжирний <br>
+            700	- Bold - Жирний <br>
+            800	- Extra Bold (Ultra Bold)	- Дуже жирний <br>
+            900	- Black (Heavy)	- Найбільш насичене накреслення
           </p>
         </div>
         <pre><code class="language-html view-as-code learn-html-code">
@@ -2199,7 +2214,6 @@
               font-style: normal;
               font-display: swap;
             }
-
             @font-face {
               font-family: ScienceGothic;
               src: url("/fonts/ScienceGothic-Bold.woff2") format(woff2);
@@ -2225,6 +2239,76 @@
 <!--            }-->
 <!--          </style>-->
 <!--        </div>-->
+      </div>
+      <div class="learn-html-block" id="color">
+        <div class="learn-html-desription">
+          <p>
+            Кольори. <br>
+            Є багато різних атрибутів через які задають колір. <br>
+            Основні формати це <br>
+            <br>
+            rgb - (255 0 0 / і тут альфа канал, від 0 до 1, відповідає за прозорість.)
+            <br>
+            hex - #f0000 <br>
+            hsl - абривіатура розшифровується наступним чином. H - hue (колір). S - saturation (насиченість). L - lightness (светлота)
+            саме в такому порядку і потрібно задавати значення.
+            color: hsl( Перше значення від 0 до 360 (в градусах колір). Друге значення від 0% до 100% насиченість. І lightness 50% золота середина.)
+            color: hsl(240 100% 50% / і альфа канал від 0 до 1)
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <div class="color-example-container color--1">
+            Приклад
+          </div>
+          <div class="color-example-container color--2">
+            Приклад
+          </div>
+          <div class="color-example-container color--3">
+            Приклад
+          </div>
+          <style>
+            .color-example-container {
+              margin-bottom: 5px;
+              text-align: center;
+            }
+            .color--1 {
+              border: 2px solid #ff0000;
+            }
+            .color--2 {
+              border: 2px solid rgb(255 0 0 / 1);
+            }
+            .color--3 {
+              border: 2px solid hsl(0 100% 50% / 1);
+            }
+          </style>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <div class="color-example-container color--1">
+            Приклад
+          </div>
+          <div class="color-example-container color--2">
+            Приклад
+          </div>
+          <div class="color-example-container color--3">
+            Приклад
+          </div>
+          <style>
+            .color-example-container {
+              margin-bottom: 5px;
+              text-align: center;
+            }
+            .color--1 {
+              border: 2px solid #ff0000;
+            }
+            .color--2 {
+              border: 2px solid rgb(255 0 0 / 1);
+            }
+            .color--3 {
+              border: 2px solid hsl(0 100% 50% / 1);
+            }
+          </style>
+        </div>
       </div>
     </section>
   </main>
