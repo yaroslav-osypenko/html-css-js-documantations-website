@@ -74,6 +74,9 @@ q:before, q:after {
   --background-color-block: #0f1f3d;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   box-sizing: border-box;
   font-family: ScienceGothic;
@@ -184,6 +187,7 @@ aside section {
   text-decoration: none;
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 .learn-html-code {
@@ -201,7 +205,6 @@ pre {
   margin-inline: 0 !important;
   margin-block: 0 !important;
   /* margin: 0 !important; */
-  /* display: grid; */
 }
 
 .view-as-code {
@@ -370,5 +373,11 @@ details ul{
 
   .learn-html-example--table table {
     font-size: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
