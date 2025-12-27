@@ -137,6 +137,9 @@
             <li class="navigation-item">
               <a href="#normalazing" class="navigation-link">Нормалізація стилів</a>
             </li>
+            <li class="navigation-item">
+              <a href="#link-fonts" class="navigation-link">Підключення шрифтів</a>
+            </li>
           </ul>
         </nav>
       </section>
@@ -2149,6 +2152,62 @@
             content: '';
             content: none;
           }
+        </code></pre>
+<!--        <span class="example">Example:</span>-->
+<!--        <div class="learn-html-example">-->
+<!--          <div class="border-example-container">-->
+<!--            <div class="border-example-item">Приклад</div>-->
+<!--          </div>-->
+<!--          <style>-->
+<!--            .border-example-container {-->
+<!--              display: flex;-->
+<!--              border: 5px solid red;-->
+<!--            }-->
+<!--            .border-example-item {-->
+<!--              flex-grow: 1;-->
+<!--              text-align: center;-->
+<!--            }-->
+<!--          </style>-->
+<!--        </div>-->
+      </div>
+      <div class="learn-html-block" id="link-fonts">
+        <div class="learn-html-desription">
+          <p>
+            Існує декілька способів підключення шрифтів до проекту. <br>
+            Найбільш простий серед них - підключення шрифтів які хостяться через Google Fonts.
+            <br>
+            Існує два способи, через html з тегом link, через css з тегом @import
+            <br>
+            Та підключення напряму через файли проекта. Всі приклади нижче
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          Через link в HTML: (найкращий варіант для продуктивності):
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+          Через @import в CSS:
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+          </style>
+
+          Підключення з файлів проекта:
+          <style>
+            @font-face {
+              font-family: ScienceGothic;
+              src: url("/fonts/ScienceGothic-Light.woff2") format(woff2);
+              font-weight: 300;
+              font-style: normal;
+              font-display: swap;
+            }
+
+            @font-face {
+              font-family: ScienceGothic;
+              src: url("/fonts/ScienceGothic-Bold.woff2") format(woff2);
+              font-weight: 700;
+              font-style: normal;
+              font-display: swap;
+            }
+          </style>
         </code></pre>
 <!--        <span class="example">Example:</span>-->
 <!--        <div class="learn-html-example">-->
