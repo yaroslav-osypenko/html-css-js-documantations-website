@@ -144,7 +144,7 @@
               <a href="#color" class="navigation-link">Кольори та їх типи.</a>
             </li>
             <li class="navigation-item">
-              <a href="#background" class="navigation-link">Бекграунд та всі похідні.</a>
+              <a href="#background" class="navigation-link">Background та всі похідні.</a>
             </li>
           </ul>
         </nav>
@@ -2361,16 +2361,35 @@
             корочений запис (Shorthand) <br>
             Всі ці властивості можна записати в один рядок background. Порядок не суворий, але для size є нюанс (пишеться через слеш після position):
             <br> <br>
-             Колір | Зображення | Позиція / Розмір | Повторення | Прив'язка
+            Колір | Зображення | Позиція / Розмір | Повторення | Прив'язка
             background: #f00 url('cat.jpg') center / cover no-repeat fixed;
           </p>
         </div>
         <pre><code class="language-html view-as-code learn-html-code">
-
+          <div class="background-example-container">
+            Привіт
+          </div>
+          <style>
+            .background-example-container {
+              color: black;
+              background: #2e5cb8;
+              border: 1px solid black;
+            }
+          </style>
         </code></pre>
         <span class="example">Example:</span>
         <div class="learn-html-example">
-
+          <div class="background-example-container">
+            Привіт
+          </div>
+          <style>
+            .background-example-container {
+              text-align: center;
+              color: wheat;
+              background: #2e5cb8;
+              border: 1px solid black;
+            }
+          </style>
         </div>
       </div>
     </section>
