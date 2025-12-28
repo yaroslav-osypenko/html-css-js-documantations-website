@@ -143,6 +143,9 @@
             <li class="navigation-item">
               <a href="#color" class="navigation-link">Кольори та їх типи.</a>
             </li>
+            <li class="navigation-item">
+              <a href="#background" class="navigation-link">Бекграунд та всі похідні.</a>
+            </li>
           </ul>
         </nav>
       </section>
@@ -2315,6 +2318,59 @@
               border: 2px solid hsl(0 100% 50% / 1);
             }
           </style>
+        </div>
+      </div>
+      <div class="learn-html-block" id="background">
+        <div class="learn-html-desription">
+          <p>
+            CSS Background <br>
+            1. Основні властивості <br>
+            background-color — колір фону. Можна задавати в hex, rgb, hsl або назвою.
+            <br>
+            background-image — шлях до зображення: url('./path/to/image.jpg').
+            <br>
+            background-repeat — керує повторенням фону.repeat (дефолт) — заповнює всю площу.
+            <br>
+              no-repeat — зображення виводиться один раз. <br>
+              repeat-x / repeat-y — повторення лише по горизонталі або вертикалі.
+            <br>
+            background-position — де знаходиться фон. Значення: center, top, bottom, left, right або в пікселях/відсотках (наприклад, 20px 50%).
+            <br>
+            background-size — розмір зображення. <br>
+            cover — розтягує фото на весь блок без втрати пропорцій (частина фото може обрізатися).
+            <br>
+            contain — вписує фото в блок повністю (можуть залишитися порожні місця).
+            <br>
+            background-attachment — поведінка при скролі. <br>
+            scroll (дефолт) — фон рухається разом зі сторінкою. <br>
+            fixed — створює ефект паралакса (фон застигає, а контент їде поверх нього).
+            <br>
+            2. Область відображення (background-clip) <br>
+            Керує тим, наскільки далеко під межі блоку заходить фон. <br>
+            border-box(Дефолт) - Фон під за кордоном (border) <br>
+            padding-box - Фон тільки до кордону (займає padding, але не border)
+            <br>
+            content-box - Фон тільки там, де контент (не заходить на padding)
+            <br>
+            text - Фон заповнює лише силует тексту. <br>
+            Важливо для clip: text: Щоб побачити ефект, текст має бути прозорим:
+            <br>
+            color: transparent; <br>
+            -webkit-background-clip: text; Для Chrome/Safari  <br>
+            background-clip: text; <br>
+            корочений запис (Shorthand) <br>
+            Всі ці властивості можна записати в один рядок background. Порядок не суворий, але для size є нюанс (пишеться через слеш після position):
+            <br> <br>
+             Колір | Зображення | Позиція / Розмір | Повторення | Прив'язка
+            background: #f00 url('cat.jpg') center / cover no-repeat fixed;
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+
         </div>
       </div>
     </section>
