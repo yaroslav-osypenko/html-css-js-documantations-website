@@ -146,6 +146,9 @@
             <li class="navigation-item">
               <a href="#background" class="navigation-link">Background та всі похідні.</a>
             </li>
+            <li class="navigation-item">
+              <a href="#outline" class="navigation-link">outline - кастомна рамка</a>
+            </li>
           </ul>
         </nav>
       </section>
@@ -2392,6 +2395,64 @@
           </style>
         </div>
       </div>
+      <div class="learn-html-block" id="outline">
+        <div class="learn-html-desription">
+          <p>
+            outline - властивість схожа на бордер. Запис відбувається точно так само.
+            лиш в outline є ще властивість outline-offset.
+            Зміщення бордера в середину пропорційно зменшуючись, або навпаки при збільшенні, пропорційно збільшуватись
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <div class="outline-example-container outline-example">
+            Example
+          </div>
+          <div class="outline-example-container ouline-offset-minus">
+            Example
+          </div>
+          <div class="outline-example-container outline-offset-minus">
+            Example
+          </div>
+          <style>
+            .outline-example-container {
+              text-align: center;
+              background-color: #D4F7C7;
+            }
+          </style>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <div class="outline-example-container outline-example">
+            Example
+          </div>
+          <div class="outline-example-container ouline-offset-minus">
+            Example
+          </div>
+          <div class="outline-example-container outline-offset-plus">
+            Example
+          </div>
+          <style>
+            .outline-example-container {
+              text-align: center;
+              background-color: #D4F7C7;
+              margin-bottom: 10px;
+              height: 30px;
+            }
+            .outline-example {
+              outline: 2px solid red;
+            }
+            .ouline-offset-minus {
+              outline: 2px solid red;
+              outline-offset: -10px;
+            }
+            .outline-offset-plus {
+              outline: 2px solid red;
+              outline-offset: 5px;
+            }
+          </style>
+        </div>
+      </div>
+
     </section>
   </main>
   <footer>
