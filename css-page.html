@@ -149,6 +149,9 @@
             <li class="navigation-item">
               <a href="#outline" class="navigation-link">outline - кастомна рамка</a>
             </li>
+            <li class="navigation-item">
+              <a href="#border-radius" class="navigation-link">border-radius - закруглення рамки</a>
+            </li>
           </ul>
         </nav>
       </section>
@@ -2461,6 +2464,76 @@
             .outline-offset-plus {
               outline: 2px solid red;
               outline-offset: 5px;
+            }
+          </style>
+        </div>
+      </div>
+      <div class="learn-html-block" id="border-radius">
+        <div class="learn-html-desription">
+          <p>
+            border-radius
+            Окрім того що border-radius 50% може робити обєкт круглим або просто скругляти його краї, можна створювати цікаві фігури
+            через задання параметрів починаючи від лівого верхнього вугла по часовій стрілці до лівого нижнього.
+            Нижче наведені три приклади, де були просто скруглені краї, <br>
+            Де були скруглені до круга, тобто 50%
+            І де ми кастомно кожному вуглу задаємо різні значення.
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <div class="border-radius-example-container border-radius--1">
+            Приклад
+          </div>
+          <div class="border-radius-example-container border-radius--2">
+            Приклад
+          </div>
+          <div class="border-radius-example-container border-radius--3">
+            Приклад
+          </div>
+          <style>
+            .border-radius-example-container {
+              text-align: center;
+              background-color: #D4F7C7;
+              margin-bottom: 10px;
+              height: 30px;
+              border: 1px solid black;
+            }
+            .border-radius--1 {
+              border-radius: 5px;
+            }
+            .border-radius--2 {
+              border-radius: 50%;
+            }
+            .border-radius--3 {
+              border-radius: 5px 10px 50% 10px;
+            }
+          </style>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example">
+          <div class="border-radius-example-container border-radius--1">
+            Приклад
+          </div>
+          <div class="border-radius-example-container border-radius--2">
+            Приклад
+          </div>
+          <div class="border-radius-example-container border-radius--3">
+            Приклад
+          </div>
+          <style>
+            .border-radius-example-container {
+              text-align: center;
+              background-color: #D4F7C7;
+              margin-bottom: 10px;
+              height: 30px;
+            }
+            .border-radius--1 {
+              border-radius: 5px;
+            }
+            .border-radius--2 {
+              border-radius: 50%;
+            }
+            .border-radius--3 {
+              border-radius: 5px 10px 50% 10px;
             }
           </style>
         </div>
