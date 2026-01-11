@@ -1,5 +1,5 @@
 @font-face {
-  font-family: ScienceGothic;
+  font-family: "ScienceGothic";
   src: url("../fonts/ScienceGothic-Light.woff2") format(woff2);
   font-weight: 300;
   font-style: normal;
@@ -7,13 +7,12 @@
 }
 
 @font-face {
-  font-family: ScienceGothic;
+  font-family: "ScienceGothic";
   src: url("../fonts/ScienceGothic-Bold.woff2") format(woff2);
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
-
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -29,7 +28,6 @@ time, mark {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -39,7 +37,6 @@ time, mark {
   box-sizing: border-box;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -56,14 +53,7 @@ blockquote, q {
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
 }
-/* table {
-  border-collapse: collapse;
-  border-spacing: 0;
-} */
-
-
 
 :root {
   --color-dark: black;
@@ -79,7 +69,7 @@ html {
 }
 body {
   box-sizing: border-box;
-  font-family: ScienceGothic;
+  font-family: "ScienceGothic", serif;
   background-color: black;
   font-size: 16px;
 }
@@ -91,7 +81,6 @@ main {
   margin-inline: auto;
   padding-inline: 15px;
 }
-
 
 .container {
   max-width: 1920px;
@@ -113,7 +102,6 @@ main {
 .navigation-container {
   padding: 20px;
 }
-
 
 aside section {
   width: min(25vw, 400px);
@@ -204,7 +192,6 @@ aside section {
 pre {
   margin-inline: 0 !important;
   margin-block: 0 !important;
-  /* margin: 0 !important; */
 }
 
 .view-as-code {
@@ -225,7 +212,6 @@ pre {
 .learn-html-desription {
   margin-block: 15px;
 }
-
 
 .example-semantik-h1-h2-h3 {
   display: flex;
@@ -256,13 +242,13 @@ pre {
 }
 
 .learn-html-example--ul ul {
-  list-style-type: disc; /* Повертає стандартні крапки */
-  padding-left: 40px;    /* Повертає стандартний відступ зліва */
-  margin: 1em 0;         /* Повертає відступи зверху та знизу */
+  list-style-type: disc;
+  padding-left: 40px;
+  margin: 1em 0;
 }
 
 .learn-html-example--ul li {
-  display: list-item;    /* Гарантує, що елемент списку поводиться як пункт списку */
+  display: list-item;
 }
 
 .learn-html-example--ol li {
@@ -270,9 +256,9 @@ pre {
 }
 
 .learn-html-example--ol ol {
-  list-style-type: decimal; /* Повертає нумерацію (1, 2, 3...) */
-  padding-left: 40px;       /* Повертає відступ для номерів */
-  margin: 1em 0;            /* Додає стандартні відступи зверху та знизу */
+  list-style-type: decimal;
+  padding-left: 40px;
+  margin: 1em 0;
 }
 
 .navigation-menu {
