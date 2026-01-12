@@ -135,7 +135,7 @@
               <a href="#box-sizing" class="navigation-link">Властивість - box-sizing</a>
             </li>
             <li class="navigation-item">
-              <a href="#normalazing" class="navigation-link">Нормалізація стилів</a>
+              <a href="#normalizing" class="navigation-link">Нормалізація стилів</a>
             </li>
             <li class="navigation-item">
               <a href="#link-fonts" class="navigation-link">Підключення шрифтів - link</a>
@@ -2099,7 +2099,7 @@
 <!--          </style>-->
 <!--        </div>-->
       </div>
-      <div class="learn-html-block" id="normalazing">
+      <div class="learn-html-block" id="normalizing">
         <div class="learn-html-desription">
           <p>
             Для чого потрібна нормалізація стилів: <br> <br>
@@ -2558,13 +2558,10 @@
           }
         });
 
-
         if (minIndent !== Infinity && minIndent > 0) {
           const indentRegex = new RegExp(`^\\s{${minIndent}}`, 'gm');
           htmlContent = htmlContent.replace(indentRegex, '');
         }
-
-
 
         let escaped = htmlContent
           .replace(/&(?!(?:amp|lt|gt|quot|#39);)/g, '&amp;')
