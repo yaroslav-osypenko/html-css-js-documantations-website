@@ -152,6 +152,9 @@
             <li class="navigation-item">
               <a href="#border-radius" class="navigation-link">border-radius - закруглення рамки</a>
             </li>
+            <li class="navigation-item">
+              <a href="#img-filters" class="navigation-link">filters - фільтри на зоображення</a>
+            </li>
           </ul>
         </nav>
       </section>
@@ -2578,6 +2581,150 @@
               aspect-ratio: 1;
               border: 2px solid red;
               box-shadow: -5px 10px 6px 5px rgb(0 0 255 / 0.5) inset;
+            }
+          </style>
+        </div>
+      </div>
+      <div class="learn-html-block" id="img-filters">
+        <div class="learn-html-desription">
+          <p>
+            Фільтри на зоображення. <br>
+            brightness - яскравість зображення - По дефолту 1, значення вказується в процентах
+            <br>
+            blur - значення вказується в пікселях, від 0 і так далі поширюється ефект блюра.
+            <br>
+            contrast - контрасність. <br> <br>
+            drop-shadow - можна задати тінь на безпосередньо png, а не на його кордонах квадратом.
+            <br>
+            Цікаве використання. <br>
+            grayscale - робить елемент img чорно білим. <br>
+            saturate - міняє насиченість кольорів. <br>
+            sepia - добавляє коричневий відтінок, як на старих фото.
+
+          </p>
+        </div>
+        <pre><code class="language-html view-as-code learn-html-code">
+          <div class="img-filters-example-box--1">
+            <img
+              src="./img/example-cat.png"
+              alt="Cat"
+            >
+          </div>
+          <div class="img-filters-example-box--2">
+            <img
+              src="./img/example-cat.png"
+              alt="Cat"
+            >
+          </div>
+          <div class="img-filters-example-box--3">
+            <img
+              src="./img/example-cat.png"
+              alt="Cat"
+            >
+          </div>
+          <div class="img-filters-example-box--4">
+            <img
+              src="./img/example-cat.png"
+              alt="Cat"
+              width="300"
+              height="200"
+            >
+          </div>
+          <div class="img-filters-example-box--5">
+            <img
+              src="./img/example-cat.png"
+              alt="Cat"
+            >
+          </div>
+          <div class="img-filters-example-box--6">
+            <img
+              src="./img/example-cat.png"
+              alt="Cat"
+            >
+          </div>
+          <style>
+            .img-filters-example-box img {
+              filter: brightness(0.5);
+            }
+            .img-filters-example-box--2 img {
+              filter: blur(1px);
+            }
+            .img-filters-example-box--3 img {
+              filter: drop-shadow(15px 15px 15px red);
+            }
+            .img-filters-example-box--4 img {
+              filter: grayscale(50%);
+              /*від 0 до 100 процентів*/
+            }
+            .img-filters-example-box--5 img {
+              filter: opacity(50%);
+            /*"від 0 до 100% - прозорість."*/
+            }
+            .img-filters-example-box--6 img {
+              filter: saturate(0.5);
+              /*від 0 і так далі.*/
+            }
+          </style>
+        </code></pre>
+        <span class="example">Example:</span>
+        <div class="learn-html-example learn-html-example--env">
+          <div class="img-filters-example-box--1">
+            <img
+              src="./img/example-cat.png"
+              alt="Cat"
+            >
+          </div>
+          <div class="img-filters-example-box--2">
+            <img
+              src="./img/example-cat.png"
+              alt="Cat"
+            >
+          </div>
+          <div class="img-filters-example-box--3">
+            <img
+              src="./img/example-cat.png"
+              alt="Cat"
+            >
+          </div>
+          <div class="img-filters-example-box--4">
+            <img
+              src="./img/example-cat.png"
+              alt="Cat"
+            >
+          </div>
+          <div class="img-filters-example-box--5">
+            <img
+              src="./img/example-cat.png"
+              alt="Cat"
+            >
+          </div>
+          <div class="img-filters-example-box--6">
+            <img
+              src="./img/example-cat.png"
+              alt="Cat"
+            >
+          </div>
+          <style>
+            .img-filters-example-box img {
+              filter: brightness(0.5);
+            }
+            .img-filters-example-box--2 img {
+              filter: blur(1px);
+            }
+            .img-filters-example-box--3 img {
+              filter: drop-shadow(15px 15px 15px red);
+            }
+            .img-filters-example-box--4 img {
+              filter: grayscale(40%);
+              /*від 0 до 100 процентів*/
+            }
+            .img-filters-example-box--5 img {
+              filter: opacity(40%);
+              /*"від 0 до 100% - прозорість."*/
+            }
+            .img-filters-example-box--6 img {
+              filter: saturate(0.1);
+              /*від 0 і так далі.*/
             }
           </style>
         </div>

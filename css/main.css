@@ -318,12 +318,27 @@ pre {
   justify-content: center;
 }
 
+.img-filters-example-box--1 img,
+.img-filters-example-box--2 img,
+.img-filters-example-box--3 img,
+.img-filters-example-box--4 img,
+.img-filters-example-box--5 img,
+.img-filters-example-box--6 img {
+  max-width: 100%;
+  width: 100%;
+
+}
+
 details ul{
   padding: 8px;
 }
 
 .example-placeholder {
   resize: none;
+}
+
+.learn-html-example--env {
+  overflow: hidden;
 }
 
 @media (max-width: 1090px) {
